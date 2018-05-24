@@ -40,7 +40,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Investment blockchain platform";
+    const char* pszTimestamp = "Investment blockchain platform v.5";
     const CScript genesisOutputScript = CScript() << ParseHex("049e67afe2a0f688224aef615cbbcfd8a6e17aa90a3a0959d4b98f73894b9b4f83635ff2a12c160cb8fcc426c6ab05b3f79af0b996e905111a4a86f77711016591") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -92,10 +92,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000b0001a");
+        consensus.nMinimumChainWork = uint256S("0");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x1f2190de4f22108a4ee53b593f4f46070d53921cfd0dbf45882117c6238937c7");
+        consensus.defaultAssumeValid = uint256S("0");
 
         pchMessageStart[0] = 0x83;
         pchMessageStart[1] = 0x23;
@@ -225,7 +225,6 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("allcoin.guru", "testnet.dnsseed.allcoin.guru"));
 
 
         // Testnet ICPro addresses start with 'y'
