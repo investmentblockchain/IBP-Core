@@ -1,0 +1,6 @@
+usr/local/bin/icpro-qt usr/bin
+share/pixmaps/icpro32.xpm usr/share/pixmaps
+share/pixmaps/icpro16.xpm usr/share/pixmaps
+share/pixmaps/icpro128.png usr/share/pixmaps
+debian/icpro-qt.desktop usr/share/applications
+debian/icpro-qt.protocol usr/share/kde4/services/
