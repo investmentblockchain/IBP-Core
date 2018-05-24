@@ -40,7 +40,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Investment blockchain platform v.5";
+    const char* pszTimestamp = "Investment blockchain platform";
     const CScript genesisOutputScript = CScript() << ParseHex("049e67afe2a0f688224aef615cbbcfd8a6e17aa90a3a0959d4b98f73894b9b4f83635ff2a12c160cb8fcc426c6ab05b3f79af0b996e905111a4a86f77711016591") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
