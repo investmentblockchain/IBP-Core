@@ -123,6 +123,7 @@ share/BitcoindComparisonTool.jar
 .project
 .autotools
 /doc/doxygen/
+dist
 
 libicproconsensus.pc
 src/qt/icpro-qt.bash
