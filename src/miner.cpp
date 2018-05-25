@@ -99,7 +99,7 @@ CBlockTemplate* CreateNewBlock(const CChainParams& chainparams, const CScript& s
     unsigned int nBlockPrioritySize = GetArg("-blockprioritysize", DEFAULT_BLOCK_PRIORITY_SIZE);
     nBlockPrioritySize = std::min(nBlockMaxSize, nBlockPrioritySize);
 
-    // Minimum block size you icpro to create; block will be filled with free transactions
+    // Minimum block size you ibp to create; block will be filled with free transactions
     // until there are no more or the block reaches this size:
     unsigned int nBlockMinSize = GetArg("-blockminsize", DEFAULT_BLOCK_MIN_SIZE);
     nBlockMinSize = std::min(nBlockMaxSize, nBlockMinSize);
@@ -404,7 +404,7 @@ void static BitcoinMiner(const CChainParams& chainparams, CConnman& connman)
 {
     LogPrintf("ICProMiner -- started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("icpro-miner");
+    RenameThread("ibp-miner");
 
     unsigned int nExtraNonce = 0;
 

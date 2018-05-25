@@ -2,7 +2,7 @@
 
 #include "cachemultimap.h"
 
-#include "test/test_icpro.h"
+#include "test/test_ibp.h"
 
 #include <algorithm>
 #include <iostream>

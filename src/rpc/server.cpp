@@ -344,19 +344,19 @@ static const CRPCCommand vRPCCommands[] =
 #endif
 
     /* ICPro features */
-    { "icpro",               "masternode",             &masternode,             true  },
-    { "icpro",               "masternodelist",         &masternodelist,         true  },
-    { "icpro",               "masternodebroadcast",    &masternodebroadcast,    true  },
-    { "icpro",               "gobject",                &gobject,                true  },
-    { "icpro",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
-    { "icpro",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
-    { "icpro",               "voteraw",                &voteraw,                true  },
-    { "icpro",               "mnsync",                 &mnsync,                 true  },
-    { "icpro",               "spork",                  &spork,                  true  },
-    { "icpro",               "getpoolinfo",            &getpoolinfo,            true  },
-    { "icpro",               "sentinelping",           &sentinelping,           true  },
+    { "ibp",               "masternode",             &masternode,             true  },
+    { "ibp",               "masternodelist",         &masternodelist,         true  },
+    { "ibp",               "masternodebroadcast",    &masternodebroadcast,    true  },
+    { "ibp",               "gobject",                &gobject,                true  },
+    { "ibp",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
+    { "ibp",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
+    { "ibp",               "voteraw",                &voteraw,                true  },
+    { "ibp",               "mnsync",                 &mnsync,                 true  },
+    { "ibp",               "spork",                  &spork,                  true  },
+    { "ibp",               "getpoolinfo",            &getpoolinfo,            true  },
+    { "ibp",               "sentinelping",           &sentinelping,           true  },
 #ifdef ENABLE_WALLET
-    { "icpro",               "privatesend",            &privatesend,            false },
+    { "ibp",               "privatesend",            &privatesend,            false },
 
     /* Wallet */
     { "wallet",             "keepass",                &keepass,                true },
@@ -580,7 +580,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(const std::string& methodname, const std::string& args)
 {
-    return "> icpro-cli " + methodname + " " + args + "\n";
+    return "> ibp-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(const std::string& methodname, const std::string& args)

@@ -1,0 +1,6 @@
+usr/local/bin/ibp-qt usr/bin
+share/pixmaps/ibp32.xpm usr/share/pixmaps
+share/pixmaps/ibp16.xpm usr/share/pixmaps
+share/pixmaps/ibp128.png usr/share/pixmaps
+debian/ibp-qt.desktop usr/share/applications
+debian/ibp-qt.protocol usr/share/kde4/services/

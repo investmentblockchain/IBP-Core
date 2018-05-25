@@ -319,7 +319,7 @@ void CGovernanceManager::AddGovernanceObject(CGovernanceObject& govobj, CConnman
         return;
     }
 
-    // IF WE HAVE THIS OBJECT ALREADY, WE DON'T ICPRO ANOTHER COPY
+    // IF WE HAVE THIS OBJECT ALREADY, WE DON'T IBP ANOTHER COPY
 
     if(mapObjects.count(nHash)) {
         LogPrintf("CGovernanceManager::AddGovernanceObject -- already have governance object %s\n", nHash.ToString());
@@ -1155,7 +1155,7 @@ int CGovernanceManager::RequestGovernanceObjectVotes(const std::vector<CNode*>& 
 
     // This should help us to get some idea about an impact this can bring once deployed on mainnet.
     // Testnet is ~40 times smaller in masternode count, but only ~1000 masternodes usually vote,
-    // so 1 obj on mainnet == ~10 objs or ~1000 votes on testnet. However we icpro to test a higher
+    // so 1 obj on mainnet == ~10 objs or ~1000 votes on testnet. However we ibp to test a higher
     // number of votes to make sure it's robust enough, so aim at 2000 votes per masternode per request.
     // On mainnet nMaxObjRequestsPerNode is always set to 1.
     int nMaxObjRequestsPerNode = 1;

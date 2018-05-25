@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/icpro-config.h"
+#include "config/ibp-config.h"
 #endif
 
 #include "util.h"
@@ -116,8 +116,8 @@ bool fLiteMode = false;
 */
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "icpro.conf";
-const char * const BITCOIN_PID_FILENAME = "icprod.pid";
+const char * const BITCOIN_CONF_FILENAME = "ibp.conf";
+const char * const BITCOIN_PID_FILENAME = "ibpd.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -187,7 +187,7 @@ instance_of_cinit;
 
 /**
  * LogPrintf() has been broken a couple of times now
- * by well-meaning icpro adding mutexes in the most straightforward way.
+ * by well-meaning ibp adding mutexes in the most straightforward way.
  * It breaks because it may be called by global destructors during shutdown.
  * Since the order of destruction of static/global objects is undefined,
  * defining a mutex as a global object doesn't work (the mutex gets
@@ -271,8 +271,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "icpro" is a composite category enabling all ICPro-related debug output
-            if(ptrCategory->count(string("icpro"))) {
+            // "ibp" is a composite category enabling all ICPro-related debug output
+            if(ptrCategory->count(string("ibp"))) {
                 ptrCategory->insert(string("privatesend"));
                 ptrCategory->insert(string("instantsend"));
                 ptrCategory->insert(string("masternode"));
@@ -496,7 +496,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "icpro";
+    const char* pszModule = "ibp";
 #endif
     if (pex)
         return strprintf(
@@ -519,7 +519,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\ICProCore
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\ICProCore
     // Mac: ~/Library/Application Support/ICProCore
-    // Unix: ~/.icprocore
+    // Unix: ~/.ibpcore
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "ICProCore";
@@ -535,7 +535,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/ICProCore";
 #else
     // Unix
-    return pathRet / ".icprocore";
+    return pathRet / ".ibpcore";
 #endif
 #endif
 }
@@ -629,7 +629,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty icpro.conf if it does not excist
+        // Create empty ibp.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -641,7 +641,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override icpro.conf
+        // Don't overwrite existing settings so command line settings override ibp.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

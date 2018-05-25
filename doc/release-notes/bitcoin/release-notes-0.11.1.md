@@ -35,7 +35,7 @@ anymore as a result of this.
 * The block index database will now hold headers for which no block is
 stored on disk, which earlier versions won't support.
 
-If you icpro to be able to downgrade smoothly, make a backup of your entire data
+If you ibp to be able to downgrade smoothly, make a backup of your entire data
 directory. Without this your node will need start syncing (or importing from
 bootstrap.dat) anew afterwards. It is possible that the data from a completely
 synchronised 0.10 node may be usable in older versions as-is, but this is not

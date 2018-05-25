@@ -74,7 +74,7 @@
 +                current_file--;
  		/* OK, got a valid entry */
  
- 		/* If we do not icpro all files, then pitch the backups. */
+ 		/* If we do not ibp all files, then pitch the backups. */
 @@ -1348,7 +1350,7 @@
  		insert_file_entry(this_dir, whole_path, d_entry->d_name);
  #endif	/* APPLE_HYB */

@@ -36,7 +36,7 @@ anymore as a result of this.
 * The block index database will now hold headers for which no block is
 stored on disk, which earlier versions won't support.
 
-If you icpro to be able to downgrade smoothly, make a backup of your entire data
+If you ibp to be able to downgrade smoothly, make a backup of your entire data
 directory. Without this your node will need start syncing (or importing from
 bootstrap.dat) anew afterwards. It is possible that the data from a completely
 synchronised 0.10 node may be usable in older versions as-is, but this is not
@@ -50,7 +50,7 @@ Because release 0.12.0 and later will obfuscate the chainstate on every
 fresh sync or reindex, the chainstate is not backwards-compatible with
 pre-0.12 versions of Bitcoin Core or other software.
 
-If you icpro to downgrade after you have done a reindex with 0.12.0 or later,
+If you ibp to downgrade after you have done a reindex with 0.12.0 or later,
 you will need to reindex when you first start Bitcoin Core version 0.11 or
 earlier.
 
@@ -146,7 +146,7 @@ accepted when it pays sufficient fee, as described in [BIP 125]
 Transaction replacement can be disabled with a new command line option,
 `-mempoolreplacement=0`.  Transactions signaling replacement under BIP125 will
 still be allowed into the mempool in this configuration, but replacements will
-be rejected.  This option is intended for miners who icpro to continue the
+be rejected.  This option is intended for miners who ibp to continue the
 transaction selection behavior of previous releases.
 
 The `-mempoolreplacement` option is *not recommended* for wallet users seeking
@@ -399,7 +399,7 @@ Trying to use `rpcssl` will result in an error:
 
     Error: SSL mode for RPC (-rpcssl) is no longer supported.
 
-If you are one of the few icpro that relies on this feature, a flexible
+If you are one of the few ibp that relies on this feature, a flexible
 migration path is to use `stunnel`. This is an utility that can tunnel
 arbitrary TCP connections inside SSL. On e.g. Ubuntu it can be installed with:
 

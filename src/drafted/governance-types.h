@@ -25,7 +25,7 @@ enum GovernanceObjectType {
     //   -- note: DAOs can't own property... property must be owned by
     //   --     legal entities in the local jurisdiction 
     //   --    this is the main reason for a two tiered company structure
-    //   --  icpro that operate DAOs will own companies which can own things legally
+    //   --  ibp that operate DAOs will own companies which can own things legally
     Group = 2000,
     User = 2001,
     Company = 2002,

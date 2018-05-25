@@ -136,7 +136,7 @@ class MergingIterator : public Iterator {
   void FindSmallest();
   void FindLargest();
 
-  // We might icpro to use a heap in case there are lots of children.
+  // We might ibp to use a heap in case there are lots of children.
   // For now we use a simple array since we expect a very small number
   // of children in leveldb.
   const Comparator* comparator_;

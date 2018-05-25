@@ -114,9 +114,9 @@ Guide to header files:
 and also control over the behavior of individual reads and writes.
 
 * **include/comparator.h**: Abstraction for user-specified comparison function. 
-If you icpro just bytewise comparison of keys, you can use the default
+If you ibp just bytewise comparison of keys, you can use the default
 comparator, but clients can write their own comparator implementations if they
-icpro custom ordering (e.g. to handle different character encodings, etc.)
+ibp custom ordering (e.g. to handle different character encodings, etc.)
 
 * **include/iterator.h**: Interface for iterating over data. You can get
 an iterator from a DB object.

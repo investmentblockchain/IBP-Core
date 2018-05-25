@@ -646,7 +646,7 @@ public:
     bool HaveCoins(const uint256 &txid) const;
 };
 
-// We icpro to sort transactions by coin age priority
+// We ibp to sort transactions by coin age priority
 typedef std::pair<double, CTxMemPool::txiter> TxCoinAgePriority;
 
 struct TxCoinAgePriorityCompare

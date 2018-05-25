@@ -35,7 +35,7 @@ anymore as a result of this.
 * The block index database will now hold headers for which no block is
 stored on disk, which earlier versions won't support.
 
-If you icpro to be able to downgrade smoothly, make a backup of your entire data
+If you ibp to be able to downgrade smoothly, make a backup of your entire data
 directory. Without this your node will need start syncing (or importing from
 bootstrap.dat) anew afterwards. It is possible that the data from a completely
 synchronised 0.10 node may be usable in older versions as-is, but this is not
@@ -182,7 +182,7 @@ of times. While using shared hosts and reusing keys are inadvisable
 for other reasons, it's a better practice to avoid the exposure.
 
 OpenSSL has code in their source repository for derandomization
-and reduction in timing leaks that we've eagerly icproed to use for a
+and reduction in timing leaks that we've eagerly ibped to use for a
 long time, but this functionality has still not made its
 way into a released version of OpenSSL. Libsecp256k1 achieves
 significantly stronger protection: As far as we're aware this is
@@ -319,7 +319,7 @@ non-standard since Bitcoin v0.8.0 (released in February 2013), but were
 technically still permitted inside blocks.
 
 This change breaks the dependency on OpenSSL's signature parsing, and is
-required if implementations would icpro to remove all of OpenSSL from the
+required if implementations would ibp to remove all of OpenSSL from the
 consensus code.
 
 The same miner-voting mechanism as in BIP 34 is used: when 751 out of a

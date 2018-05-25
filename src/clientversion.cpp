@@ -10,7 +10,7 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both icprod and icpro-qt, to make it harder for attackers to
+ * for both ibpd and ibp-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
 const std::string CLIENT_NAME("ICPro Core");

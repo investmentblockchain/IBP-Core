@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  ibpd The ICPro Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: ibpd
+# processname: ibpd
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/ibpd, see below
+if [ -f /etc/sysconfig/ibpd ]; then
+        . /etc/sysconfig/ibpd
+fi
+
+RETVAL=0
+
+prog=ibpd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/ibpd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/ibpd}
+
+# ibpd defaults to /usr/bin/ibpd, override with BITCOIND_BIN
+ibpd=${BITCOIND_BIN-/usr/bin/ibpd}
+
+# ibpd opts default to -disablewallet, override with BITCOIND_OPTS
+ibpd_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $ibpd $ibpd_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

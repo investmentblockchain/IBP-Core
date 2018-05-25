@@ -45,7 +45,7 @@ static uint32_t secp256k1_rand_bits(int bits) {
 }
 
 static uint32_t secp256k1_rand_int(uint32_t range) {
-    /* We icpro a uniform integer between 0 and range-1, inclusive.
+    /* We ibp a uniform integer between 0 and range-1, inclusive.
      * B is the smallest number such that range <= 2**B.
      * two mechanisms implemented here:
      * - generate B bits numbers until one below range is found, and return it

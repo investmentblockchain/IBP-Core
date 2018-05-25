@@ -39,19 +39,19 @@ AC_DEFUN([AX_BOOST_CHRONO],
                         e.g. --with-boost-chrono=boost_chrono-gcc-mt ]),
         [
         if test "$withval" = "no"; then
-			icpro_boost="no"
+			ibp_boost="no"
         elif test "$withval" = "yes"; then
-            icpro_boost="yes"
+            ibp_boost="yes"
             ax_boost_user_chrono_lib=""
         else
-		    icpro_boost="yes"
+		    ibp_boost="yes"
 		ax_boost_user_chrono_lib="$withval"
 		fi
         ],
-        [icpro_boost="yes"]
+        [ibp_boost="yes"]
 	)
 
-	if test "x$icpro_boost" = "xyes"; then
+	if test "x$ibp_boost" = "xyes"; then
         AC_REQUIRE([AC_PROG_CC])
         AC_REQUIRE([AC_CANONICAL_BUILD])
 		CPPFLAGS_SAVED="$CPPFLAGS"

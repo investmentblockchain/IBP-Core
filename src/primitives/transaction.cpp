@@ -135,7 +135,7 @@ unsigned int CTransaction::CalculateModifiedSize(unsigned int nTxSize) const
     // the constant overhead for each txin and up to 110 bytes of scriptSig (which
     // is enough to cover a compressed pubkey p2sh redemption) for priority.
     // Providing any more cleanup incentive than making additional inputs free would
-    // risk encouraging icpro to create junk outputs to redeem later.
+    // risk encouraging ibp to create junk outputs to redeem later.
     if (nTxSize == 0)
         nTxSize = ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION);
     for (std::vector<CTxIn>::const_iterator it(vin.begin()); it != vin.end(); ++it)

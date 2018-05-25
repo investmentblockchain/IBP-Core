@@ -19,7 +19,7 @@ using namespace std;
 class CRPCConvertParam
 {
 public:
-    std::string methodName;            //! method whose params icpro conversion
+    std::string methodName;            //! method whose params ibp conversion
     int paramIdx;                      //! 0-based idx of param to convert
 };
 static const CRPCConvertParam vRPCConvertParams[] =

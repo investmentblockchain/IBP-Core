@@ -338,7 +338,7 @@ void MasternodeList::on_startButton_clicked()
 
     // Display message box
     QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm masternode start"),
-        tr("Are you sure you icpro to start masternode %1?").arg(QString::fromStdString(strAlias)),
+        tr("Are you sure you ibp to start masternode %1?").arg(QString::fromStdString(strAlias)),
         QMessageBox::Yes | QMessageBox::Cancel,
         QMessageBox::Cancel);
 
@@ -362,7 +362,7 @@ void MasternodeList::on_startAllButton_clicked()
 {
     // Display message box
     QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm all masternodes start"),
-        tr("Are you sure you icpro to start ALL masternodes?"),
+        tr("Are you sure you ibp to start ALL masternodes?"),
         QMessageBox::Yes | QMessageBox::Cancel,
         QMessageBox::Cancel);
 
@@ -394,7 +394,7 @@ void MasternodeList::on_startMissingButton_clicked()
     // Display message box
     QMessageBox::StandardButton retval = QMessageBox::question(this,
         tr("Confirm missing masternodes start"),
-        tr("Are you sure you icpro to start MISSING masternodes?"),
+        tr("Are you sure you ibp to start MISSING masternodes?"),
         QMessageBox::Yes | QMessageBox::Cancel,
         QMessageBox::Cancel);
 

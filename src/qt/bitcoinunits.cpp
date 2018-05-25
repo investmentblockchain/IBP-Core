@@ -118,7 +118,7 @@ int BitcoinUnits::decimals(int unit)
 
 QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators)
 {
-    // Note: not using straight sprintf here because we do NOT icpro
+    // Note: not using straight sprintf here because we do NOT ibp
     // localized number formatting.
     if(!valid(unit))
         return QString(); // Refuse to format invalid unit

@@ -206,7 +206,7 @@ class EstimateFeeTest(BitcoinTestFramework):
             reps += 1
         print("Finished splitting")
 
-        # Now we can connect the other nodes, didn't icpro to connect them earlier
+        # Now we can connect the other nodes, didn't ibp to connect them earlier
         # so the estimates would not be affected by the splitting transactions
         # Node1 mines small blocks but that are bigger than the expected transaction rate,
         # and allows free transactions.

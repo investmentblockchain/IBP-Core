@@ -12,7 +12,7 @@
 //
 // A builtin cache implementation with a least-recently-used eviction
 // policy is provided.  Clients may use their own implementations if
-// they icpro something more sophisticated (like scan-resistance, a
+// they ibp something more sophisticated (like scan-resistance, a
 // custom eviction policy, variable cache sizing, etc.)
 
 #ifndef STORAGE_LEVELDB_INCLUDE_CACHE_H_

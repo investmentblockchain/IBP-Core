@@ -303,10 +303,10 @@ int CPrivateSend::GetDenominations(const std::vector<CTxOut>& vecTxOut, bool fSi
 bool CPrivateSend::GetDenominationsBits(int nDenom, std::vector<int> &vecBitsRet)
 {
     // ( bit on if present, 4 denominations example )
-    // bit 0 - 100ICPRO+1
-    // bit 1 - 10ICPRO+1
-    // bit 2 - 1ICPRO+1
-    // bit 3 - .1ICPRO+1
+    // bit 0 - 100IBP+1
+    // bit 1 - 10IBP+1
+    // bit 2 - 1IBP+1
+    // bit 3 - .1IBP+1
 
     int nMaxDenoms = vecStandardDenominations.size();
 
@@ -427,7 +427,7 @@ void ThreadCheckPrivateSend(CConnman& connman)
     fOneThread = true;
 
     // Make this thread recognisable as the PrivateSend thread
-    RenameThread("icpro-ps");
+    RenameThread("ibp-ps");
 
     unsigned int nTick = 0;
 

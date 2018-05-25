@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/ibp_bg.qm</file>
+        <file alias="de">locale/ibp_de.qm</file>
+        <file alias="en">locale/ibp_en.qm</file>
+        <file alias="es">locale/ibp_es.qm</file>
+        <file alias="fi">locale/ibp_fi.qm</file>
+        <file alias="fr">locale/ibp_fr.qm</file>
+        <file alias="it">locale/ibp_it.qm</file>
+        <file alias="ja">locale/ibp_ja.qm</file>
+        <file alias="pl">locale/ibp_pl.qm</file>
+        <file alias="pt">locale/ibp_pt.qm</file>
+        <file alias="ru">locale/ibp_ru.qm</file>
+        <file alias="sk">locale/ibp_sk.qm</file>
+        <file alias="sv">locale/ibp_sv.qm</file>
+        <file alias="vi">locale/ibp_vi.qm</file>
+        <file alias="zh_CN">locale/ibp_zh_CN.qm</file>
+        <file alias="zh_TW">locale/ibp_zh_TW.qm</file>
+    </qresource>
+</RCC>

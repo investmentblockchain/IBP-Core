@@ -35,7 +35,7 @@ anymore as a result of this.
 * The block index database will now hold headers for which no block is
 stored on disk, which earlier versions won't support.
 
-If you icpro to be able to downgrade smoothly, make a backup of your entire data
+If you ibp to be able to downgrade smoothly, make a backup of your entire data
 directory. Without this your node will need start syncing (or importing from
 bootstrap.dat) anew afterwards. It is possible that the data from a completely
 synchronised 0.10 node may be usable in older versions as-is, but this is not
@@ -75,7 +75,7 @@ P2P protocol and network code:
 - `200f293` Ignore getaddr messages on Outbound connections.
 - `d5d8998` Limit message sizes before transfer
 - `aeb9279` Better fingerprinting protection for non-main-chain getdatas.
-- `cf0218f` Make addrman's bucket placement deterministic (countermeasure 1 against eclipse attacks, see http://cs-icpro.bu.edu/heilman/eclipse/)
+- `cf0218f` Make addrman's bucket placement deterministic (countermeasure 1 against eclipse attacks, see http://cs-ibp.bu.edu/heilman/eclipse/)
 - `0c6f334` Always use a 50% chance to choose between tried and new entries (countermeasure 2 against eclipse attacks)
 - `214154e` Do not bias outgoing connections towards fresh addresses (countermeasure 2 against eclipse attacks)
 - `aa587d4` Scale up addrman (countermeasure 6 against eclipse attacks)

@@ -448,7 +448,7 @@ TEST(LogTest, PartialLastIsIgnored) {
 TEST(LogTest, ErrorJoinsRecords) {
   // Consider two fragmented records:
   //    first(R1) last(R1) first(R2) last(R2)
-  // where the middle two fragments disappear.  We do not icpro
+  // where the middle two fragments disappear.  We do not ibp
   // first(R1),last(R2) to get joined and returned as a valid record.
 
   // Write records that span two blocks

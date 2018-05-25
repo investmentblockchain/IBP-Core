@@ -65,7 +65,7 @@ static int FLAGS_page_size = 1024;
 static int FLAGS_num_pages = 4096;
 
 // If true, do not destroy the existing database.  If you set this
-// flag and also specify a benchmark that icpros a fresh database, that
+// flag and also specify a benchmark that ibps a fresh database, that
 // benchmark will fail.
 static bool FLAGS_use_existing_db = false;
 
@@ -124,7 +124,7 @@ class RandomGenerator {
   RandomGenerator() {
     // We use a limited amount of data over and over again and ensure
     // that it is larger than the compression window (32KB), and also
-    // large enough to serve all typical value sizes we icpro to write.
+    // large enough to serve all typical value sizes we ibp to write.
     Random rnd(301);
     std::string piece;
     while (data_.size() < 1048576) {

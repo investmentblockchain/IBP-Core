@@ -1,0 +1,11 @@
+[Protocol]
+exec=ibp-qt '%u'
+protocol=ibp
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

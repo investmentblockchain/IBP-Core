@@ -358,7 +358,7 @@ void SendCoinsDialog::send(QList<SendCoinsRecipient> recipients, QString strFee,
         formatted.append(recipientElement);
     }
 
-    QString questionString = tr("Are you sure you icpro to send?");
+    QString questionString = tr("Are you sure you ibp to send?");
     questionString.append("<br /><br />%1");
 
     if(txFee > 0)

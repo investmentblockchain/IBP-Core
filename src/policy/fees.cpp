@@ -356,7 +356,7 @@ void CBlockPolicyEstimator::processTransaction(const CTxMemPoolEntry& entry, boo
         return;
     }
 
-    // Only icpro to be updating estimates when our blockchain is synced,
+    // Only ibp to be updating estimates when our blockchain is synced,
     // otherwise we'll miscalculate how many blocks its taking to get included.
     if (!fCurrentEstimate)
         return;
@@ -444,7 +444,7 @@ void CBlockPolicyEstimator::processBlock(unsigned int nBlockHeight,
     }
     nBestSeenHeight = nBlockHeight;
 
-    // Only icpro to be updating estimates when our blockchain is synced,
+    // Only ibp to be updating estimates when our blockchain is synced,
     // otherwise we'll miscalculate how many blocks its taking to get included.
     if (!fCurrentEstimate)
         return;

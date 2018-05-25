@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/icpro-config.h"
+#include "config/ibp-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -102,7 +102,7 @@ void OptionsModel::Init(bool resetSettings)
         settings.setValue("fLowKeysWarning", true);
 
     // These are shared with the core or have a command-line parameter
-    // and we icpro command-line parameters to overwrite the GUI settings.
+    // and we ibp command-line parameters to overwrite the GUI settings.
     //
     // If setting doesn't exist create it with defaults.
     //
@@ -198,7 +198,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in icpro.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in ibp.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())

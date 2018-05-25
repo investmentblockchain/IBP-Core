@@ -1,11 +1,11 @@
 Sample configuration files for:
 
-SystemD: icprod.service
-Upstart: icprod.conf
-OpenRC:  icprod.openrc
-         icprod.openrcconf
-CentOS:  icprod.init
-OS X:    org.icpro.icprod.plist
+SystemD: ibpd.service
+Upstart: ibpd.conf
+OpenRC:  ibpd.openrc
+         ibpd.openrcconf
+CentOS:  ibpd.init
+OS X:    org.ibp.ibpd.plist
 
 have been made available to assist packagers in creating node packages here.
 

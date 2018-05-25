@@ -6,18 +6,18 @@
 #define BITCOIN_CLIENTVERSION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/icpro-config.h"
+#include "config/ibp-config.h"
 #else
 
 /**
  * client versioning and copyright year
  */
 
-//! These need to be macros, as clientversion.cpp's and icpro*-res.rc's voodoo requires it
+//! These need to be macros, as clientversion.cpp's and ibp*-res.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR 5
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 1
-#define CLIENT_VERSION_BUILD 2
+#define CLIENT_VERSION_BUILD 3
 
 //! Set to true for release, false for prerelease or test build
 #define CLIENT_VERSION_IS_RELEASE true
@@ -41,7 +41,7 @@
 #define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, " STRINGIZE(COPYRIGHT_YEAR) " The ICPro Core Developers"
 
 /**
- * icprod-res.rc includes this file, but it cannot cope with real c++ code.
+ * ibpd-res.rc includes this file, but it cannot cope with real c++ code.
  * WINDRES_PREPROC is defined to indicate that its pre-processor is running.
  * Anything other than a define should be guarded below.
  */

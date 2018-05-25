@@ -459,7 +459,7 @@ bool Version::RecordReadSample(Slice internal_key) {
   state.matches = 0;
   ForEachOverlapping(ikey.user_key, internal_key, &state, &State::Match);
 
-  // Must have at least two matches since we icpro to merge across
+  // Must have at least two matches since we ibp to merge across
   // files. But what if we have a single file that contains many
   // overwrites and deletions?  Should we have another mechanism for
   // finding such files?

@@ -1,7 +1,7 @@
 ICPro Core 0.12.1
 =====================
 
-This is the official reference wallet for ICPro digital currency and comprises the backbone of the ICPro peer-to-peer network. You can [download ICPro Core](https://www.icpro.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for ICPro digital currency and comprises the backbone of the ICPro peer-to-peer network. You can [download ICPro Core](https://www.ibp.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -11,12 +11,12 @@ The following are some helpful notes on how to run ICPro on your native platform
 
 Unpack the files into a directory and run:
 
-- `bin/icpro-qt` (GUI) or
-- `bin/icprod` (headless)
+- `bin/ibp-qt` (GUI) or
+- `bin/ibpd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run icpro-qt.exe.
+Unpack the files into a directory, and then run ibp-qt.exe.
 
 ### OS X
 
@@ -27,7 +27,7 @@ Drag ICPro-Qt to your applications folder, and then run ICPro-Qt.
 * See the [ICPro documentation](https://ICProDev.atlassian.net/wiki/display/DOC)
 for help and more information.
 * Ask for help on [#ICProDev](http://webchat.freenode.net?channels=ICProDev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=ICProDev).
-* Ask for help on the [ICProTalk](https://icprotalk.org/) forums.
+* Ask for help on the [ICProTalk](https://ibptalk.org/) forums.
 
 Building
 ---------------------
@@ -57,7 +57,7 @@ The ICPro Core repo's [root README](/README.md) contains relevant information on
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [ICProTalk](https://icprotalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on the [ICProTalk](https://ibptalk.org/) forums, in the Development & Technical Discussion board.
 * Discuss on [#ICProDev](http://webchat.freenode.net/?channels=ICProDev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=ICProDev).
 
 ### Miscellaneous

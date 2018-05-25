@@ -6,13 +6,13 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/icpro
-src/icprod
-src/icpro-cli
-src/icpro-tx
-src/test/test_icpro
-src/qt/test/test_icpro-qt
-src/bench/bench_icpro
+src/ibp
+src/ibpd
+src/ibp-cli
+src/ibp-tx
+src/test/test_ibp
+src/qt/test/test_ibp-qt
+src/bench/bench_ibp
 
 # autoreconf
 Makefile.in
@@ -35,8 +35,8 @@ config.log
 config.status
 configure
 libtool
-src/config/icpro-config.h
-src/config/icpro-config.h.in
+src/config/ibp-config.h
+src/config/ibp-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -62,7 +62,7 @@ libconftest.dylib*
 *.o
 *.o-*
 #*.patch
-.icpro
+.ibp
 *.a
 *.pb.cc
 *.pb.h
@@ -81,12 +81,12 @@ libconftest.dylib*
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-icpro-qt
+ibp-qt
 Dash-Qt.app
 
 # Unit-tests
 Makefile.test
-icpro-qt_test
+ibp-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -100,7 +100,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_icpro.coverage/
+test_ibp.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -125,12 +125,12 @@ share/BitcoindComparisonTool.jar
 /doc/doxygen/
 dist/*
 
-libicproconsensus.pc
-src/qt/icpro-qt.bash
+libibpconsensus.pc
+src/qt/ibp-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
-icpro-cli
-icprod
-icpro-qt
+ibp-cli
+ibpd
+ibp-qt
 make

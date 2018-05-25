@@ -14,7 +14,7 @@
 
 #include <openssl/rand.h>
 
-// If we don't icpro a message to be processed by Qt, return true and set result to
+// If we don't ibp a message to be processed by Qt, return true and set result to
 // the value that the window procedure should return. Otherwise return false.
 bool WinShutdownMonitor::nativeEventFilter(const QByteArray &eventType, void *pMessage, long *pnResult)
 {

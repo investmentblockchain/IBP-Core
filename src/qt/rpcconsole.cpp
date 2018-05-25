@@ -772,7 +772,7 @@ void RPCConsole::startExecutor()
     connect(&thread, SIGNAL(finished()), executor, SLOT(deleteLater()), Qt::DirectConnection);
 
     // Default implementation of QThread::run() simply spins up an event loop in the thread,
-    // which is what we icpro.
+    // which is what we ibp.
     thread.start();
 }
 

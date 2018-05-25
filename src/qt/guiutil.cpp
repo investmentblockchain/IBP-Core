@@ -115,7 +115,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 
     widget->setFont(fixedPitchFont());
 #if QT_VERSION >= 0x040700
-    // We don't icpro translators to use own addresses in translations
+    // We don't ibp translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
     widget->setPlaceholderText(QObject::tr("Enter a ICPro address (e.g. %1)").arg("XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg"));
 #endif
@@ -134,8 +134,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no icpro: URI
-    if(!uri.isValid() || uri.scheme() != QString("icpro"))
+    // return if URI is not valid or is no ibp: URI
+    if(!uri.isValid() || uri.scheme() != QString("ibp"))
         return false;
 
     SendCoinsRecipient rv;
@@ -204,13 +204,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert icpro:// to icpro:
+    // Convert ibp:// to ibp:
     //
-    //    Cannot handle this later, because icpro:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because ibp:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("icpro://", Qt::CaseInsensitive))
+    if(uri.startsWith("ibp://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 7, "icpro:");
+        uri.replace(0, 7, "ibp:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -218,7 +218,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("icpro:%1").arg(info.address);
+    QString ret = QString("ibp:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -424,7 +424,7 @@ void openConfigfile()
 {
     boost::filesystem::path pathConfig = GetConfigFile();
 
-    /* Open icpro.conf with the associated application */
+    /* Open ibp.conf with the associated application */
     if (boost::filesystem::exists(pathConfig))
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
@@ -734,8 +734,8 @@ boost::filesystem::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "icprocore.desktop";
-    return GetAutostartDir() / strprintf("icprocore-%s.lnk", chain);
+        return GetAutostartDir() / "ibpcore.desktop";
+    return GetAutostartDir() / strprintf("ibpcore-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -774,7 +774,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = ChainNameFromCommandLine();
-        // Write a icprocore.desktop file to the autostart directory:
+        // Write a ibpcore.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)

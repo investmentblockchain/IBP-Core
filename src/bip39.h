@@ -21,8 +21,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef ICPRO_BIP39_H
-#define ICPRO_BIP39_H
+#ifndef IBP_BIP39_H
+#define IBP_BIP39_H
 
 #include "support/allocators/secure.h"
 

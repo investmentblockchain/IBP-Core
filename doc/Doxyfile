@@ -245,7 +245,7 @@ OPTIMIZE_OUTPUT_VHDL   = NO
 
 EXTENSION_MAPPING      =
 
-# If you use STL classes (i.e. std::string, std::vector, etc.) but do not icpro
+# If you use STL classes (i.e. std::string, std::vector, etc.) but do not ibp
 # to include (a tag file for) the STL sources as input, then you should
 # set this tag to YES in order to let doxygen match functions declarations and
 # definitions whose arguments contain STL classes (e.g. func(std::string); v.s.
@@ -269,7 +269,7 @@ SIP_SUPPORT            = NO
 # and setter methods for a property. Setting this option to YES (the default)
 # will make doxygen replace the get and set methods by a property in the
 # documentation. This will only work if the methods are indeed getting or
-# setting a simple type. If this is not the case, or you icpro to show the
+# setting a simple type. If this is not the case, or you ibp to show the
 # methods anyway, you should set this option to NO.
 
 IDL_PROPERTY_SUPPORT   = YES
@@ -1156,7 +1156,7 @@ FORMULA_TRANSPARENT    = YES
 # Enable the USE_MATHJAX option to render LaTeX formulas using MathJax
 # (see http://www.mathjax.org) which uses client side Javascript for the
 # rendering instead of using prerendered bitmaps. Use this if you do not
-# have LaTeX installed or if you icpro to formulas look prettier in the HTML
+# have LaTeX installed or if you ibp to formulas look prettier in the HTML
 # output. When enabled you also need to install MathJax separately and
 # configure the path to it using the MATHJAX_RELPATH option.
 
@@ -1423,7 +1423,7 @@ PERLMOD_LATEX          = NO
 
 # If the PERLMOD_PRETTY tag is set to YES the Perl module output will be
 # nicely formatted so it can be parsed by a human reader.  This is useful
-# if you icpro to understand what is going on.  On the other hand, if this
+# if you ibp to understand what is going on.  On the other hand, if this
 # tag is set to NO the size of the Perl module output will be much smaller
 # and Perl will parse it just the same.
 
@@ -1490,7 +1490,7 @@ PREDEFINED             =
 # If the MACRO_EXPANSION and EXPAND_ONLY_PREDEF tags are set to YES then
 # this tag can be used to specify a list of macro names that should be expanded.
 # The macro definition that is found in the sources will be used.
-# Use the PREDEFINED tag if you icpro to use a different macro definition that
+# Use the PREDEFINED tag if you ibp to use a different macro definition that
 # overrules the definition found in the source code.
 
 EXPAND_AS_DEFINED      =
@@ -1589,7 +1589,7 @@ DOT_NUM_THREADS        = 0
 
 # By default doxygen will write a font called Helvetica to the output
 # directory and reference it in all dot files that doxygen generates.
-# When you icpro a differently looking font you can specify the font name
+# When you ibp a differently looking font you can specify the font name
 # using DOT_FONTNAME. You need to make sure dot is able to find the font,
 # which can be done by putting it in a standard location or by setting the
 # DOTFONTPATH environment variable or by setting DOT_FONTPATH to the directory

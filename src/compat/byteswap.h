@@ -6,7 +6,7 @@
 #define BITCOIN_COMPAT_BYTESWAP_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/icpro-config.h"
+#include "config/ibp-config.h"
 #endif
 
 #include <stdint.h>

@@ -130,7 +130,7 @@ class PruneTest(BitcoinTestFramework):
         print "Invalidating block at height:",invalidheight,badhash
         self.nodes[1].invalidateblock(badhash)
 
-        # We've now switched to our previously mined-24 block fork on node 1, but thats not what we icpro
+        # We've now switched to our previously mined-24 block fork on node 1, but thats not what we ibp
         # So invalidate that fork as well, until we're on the same chain as node 0/2 (but at an ancestor 288 blocks ago)
         mainchainhash = self.nodes[0].getblockhash(invalidheight - 1)
         curhash = self.nodes[1].getblockhash(invalidheight - 1)

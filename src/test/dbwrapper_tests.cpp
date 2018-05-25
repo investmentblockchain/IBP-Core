@@ -5,7 +5,7 @@
 #include "dbwrapper.h"
 #include "uint256.h"
 #include "random.h"
-#include "test/test_icpro.h"
+#include "test/test_ibp.h"
 
 #include <boost/assign/std/vector.hpp> // for 'operator+=()'
 #include <boost/assert.hpp>
@@ -146,7 +146,7 @@ BOOST_AUTO_TEST_CASE(existing_data_no_obfuscate)
     // Call the destructor to free leveldb LOCK
     delete dbw;
 
-    // Now, set up another wrapper that icpros to obfuscate the same directory
+    // Now, set up another wrapper that ibps to obfuscate the same directory
     CDBWrapper odbw(ph, (1 << 10), false, false, true);
 
     // Check that the key/val we wrote with unobfuscated wrapper exists and 

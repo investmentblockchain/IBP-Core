@@ -1,5 +1,5 @@
 The maxsendbuffer bug (0.3.20.1 clients not being able to download the block chain from other 0.3.20.1 clients) was only going to get
-worse as icpro upgraded, so I cherry-picked the bug fix and created a minor release yesterday.
+worse as ibp upgraded, so I cherry-picked the bug fix and created a minor release yesterday.
 
 The Amazon Machine Images I used to do the builds are available:
 
@@ -9,7 +9,7 @@ The Amazon Machine Images I used to do the builds are available:
 
 (mac build will be done soon)
 
-If you have already downloaded version 0.3.20.1, please either add this to your icpro.conf file:
+If you have already downloaded version 0.3.20.1, please either add this to your ibp.conf file:
 
   maxsendbuffer=10000
   maxreceivebuffer=10000

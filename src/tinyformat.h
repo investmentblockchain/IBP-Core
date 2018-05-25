@@ -455,8 +455,8 @@ class FormatIterator
             : m_out(out),
             m_fmt(fmt),
             m_extraFlags(Flag_None),
-            m_icproWidth(false),
-            m_icproPrecision(false),
+            m_ibpWidth(false),
+            m_ibpPrecision(false),
             m_variableWidth(0),
             m_variablePrecision(0),
             m_origWidth(out.width()),
@@ -567,8 +567,8 @@ class FormatIterator
         const char* m_fmt;
         unsigned int m_extraFlags;
         // State machine info for handling of variable width & precision
-        bool m_icproWidth;
-        bool m_icproPrecision;
+        bool m_ibpWidth;
+        bool m_ibpPrecision;
         int m_variableWidth;
         int m_variablePrecision;
         // Saved stream state
@@ -586,28 +586,28 @@ void FormatIterator::accept(const T& value)
 {
     // Parse the format string
     const char* fmtEnd = 0;
-    if(m_extraFlags == Flag_None && !m_icproWidth && !m_icproPrecision)
+    if(m_extraFlags == Flag_None && !m_ibpWidth && !m_ibpPrecision)
     {
         m_fmt = printFormatStringLiteral(m_out, m_fmt);
         fmtEnd = streamStateFromFormat(m_out, m_extraFlags, m_fmt, 0, 0);
-        m_icproWidth     = (m_extraFlags & Flag_VariableWidth) != 0;
-        m_icproPrecision = (m_extraFlags & Flag_VariablePrecision) != 0;
+        m_ibpWidth     = (m_extraFlags & Flag_VariableWidth) != 0;
+        m_ibpPrecision = (m_extraFlags & Flag_VariablePrecision) != 0;
     }
     // Consume value as variable width and precision specifier if necessary
     if(m_extraFlags & (Flag_VariableWidth | Flag_VariablePrecision))
     {
-        if(m_icproWidth || m_icproPrecision)
+        if(m_ibpWidth || m_ibpPrecision)
         {
             int v = convertToInt<T>::invoke(value);
-            if(m_icproWidth)
+            if(m_ibpWidth)
             {
                 m_variableWidth = v;
-                m_icproWidth = false;
+                m_ibpWidth = false;
             }
-            else if(m_icproPrecision)
+            else if(m_ibpPrecision)
             {
                 m_variablePrecision = v;
-                m_icproPrecision = false;
+                m_ibpPrecision = false;
             }
             return;
         }

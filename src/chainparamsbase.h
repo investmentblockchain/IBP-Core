@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between icpro-cli and icprod)
+ * CBaseChainParams defines the base parameters (shared between ibp-cli and ibpd)
  * of a given instance of the ICPro system.
  */
 class CBaseChainParams

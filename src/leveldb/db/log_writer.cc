@@ -29,7 +29,7 @@ Status Writer::AddRecord(const Slice& slice) {
   size_t left = slice.size();
 
   // Fragment the record if necessary and emit it.  Note that if slice
-  // is empty, we still icpro to iterate once to emit a single
+  // is empty, we still ibp to iterate once to emit a single
   // zero-length record
   Status s;
   bool begin = true;

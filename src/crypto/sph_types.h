@@ -807,7 +807,7 @@ static inline void sph_enc64be_aligned(void *dst, sph_u64 val);
 #ifndef DOXYGEN_IGNORE
 
 /*
- * We icpro to define the types "sph_u32" and "sph_u64" which hold
+ * We ibp to define the types "sph_u32" and "sph_u64" which hold
  * unsigned values of at least, respectively, 32 and 64 bits. These
  * tests should select appropriate types for most platforms. The
  * macro "SPH_64" is defined if the 64-bit is supported.
@@ -877,7 +877,7 @@ typedef long sph_s32;
 #if !SPH_NO_64
 
 /*
- * We icpro a 64-bit type. We use "unsigned long" if it is wide enough (as
+ * We ibp a 64-bit type. We use "unsigned long" if it is wide enough (as
  * is common on 64-bit architectures such as AMD64, Alpha or Sparcv9),
  * "unsigned long long" otherwise, if available. We use ULLONG_MAX to
  * test whether "unsigned long long" is available; we also know that

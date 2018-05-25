@@ -1,5 +1,5 @@
 ---
-name: "icpro-dmg-signer"
+name: "ibp-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -8,10 +8,10 @@ packages:
 - "faketime"
 reference_datetime: "2017-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/icproproject/icpro-detached-sigs.git"
+- "url": "https://github.com/ibpproject/ibp-detached-sigs.git"
   "dir": "signature"
 files:
-- "icpro-osx-unsigned.tar.gz"
+- "ibp-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -28,8 +28,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=icpro-osx-unsigned.tar.gz
-  SIGNED=icpro-osx-signed.dmg
+  UNSIGNED=ibp-osx-unsigned.tar.gz
+  SIGNED=ibp-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx

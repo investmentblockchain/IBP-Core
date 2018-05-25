@@ -220,7 +220,7 @@ extern const char *REJECT;
 extern const char *SENDHEADERS;
 
 // ICPro message types
-// NOTE: do NOT declare non-implmented here, we don't icpro them to be exposed to the outside
+// NOTE: do NOT declare non-implmented here, we don't ibp them to be exposed to the outside
 // TODO: add description
 extern const char *TXLOCKREQUEST;
 extern const char *TXLOCKVOTE;
@@ -254,7 +254,7 @@ enum ServiceFlags : uint64_t {
     // Nothing
     NODE_NONE = 0,
     // NODE_NETWORK means that the node is capable of serving the block chain. It is currently
-    // set by all ICPro Core nodes, and is unset by SPV clients or other peers that just icpro
+    // set by all ICPro Core nodes, and is unset by SPV clients or other peers that just ibp
     // network services but don't provide them.
     NODE_NETWORK = (1 << 0),
     // NODE_GETUTXO means the node is capable of responding to the getutxo protocol request.

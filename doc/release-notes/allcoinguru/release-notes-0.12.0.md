@@ -8,7 +8,7 @@ ICPro Core version 0.12.0 is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/icproproject/icpro/issues
+  https://github.com/ibpproject/ibp/issues
 
 
 How to Upgrade
@@ -17,7 +17,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/ICPro-Qt (on Mac) or
-icprod/icpro-qt (on Linux).
+ibpd/ibp-qt (on Linux).
 
 **This new version uses transaction indexing by default, you will need to reindex 
 the blockchain. To do so, start the client with --reindex.**
@@ -38,7 +38,7 @@ anymore as a result of this.
 * The block index database will now hold headers for which no block is
 stored on disk, which earlier versions won't support.
 
-If you icpro to be able to downgrade smoothly, make a backup of your entire data
+If you ibp to be able to downgrade smoothly, make a backup of your entire data
 directory. Without this your node will need start syncing (or importing from
 bootstrap.dat) anew afterwards. It is possible that the data from a completely
 synchronised 0.10 node may be usable in older versions as-is, but this is not
@@ -100,4 +100,4 @@ AlexMomo
 snogcel
 bertlebbert
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/icpro/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/ibp/).

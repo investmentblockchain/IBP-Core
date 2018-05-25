@@ -17,7 +17,7 @@ import base64
 import httplib
 import sys
 import hashlib
-import icpro_hash
+import ibp_hash
 import datetime
 import time
 from collections import namedtuple
@@ -55,7 +55,7 @@ def calc_hdr_hash(blk_hdr):
 	#hash2_o = hash2.digest()
 
 	#return hash2_o
-        pow_hash = icpro_hash.getPoWHash(blk_hdr)
+        pow_hash = ibp_hash.getPoWHash(blk_hdr)
         return pow_hash
 
 def calc_hash_str(blk_hdr):
@@ -241,7 +241,7 @@ class BlockDataCopier:
 				if self.outOfOrderSize < self.settings['out_of_order_cache_sz']:
 					# If there is space in the cache, read the data
 					# Reading the data in file sequence instead of seeking and fetching it later is preferred,
-					# but we don't icpro to fill up memory
+					# but we don't ibp to fill up memory
 					self.outOfOrderData[blkHeight] = self.inF.read(inLen)
 					self.outOfOrderSize += inLen
 				else: # If no space in cache, seek forward

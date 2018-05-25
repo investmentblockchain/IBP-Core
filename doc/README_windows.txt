@@ -11,13 +11,13 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run icpro-qt.exe.
+Unpack the files into a directory and run ibp-qt.exe.
 
 ICPro Core is the original ICPro client and it builds the backbone of the network.
 However, it downloads and stores the entire history of ICPro transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
-See the icpro wiki at:
+See the ibp wiki at:
   https://ICProDev.atlassian.net/wiki/
 for more help and information.

@@ -24,7 +24,7 @@ make
 make install # optional
 ```
 
-This will build icpro-qt as well if the dependencies are met.
+This will build ibp-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -99,7 +99,7 @@ ZMQ dependencies:
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-If you icpro to build ICPro-Qt, make sure that the required packages for Qt development
+If you ibp to build ICPro-Qt, make sure that the required packages for Qt development
 are installed. Either Qt 5 or Qt 4 are necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used. Pass `--with-gui=qt4` to configure to choose Qt4.
 To build without GUI pass `--without-gui`.
@@ -116,12 +116,12 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a icpro-qt executable will be
+Once these are installed, they will be found by configure and a ibp-qt executable will be
 built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip icprod" to strip the debug
+The release is built with GCC and then "strip ibpd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -142,10 +142,10 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-ICPRO_ROOT=$(pwd)
+IBP_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the icpro directory
-BDB_PREFIX="${ICPRO_ROOT}/db4"
+# Pick some path to install BDB to, here we create a directory within the ibp directory
+BDB_PREFIX="${IBP_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -160,7 +160,7 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX && make install
 
 # Configure ICPro Core to use our own-built instance of BDB
-cd $ICPRO_ROOT
+cd $IBP_ROOT
 ./autogen.sh
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
@@ -202,7 +202,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./icprod
+    	scanelf -e ./ibpd
 
     The output should contain:
 
@@ -217,7 +217,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./icprod`
+    `scanelf -e ./ibpd`
 
     the output should contain:
 	STK/REL/PTL

@@ -4,7 +4,7 @@
 
 #include "hash.h"
 #include "utilstrencodings.h"
-#include "test/test_icpro.h"
+#include "test/test_ibp.h"
 
 #include <vector>
 

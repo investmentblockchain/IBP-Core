@@ -49,8 +49,8 @@ EXTRA_LIBRARIES += libbitcoin_zmq.a
 endif
 
 if BUILD_BITCOIN_LIBS
-lib_LTLIBRARIES = libicproconsensus.la
-LIBBITCOIN_CONSENSUS=libicproconsensus.la
+lib_LTLIBRARIES = libibpconsensus.la
+LIBBITCOIN_CONSENSUS=libibpconsensus.la
 else
 LIBBITCOIN_CONSENSUS=
 endif
@@ -60,15 +60,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += icprod
+  bin_PROGRAMS += ibpd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += icpro-cli icpro-tx
+  bin_PROGRAMS += ibp-cli ibp-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# icpro core #
+# ibp core #
 BITCOIN_CORE_H = \
   addrdb.h \
   activemasternode.h \
@@ -207,7 +207,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between icprod and icpro-qt
+# server: shared between ibpd and ibp-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -271,7 +271,7 @@ libbitcoin_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between icprod and icpro-qt, but only linked
+# wallet: shared between ibpd and ibp-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -344,7 +344,7 @@ crypto_libbitcoin_crypto_a_SOURCES += \
 	crypto/neoscrypt.h \
   crypto/sph_types.h
 
-# common: shared between icprod, and icpro-qt and non-server tools
+# common: shared between ibpd, and ibp-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -405,7 +405,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between icpro-cli and icpro-qt
+# cli: shared between ibp-cli and ibp-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -416,16 +416,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-icprod_SOURCES = icprod.cpp
-icprod_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-icprod_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-icprod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+ibpd_SOURCES = ibpd.cpp
+ibpd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+ibpd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+ibpd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-icprod_SOURCES += icprod-res.rc
+ibpd_SOURCES += ibpd-res.rc
 endif
 
-icprod_LDADD = \
+ibpd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -436,56 +436,56 @@ icprod_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-icprod_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+ibpd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-icprod_LDADD += libbitcoin_wallet.a
+ibpd_LDADD += libbitcoin_wallet.a
 endif
 
-icprod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+ibpd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 
-# icpro-cli binary #
-icpro_cli_SOURCES = icpro-cli.cpp
-icpro_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-icpro_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-icpro_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# ibp-cli binary #
+ibp_cli_SOURCES = ibp-cli.cpp
+ibp_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+ibp_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+ibp_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-icpro_cli_SOURCES += icpro-cli-res.rc
+ibp_cli_SOURCES += ibp-cli-res.rc
 endif
 
-icpro_cli_LDADD = \
+ibp_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL)
-icpro_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+ibp_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# icpro-tx binary #
-icpro_tx_SOURCES = icpro-tx.cpp
-icpro_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-icpro_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-icpro_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# ibp-tx binary #
+ibp_tx_SOURCES = ibp-tx.cpp
+ibp_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+ibp_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+ibp_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-icpro_tx_SOURCES += icpro-tx-res.rc
+ibp_tx_SOURCES += ibp-tx-res.rc
 endif
 
-icpro_tx_LDADD = \
+ibp_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-icpro_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+ibp_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
-# icproconsensus library #
+# ibpconsensus library #
 if BUILD_BITCOIN_LIBS
-include_HEADERS = script/icproconsensus.h
-libicproconsensus_la_SOURCES = \
+include_HEADERS = script/ibpconsensus.h
+libibpconsensus_la_SOURCES = \
   crypto/hmac_sha512.cpp \
   crypto/ripemd160.cpp \
   crypto/sha1.cpp \
@@ -494,20 +494,20 @@ libicproconsensus_la_SOURCES = \
   hash.cpp \
   primitives/transaction.cpp \
   pubkey.cpp \
-  script/icproconsensus.cpp \
+  script/ibpconsensus.cpp \
   script/interpreter.cpp \
   script/script.cpp \
   uint256.cpp \
   utilstrencodings.cpp
 
 if GLIBC_BACK_COMPAT
-  libicproconsensus_la_SOURCES += compat/glibc_compat.cpp
+  libibpconsensus_la_SOURCES += compat/glibc_compat.cpp
 endif
 
-libicproconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libicproconsensus_la_LIBADD = $(LIBSECP256K1)
-libicproconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
-libicproconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libibpconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libibpconsensus_la_LIBADD = $(LIBSECP256K1)
+libibpconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
+libibpconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
 #

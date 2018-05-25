@@ -124,7 +124,7 @@ void Table::ReadFilter(const Slice& filter_handle_value) {
     return;
   }
 
-  // We might icpro to unify with ReadBlock() if we start
+  // We might ibp to unify with ReadBlock() if we start
   // requiring checksum verification in Table::Open.
   ReadOptions opt;
   if (rep_->options.paranoid_checks) {

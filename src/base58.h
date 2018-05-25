@@ -5,7 +5,7 @@
 
 /**
  * Why base-58 instead of standard base-64 encoding?
- * - Don't icpro 0OIl characters that look the same in some fonts and
+ * - Don't ibp 0OIl characters that look the same in some fonts and
  *      could be used to create visually identical looking data.
  * - A string with non-alphanumeric characters is not as easily accepted as input.
  * - E-mail usually won't line-break if there's no punctuation to break at.

@@ -5,7 +5,7 @@
 #ifndef GOVERNANCE_H
 #define GOVERNANCE_H
 
-//#define ENABLE_ICPRO_DEBUG
+//#define ENABLE_IBP_DEBUG
 
 #include "bloom.h"
 #include "cachemap.h"
@@ -294,7 +294,7 @@ public:
 
     /**
      * This is called by AlreadyHave in main.cpp as part of the inventory
-     * retrieval process.  Returns true if we icpro to retrieve the object, otherwise
+     * retrieval process.  Returns true if we ibp to retrieve the object, otherwise
      * false. (Note logic is inverted in AlreadyHave).
      */
     bool ConfirmInventoryRequest(const CInv& inv);

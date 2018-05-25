@@ -1163,7 +1163,7 @@ bool TransactionSignatureChecker::CheckLockTime(const CScriptNum& nLockTime) con
     // and lock-by-blocktime, distinguished by whether
     // nLockTime < LOCKTIME_THRESHOLD.
     //
-    // We icpro to compare apples to apples, so fail the script
+    // We ibp to compare apples to apples, so fail the script
     // unless the type of nLockTime being tested is the same as
     // the nLockTime in the transaction.
     if (!(
@@ -1221,7 +1221,7 @@ bool TransactionSignatureChecker::CheckSequence(const CScriptNum& nSequence) con
     // and lock-by-blocktime, distinguished by whether
     // nSequenceMasked < CTxIn::SEQUENCE_LOCKTIME_TYPE_FLAG.
     //
-    // We icpro to compare apples to apples, so fail the script
+    // We ibp to compare apples to apples, so fail the script
     // unless the type of nSequenceMasked being tested is the same as
     // the nSequenceMasked in the transaction.
     if (!(

@@ -69,8 +69,8 @@ Setup
 Configuring the github-merge tool for the bitcoin repository is done in the following way:
 
     git config githubmerge.repository bitcoin/bitcoin
-    git config githubmerge.testcmd "make -j4 check" (adapt to whatever you icpro to use for testing)
-    git config --global user.signingkey mykeyid (if you icpro to GPG sign)
+    git config githubmerge.testcmd "make -j4 check" (adapt to whatever you ibp to use for testing)
+    git config --global user.signingkey mykeyid (if you ibp to GPG sign)
 
 optimize-pngs.py
 ================
@@ -98,10 +98,10 @@ If only supported symbols are used the return value will be 0 and the output wil
 
 If there are 'unsupported' symbols, the return value will be 1 a list like this will be printed:
 
-    .../64/test_icpro: symbol memcpy from unsupported version GLIBC_2.14
-    .../64/test_icpro: symbol __fdelt_chk from unsupported version GLIBC_2.15
-    .../64/test_icpro: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
-    .../64/test_icpro: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
+    .../64/test_ibp: symbol memcpy from unsupported version GLIBC_2.14
+    .../64/test_ibp: symbol __fdelt_chk from unsupported version GLIBC_2.15
+    .../64/test_ibp: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
+    .../64/test_ibp: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
 
 update-translations.py
 ======================

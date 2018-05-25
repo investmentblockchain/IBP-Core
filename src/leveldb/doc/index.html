@@ -32,7 +32,7 @@ creating it if necessary:
   assert(status.ok());
   ...
 </pre>
-If you icpro to raise an error if the database already exists, add
+If you ibp to raise an error if the database already exists, add
 the following line before the <code>leveldb::DB::Open</code> call:
 <pre>
   options.error_if_exists = true;
@@ -334,7 +334,7 @@ with larger block sizes.
 Each block is individually compressed before being written to
 persistent storage.  Compression is on by default since the default
 compression method is very fast, and is automatically disabled for
-uncompressible data.  In rare cases, applications may icpro to disable
+uncompressible data.  In rare cases, applications may ibp to disable
 compression entirely, but should only do so if benchmarks show a
 performance improvement:
 <p>
@@ -395,7 +395,7 @@ of <code>leveldb</code>.  The types of entries we might wish to store are:
    filename -&gt; permission-bits, length, list of file_block_ids
    file_block_id -&gt; data
 </pre>
-We might icpro to prefix <code>filename</code> keys with one letter (say '/') and the
+We might ibp to prefix <code>filename</code> keys with one letter (say '/') and the
 <code>file_block_id</code> keys with a different letter (say '0') so that scans
 over just the metadata do not force us to fetch and cache bulky file
 contents.

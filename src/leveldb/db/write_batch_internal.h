@@ -12,7 +12,7 @@ namespace leveldb {
 class MemTable;
 
 // WriteBatchInternal provides static methods for manipulating a
-// WriteBatch that we don't icpro in the public WriteBatch interface.
+// WriteBatch that we don't ibp in the public WriteBatch interface.
 class WriteBatchInternal {
  public:
   // Return the number of entries in the batch.

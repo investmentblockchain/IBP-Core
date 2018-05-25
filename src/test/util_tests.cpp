@@ -10,7 +10,7 @@
 #include "sync.h"
 #include "utilstrencodings.h"
 #include "utilmoneystr.h"
-#include "test/test_icpro.h"
+#include "test/test_ibp.h"
 
 #include <stdint.h>
 #include <vector>

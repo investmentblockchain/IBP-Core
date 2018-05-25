@@ -137,7 +137,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../icpro.qrc"/>
+  <include location="../ibp.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -38,7 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.icpro.ICPro-Qt</string>
+  <string>org.ibp.ICPro-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.icpro.ICProDevment</string>
+      <string>org.ibp.ICProDevment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>icpro</string>
+        <string>ibp</string>
       </array>
     </dict>
   </array>
@@ -58,7 +58,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.icpro.paymentrequest</string>
+      <string>org.ibp.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>ICPro payment request</string>
       <key>UTTypeConformsTo</key>
@@ -68,7 +68,7 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-icpro-payment-request</string>
+        <string>application/x-ibp-payment-request</string>
         <key>public.filename-extension</key>
         <array>
           <string>ICProDevmentrequest</string>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.icpro.paymentrequest</string>
+        <string>org.ibp.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

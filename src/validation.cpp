@@ -225,7 +225,7 @@ bool CheckFinalTx(const CTransaction &tx, int flags)
     // CheckFinalTx() uses chainActive.Height()+1 to evaluate
     // nLockTime because when IsFinalTx() is called within
     // CBlock::AcceptBlock(), the height of the block *being*
-    // evaluated is what is used. Thus if we icpro to know if a
+    // evaluated is what is used. Thus if we ibp to know if a
     // transaction can be part of the *next* block, we need to call
     // IsFinalTx() with one more than chainActive.Height().
     const int nBlockHeight = chainActive.Height() + 1;
@@ -355,7 +355,7 @@ bool CheckSequenceLocks(const CTransaction &tx, int flags, LockPoints* lp, bool 
     // height based locks because when SequenceLocks() is called within
     // ConnectBlock(), the height of the block *being*
     // evaluated is what is used.
-    // Thus if we icpro to know if a transaction can be part of the
+    // Thus if we ibp to know if a transaction can be part of the
     // *next* block, we need to use one more than chainActive.Height()
     index.nHeight = tip->nHeight + 1;
 
@@ -575,7 +575,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
     }
 
     // Only accept nLockTime-using transactions that can be mined in the next
-    // block; we don't icpro our mempool filled up with transactions that can't
+    // block; we don't ibp our mempool filled up with transactions that can't
     // be mined yet.
     if (!CheckFinalTx(tx, STANDARD_LOCKTIME_VERIFY_FLAGS))
         return state.DoS(0, false, REJECT_NONSTANDARD, "non-final");
@@ -629,7 +629,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
                 // maxint-1 is picked to still allow use of nLockTime by
                 // non-replacable transactions. All inputs rather than just one
                 // is for the sake of multi-party protocols, where we don't
-                // icpro a single party to be able to disable replacement.
+                // ibp a single party to be able to disable replacement.
                 //
                 // The opt-out ignores descendants as anyone relying on
                 // first-seen mempool behavior should be checking all
@@ -701,7 +701,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
         view.SetBackend(dummy);
 
         // Only accept BIP68 sequence locked transactions that can be mined in the next
-        // block; we don't icpro our mempool filled up with transactions that can't
+        // block; we don't ibp our mempool filled up with transactions that can't
         // be mined yet.
         // Must keep pool.cs for this unless we change CheckSequenceLocks to take a
         // CoinsViewCache instead of create its own
@@ -855,7 +855,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
                 // Don't allow the replacement to reduce the feerate of the
                 // mempool.
                 //
-                // We usually don't icpro to accept replacements with lower
+                // We usually don't ibp to accept replacements with lower
                 // feerates than what they replaced as that would lower the
                 // feerate of the next block. Requiring that the feerate always
                 // be increased is also an easy-to-reason about way to prevent
@@ -887,7 +887,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
                 nConflictingCount += mi->GetCountWithDescendants();
             }
             // This potentially overestimates the number of actual descendants
-            // but we just icpro to be conservative to avoid doing too much
+            // but we just ibp to be conservative to avoid doing too much
             // work.
             if (nConflictingCount <= maxDescendantsToVisit) {
                 // If not too many to replace, then calculate the set of
@@ -910,7 +910,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
 
             for (unsigned int j = 0; j < tx.vin.size(); j++)
             {
-                // We don't icpro to accept replacements that require low
+                // We don't ibp to accept replacements that require low
                 // feerate junk to be mined first. Ideally we'd keep track of
                 // the ancestor feerates and make the decision based on that,
                 // but for now requiring all new inputs to be confirmed works.
@@ -1409,7 +1409,7 @@ void UpdateCoins(const CTransaction& tx, CValidationState &state, CCoinsViewCach
         // add outputs for coinbase tx
         // In this case call the full ModifyCoins which will do a database
         // lookup to be sure the coins do not already exist otherwise we do not
-        // know whether to mark them fresh or not.  We icpro the duplicate coinbases
+        // know whether to mark them fresh or not.  We ibp the duplicate coinbases
         // before BIP30 to still be properly overwritten.
         inputs.ModifyCoins(tx.GetHash())->FromTx(tx, nHeight);
     }
@@ -1529,7 +1529,7 @@ bool CheckInputs(const CTransaction& tx, CValidationState &state, const CCoinsVi
                     // invalid in new blocks, e.g. a invalid P2SH. We DoS ban
                     // such nodes as they are not following the protocol. That
                     // said during an upgrade careful thought should be taken
-                    // as to the correct behavior - we may icpro to continue
+                    // as to the correct behavior - we may ibp to continue
                     // peering with non-upgraded nodes even after a soft-fork
                     // super-majority vote has passed.
                     return state.DoS(100,false, REJECT_INVALID, strprintf("mandatory-script-verify-flag-failed (%s)", ScriptErrorString(check.GetScriptError())));
@@ -1825,7 +1825,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("icpro-scriptch");
+    RenameThread("ibp-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2173,7 +2173,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime3 = GetTimeMicros(); nTimeConnect += nTime3 - nTime2;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime3 - nTime2), 0.001 * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * 0.000001);
 
-    // ICPRO : MODIFIED TO CHECK MASTERNODE PAYMENTS AND SUPERBLOCKS
+    // IBP : MODIFIED TO CHECK MASTERNODE PAYMENTS AND SUPERBLOCKS
 
     // It's possible that we simply don't have enough data and this could fail
     // (i.e. block itself could be a correct one and we need to store it),
@@ -2184,15 +2184,15 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
     std::string strError = "";
     if (!IsBlockValueValid(block, pindex->nHeight, blockReward, strError)) {
-        return state.DoS(0, error("ConnectBlock(ICPRO): %s", strError), REJECT_INVALID, "bad-cb-amount");
+        return state.DoS(0, error("ConnectBlock(IBP): %s", strError), REJECT_INVALID, "bad-cb-amount");
     }
 
     if (!IsBlockPayeeValid(block.vtx[0], pindex->nHeight, blockReward)) {
         mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
-        return state.DoS(0, error("ConnectBlock(ICPRO): couldn't find masternode or superblock payments"),
+        return state.DoS(0, error("ConnectBlock(IBP): couldn't find masternode or superblock payments"),
                                 REJECT_INVALID, "bad-cb-payee");
     }
-    // END ICPRO
+    // END IBP
 
     if (!control.Wait())
         return state.DoS(100, false);
@@ -2431,7 +2431,7 @@ void static UpdateTip(CBlockIndex *pindexNew) {
     }
 }
 
-/** Disconnect chainActive's tip. You probably icpro to call mempool.removeForReorg and manually re-limit mempool size after this, with cs_main held. */
+/** Disconnect chainActive's tip. You probably ibp to call mempool.removeForReorg and manually re-limit mempool size after this, with cs_main held. */
 bool static DisconnectTip(CValidationState& state, const Consensus::Params& consensusParams)
 {
     CBlockIndex *pindexDelete = chainActive.Tip();
@@ -2569,7 +2569,7 @@ void ReprocessBlocks(int nBlocks)
 
     std::map<uint256, int64_t>::iterator it = mapRejectedBlocks.begin();
     while(it != mapRejectedBlocks.end()){
-        //use a window twice as large as is usual for the nBlocks we icpro to reset
+        //use a window twice as large as is usual for the nBlocks we ibp to reset
         if((*it).second  > GetTime() - (nBlocks*60*5)) {
             BlockMap::iterator mi = mapBlockIndex.find((*it).first);
             if (mi != mapBlockIndex.end() && (*mi).second) {
@@ -3121,7 +3121,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                              REJECT_INVALID, "bad-cb-multiple");
 
 
-    // ICPRO : CHECK TRANSACTIONS FOR INSTANTSEND
+    // IBP : CHECK TRANSACTIONS FOR INSTANTSEND
 
     if(sporkManager.IsSporkActive(SPORK_3_INSTANTSEND_BLOCK_FILTERING)) {
         // We should never accept block which conflicts with completed transaction lock,
@@ -3138,17 +3138,17 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     // relaying instantsend data won't help it.
                     LOCK(cs_main);
                     mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
-                    return state.DoS(0, error("CheckBlock(ICPRO): transaction %s conflicts with transaction lock %s",
+                    return state.DoS(0, error("CheckBlock(IBP): transaction %s conflicts with transaction lock %s",
                                                 tx.GetHash().ToString(), hashLocked.ToString()),
                                      REJECT_INVALID, "conflict-tx-lock");
                 }
             }
         }
     } else {
-        LogPrintf("CheckBlock(ICPRO): spork is off, skipping transaction locking checks\n");
+        LogPrintf("CheckBlock(IBP): spork is off, skipping transaction locking checks\n");
     }
 
-    // END ICPRO
+    // END IBP
 
     // Check transactions
     BOOST_FOREACH(const CTransaction& tx, block.vtx)

@@ -120,7 +120,7 @@ const static std::string allNetMessageTypes[] = {
     NetMsgType::REJECT,
     NetMsgType::SENDHEADERS,
     // ICPro message types
-    // NOTE: do NOT include non-implmented here, we icpro them to be "Unknown command" in ProcessMessage()
+    // NOTE: do NOT include non-implmented here, we ibp them to be "Unknown command" in ProcessMessage()
     NetMsgType::TXLOCKREQUEST,
     NetMsgType::TXLOCKVOTE,
     NetMsgType::SPORK,

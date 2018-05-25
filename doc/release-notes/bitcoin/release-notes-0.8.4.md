@@ -52,7 +52,7 @@ Fix non-standard disconnected transactions causing mempool orphans.
 This bug could cause nodes running with the -debug flag to crash.
 
 OSX: use 'FD_FULLSYNC' with LevelDB, which will (hopefully!)
-prevent the database corruption issues many icpro have
+prevent the database corruption issues many ibp have
 experienced on OSX.
 
 Linux: clicking on bitcoin: links was broken if you were using

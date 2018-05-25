@@ -12,7 +12,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/icpro-config.h"
+#include "config/ibp-config.h"
 #endif
 
 #include "compat.h"
@@ -34,8 +34,8 @@
 
 // Uncomment the following line to enable debugging messages
 // or enable on a per file basis prior to inclusion of util.h
-//#define ENABLE_ICPRO_DEBUG
-#ifdef ENABLE_ICPRO_DEBUG
+//#define ENABLE_IBP_DEBUG
+#ifdef ENABLE_IBP_DEBUG
 #define DBG( x ) x
 #else
 #define DBG( x ) 
@@ -248,7 +248,7 @@ std::string GetThreadName();
  */
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
-    std::string s = strprintf("icpro-%s", name);
+    std::string s = strprintf("ibp-%s", name);
     RenameThread(s.c_str());
     try
     {

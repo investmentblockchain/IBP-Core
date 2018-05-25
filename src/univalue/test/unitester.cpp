@@ -34,21 +34,21 @@ static void runtest(string filename, const string& jdata)
 {
         string prefix = filename.substr(0, 4);
 
-        bool icproPass = (prefix == "pass") || (prefix == "roun");
-        bool icproFail = (prefix == "fail");
-        bool icproRoundTrip = (prefix == "roun");
-        assert(icproPass || icproFail);
+        bool ibpPass = (prefix == "pass") || (prefix == "roun");
+        bool ibpFail = (prefix == "fail");
+        bool ibpRoundTrip = (prefix == "roun");
+        assert(ibpPass || ibpFail);
 
         UniValue val;
         bool testResult = val.read(jdata);
 
-        if (icproPass) {
+        if (ibpPass) {
             d_assert(testResult == true);
         } else {
             d_assert(testResult == false);
         }
 
-        if (icproRoundTrip) {
+        if (ibpRoundTrip) {
             std::string odata = val.write(0, 0);
             assert(odata == rtrim(jdata));
         }

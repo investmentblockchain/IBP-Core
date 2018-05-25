@@ -1,5 +1,5 @@
 ---
-name: "icpro-win-1.0.0.1"
+name: "ibp-win-1.0.0.1"
 enable_cache: true
 suites:
 - "trusty"
@@ -23,8 +23,8 @@ packages:
 - "python"
 reference_datetime: "2017-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/icproproject/icpro.git"
-  "dir": "icpro"
+- "url": "https://github.com/ibpproject/ibp.git"
+  "dir": "ibp"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -94,7 +94,7 @@ script: |
 
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd icpro
+  cd ibp
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -105,14 +105,14 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-  SOURCEDIST=`echo icprocore-*.tar.gz`
+  SOURCEDIST=`echo ibpcore-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
 
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-  find icprocore-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+  find ibpcore-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
   mkdir -p $OUTDIR/src
   cp ../$SOURCEDIST $OUTDIR/src
   popd
@@ -132,7 +132,7 @@ script: |
     make ${MAKEOPTS} -C src check-security
     make deploy
     make install DESTDIR=${INSTALLPATH}
-    cp -f icprocore-*setup*.exe $OUTDIR/
+    cp -f ibpcore-*setup*.exe $OUTDIR/
     cd installed
     mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/
     find . -name "lib*.la" -delete

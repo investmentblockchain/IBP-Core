@@ -122,7 +122,7 @@ TEST(SkipTest, InsertAndLookup) {
   }
 }
 
-// We icpro to make sure that with a single writer and multiple
+// We ibp to make sure that with a single writer and multiple
 // concurrent readers (with no synchronization other than when a
 // reader's iterator is created), the reader always observes all the
 // data that was present in the skip list when the iterator was

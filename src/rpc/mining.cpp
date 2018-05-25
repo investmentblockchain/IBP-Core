@@ -68,7 +68,7 @@ UniValue GetNetworkHashPS(int lookup, int height) {
         maxTime = std::max(time, maxTime);
     }
 
-    // In case there's a situation where minTime == maxTime, we don't icpro a divide by zero exception.
+    // In case there's a situation where minTime == maxTime, we don't ibp a divide by zero exception.
     if (minTime == maxTime)
         return 0;
 

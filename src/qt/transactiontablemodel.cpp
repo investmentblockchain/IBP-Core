@@ -111,9 +111,9 @@ public:
         if(status == CT_UPDATED)
         {
             if(showTransaction && !inModel)
-                status = CT_NEW; /* Not in model, but icpro to show, treat as new */
+                status = CT_NEW; /* Not in model, but ibp to show, treat as new */
             if(!showTransaction && inModel)
-                status = CT_DELETED; /* In model, but icpro to hide, treat as deleted */
+                status = CT_DELETED; /* In model, but ibp to hide, treat as deleted */
         }
 
         qDebug() << "    inModel=" + QString::number(inModel) +

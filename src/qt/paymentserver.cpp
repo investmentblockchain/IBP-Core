@@ -48,14 +48,14 @@
 #endif
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("icpro:");
+const QString BITCOIN_IPC_PREFIX("ibp:");
 // BIP70 payment protocol messages
 const char* BIP70_MESSAGE_PAYICPTACK = "PaymentACK";
 const char* BIP70_MESSAGE_PAYICPTREQUEST = "PaymentRequest";
 // BIP71 payment protocol media types
-const char* BIP71_MIMETYPE_PAYICPT = "application/icpro-payment";
-const char* BIP71_MIMETYPE_PAYICPTACK = "application/icpro-paymentack";
-const char* BIP71_MIMETYPE_PAYICPTREQUEST = "application/icpro-paymentrequest";
+const char* BIP71_MIMETYPE_PAYICPT = "application/ibp-payment";
+const char* BIP71_MIMETYPE_PAYICPTACK = "application/ibp-paymentack";
+const char* BIP71_MIMETYPE_PAYICPTREQUEST = "application/ibp-paymentrequest";
 // BIP70 max payment request size in bytes (DoS protection)
 const qint64 BIP70_MAX_PAYICPTREQUEST_SIZE = 50000;
 
@@ -210,11 +210,11 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
         if (arg.startsWith("-"))
             continue;
 
-        // If the icpro: URI contains a payment request, we are not able to detect the
+        // If the ibp: URI contains a payment request, we are not able to detect the
         // network as that would require fetching and parsing the payment request.
         // That means clicking such an URI which contains a testnet payment request
         // will start a mainnet instance and throw a "wrong network" error.
-        if (arg.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // icpro: URI
+        if (arg.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // ibp: URI
         {
             savedPaymentRequests.append(arg);
 
@@ -310,7 +310,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
     GOOGLE_PROTOBUF_VERIFY_VERSION;
 
     // Install global event filter to catch QFileOpenEvents
-    // on Mac: sent when you click icpro: links
+    // on Mac: sent when you click ibp: links
     // other OSes: helpful when dealing with payment request files
     if (parent)
         parent->installEventFilter(this);
@@ -327,7 +327,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "Q_EMIT message()" here
             QMessageBox::critical(0, tr("Payment request error"),
-                tr("Cannot start icpro: click-to-pay handler"));
+                tr("Cannot start ibp: click-to-pay handler"));
         }
         else {
             connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
@@ -342,7 +342,7 @@ PaymentServer::~PaymentServer()
 }
 
 //
-// OSX-specific way of handling icpro: URIs and PaymentRequest mime types.
+// OSX-specific way of handling ibp: URIs and PaymentRequest mime types.
 // Also used by paymentservertests.cpp and when opening a payment request file
 // via "Open URI..." menu entry.
 //
@@ -368,7 +368,7 @@ void PaymentServer::initNetManager()
     if (netManager != NULL)
         delete netManager;
 
-    // netManager is used to fetch paymentrequests given in icpro: URIs
+    // netManager is used to fetch paymentrequests given in ibp: URIs
     netManager = new QNetworkAccessManager(this);
 
     QNetworkProxy proxy;
@@ -408,7 +408,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // icpro: URI
+    if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // ibp: URI
     {
 #if QT_VERSION < 0x050000
         QUrl uri(s);
@@ -564,7 +564,7 @@ bool PaymentServer::processPaymentRequest(const PaymentRequestPlus& request, Sen
             addresses.append(QString::fromStdString(CBitcoinAddress(dest).ToString()));
         }
         else if (!recipient.authenticatedMerchant.isEmpty()) {
-            // Unauthenticated payment requests to custom icpro addresses are not supported
+            // Unauthenticated payment requests to custom ibp addresses are not supported
             // (there is no good way to tell the user where they are paying in a way they'd
             // have a chance of understanding).
             Q_EMIT message(tr("Payment request rejected"),

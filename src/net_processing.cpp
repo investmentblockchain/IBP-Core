@@ -160,7 +160,7 @@ struct CNodeState {
     int nBlocksInFlightValidHeaders;
     //! Whether we consider this a preferred download peer.
     bool fPreferredDownload;
-    //! Whether this peer icpros invs or headers (when possible) for block announcements.
+    //! Whether this peer ibps invs or headers (when possible) for block announcements.
     bool fPreferHeaders;
 
     CNodeState(CAddress addrIn, std::string addrNameIn) : address(addrIn), name(addrNameIn) {
@@ -707,7 +707,7 @@ bool static AlreadyHave(const CInv& inv) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
 
         We shouldn't update the sync times for each of the messages when we already have it. 
         We're going to be asking many nodes upfront for the full inventory list, so we'll get duplicates of these.
-        We icpro to only update the time on new hits, so that we can time out appropriately if needed.
+        We ibp to only update the time on new hits, so that we can time out appropriately if needed.
     */
     case MSG_TXLOCK_REQUEST:
         return instantsend.AlreadyHave(inv.hash);
@@ -868,7 +868,7 @@ void static ProcessGetData(CNode* pfrom, const Consensus::Params& consensusParam
                     if (inv.hash == pfrom->hashContinue)
                     {
                         // Bypass PushInventory, this must send even if redundant,
-                        // and we icpro it right after the last block so they don't
+                        // and we ibp it right after the last block so they don't
                         // wait for other stuff first.
                         vector<CInv> vInv;
                         vInv.push_back(CInv(MSG_BLOCK, chainActive.Tip()->GetBlockHash()));
@@ -1063,8 +1063,8 @@ void static ProcessGetData(CNode* pfrom, const Consensus::Params& consensusParam
         // Let the peer know that we didn't find what it asked for, so it doesn't
         // have to wait around forever. Currently only SPV clients actually care
         // about this message: it's needed when they are recursively walking the
-        // dependencies of relevant unconfirmed transactions. SPV clients icpro to
-        // do that because they icpro to know about (and store and rebroadcast and
+        // dependencies of relevant unconfirmed transactions. SPV clients ibp to
+        // do that because they ibp to know about (and store and rebroadcast and
         // risk analyze) the dependencies of transactions relevant to them, without
         // having to download the entire memory pool.
         connman.PushMessage(pfrom, NetMsgType::NOTFOUND, vNotFound);
@@ -1290,7 +1290,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         vector<CAddress> vAddr;
         vRecv >> vAddr;
 
-        // Don't icpro addr from older versions unless seeding
+        // Don't ibp addr from older versions unless seeding
         if (pfrom->nVersion < CADDR_TIME_VERSION && connman.GetAddressCount() > 1000)
             return true;
         if (vAddr.size() > 1000)
@@ -1661,7 +1661,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     NodeId fromPeer = mapOrphanTransactions[orphanHash].fromPeer;
                     bool fMissingInputs2 = false;
                     // Use a dummy CValidationState so someone can't setup nodes to counter-DoS based on orphan
-                    // resolution (that is, feeding icpro an invalid transaction based on LegitTxX in order to get
+                    // resolution (that is, feeding ibp an invalid transaction based on LegitTxX in order to get
                     // anyone relaying LegitTxX banned)
                     CValidationState stateDummy;
 
@@ -1763,7 +1763,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
     {
         std::vector<CBlockHeader> headers;
 
-        // Bypass the normal CBlock deserialization, as we don't icpro to risk deserializing 2000 full blocks.
+        // Bypass the normal CBlock deserialization, as we don't ibp to risk deserializing 2000 full blocks.
         unsigned int nCount = ReadCompactSize(vRecv);
         if (nCount > MAX_HEADERS_RESULTS) {
             LOCK(cs_main);
@@ -2437,11 +2437,11 @@ bool SendMessages(CNode* pto, CConnman& connman, std::atomic<bool>& interruptMsg
         //
         {
             // If we have less than MAX_BLOCKS_TO_ANNOUNCE in our
-            // list of block hashes we're relaying, and our peer icpros
+            // list of block hashes we're relaying, and our peer ibps
             // headers announcements, then find the first header
             // not yet known to our peer but would connect, and send.
             // If no header would connect, or if we have too many
-            // blocks, or if the peer doesn't icpro headers, just
+            // blocks, or if the peer doesn't ibp headers, just
             // add all to the inv queue.
             LOCK(pto->cs_inventory);
             vector<CBlock> vHeaders;

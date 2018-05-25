@@ -595,7 +595,7 @@ void OverviewPage::togglePrivateSend(){
     QString hasMixed = settings.value("hasMixed").toString();
     if(hasMixed.isEmpty()){
         QMessageBox::information(this, tr("PrivateSend"),
-                tr("If you don't icpro to see internal PrivateSend fees/transactions select \"Most Common\" as Type on the \"Transactions\" tab."),
+                tr("If you don't ibp to see internal PrivateSend fees/transactions select \"Most Common\" as Type on the \"Transactions\" tab."),
                 QMessageBox::Ok, QMessageBox::Ok);
         settings.setValue("hasMixed", "hasMixed");
     }

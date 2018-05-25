@@ -1,36 +1,36 @@
-Sample init scripts and service configuration for icprod
+Sample init scripts and service configuration for ibpd
 ==========================================================
 
 Sample scripts and configuration files for systemd, Upstart and OpenRC
 can be found in the contrib/init folder.
 
-    contrib/init/icprod.service:    systemd service unit configuration
-    contrib/init/icprod.openrc:     OpenRC compatible SysV style init script
-    contrib/init/icprod.openrcconf: OpenRC conf.d file
-    contrib/init/icprod.conf:       Upstart service configuration file
-    contrib/init/icprod.init:       CentOS compatible SysV style init script
+    contrib/init/ibpd.service:    systemd service unit configuration
+    contrib/init/ibpd.openrc:     OpenRC compatible SysV style init script
+    contrib/init/ibpd.openrcconf: OpenRC conf.d file
+    contrib/init/ibpd.conf:       Upstart service configuration file
+    contrib/init/ibpd.init:       CentOS compatible SysV style init script
 
 1. Service User
 ---------------------------------
 
-All three Linux startup configurations assume the existence of a "icprocore" user
+All three Linux startup configurations assume the existence of a "ibpcore" user
 and group.  They must be created before attempting to use these scripts.
-The OS X configuration assumes icprod will be set up for the current user.
+The OS X configuration assumes ibpd will be set up for the current user.
 
 2. Configuration
 ---------------------------------
 
-At a bare minimum, icprod requires that the rpcpassword setting be set
+At a bare minimum, ibpd requires that the rpcpassword setting be set
 when running as a daemon.  If the configuration file does not exist or this
-setting is not set, icprod will shutdown promptly after startup.
+setting is not set, ibpd will shutdown promptly after startup.
 
 This password does not have to be remembered or typed as it is mostly used
-as a fixed token that icprod and client programs read from the configuration
+as a fixed token that ibpd and client programs read from the configuration
 file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If icprod is run with the "-server" flag (set by default), and no rpcpassword is set,
+If ibpd is run with the "-server" flag (set by default), and no rpcpassword is set,
 it will use a special cookie file for authentication. The cookie is generated with random
 content when the daemon starts, and deleted when it exits. Read access to this file
 controls who can access it through RPC.
@@ -38,13 +38,13 @@ controls who can access it through RPC.
 By default the cookie is stored in the data directory, but it's location can be overridden
 with the option '-rpccookiefile'.
 
-This allows for running icprod without having to do any manual configuration.
+This allows for running ibpd without having to do any manual configuration.
 
 `conf`, `pid`, and `wallet` accept relative paths which are interpreted as
 relative to the data directory. `wallet` *only* supports relative paths.
 
 For an example configuration file that describes the configuration settings,
-see `contrib/debian/examples/icpro.conf`.
+see `contrib/debian/examples/ibp.conf`.
 
 3. Paths
 ---------------------------------
@@ -53,22 +53,22 @@ see `contrib/debian/examples/icpro.conf`.
 
 All three configurations assume several paths that might need to be adjusted.
 
-Binary:              `/usr/bin/icprod`  
-Configuration file:  `/etc/icprocore/icpro.conf`  
-Data directory:      `/var/lib/icprod`  
-PID file:            `/var/run/icprod/icprod.pid` (OpenRC and Upstart) or `/var/lib/icprod/icprod.pid` (systemd)  
-Lock file:           `/var/lock/subsys/icprod` (CentOS)  
+Binary:              `/usr/bin/ibpd`  
+Configuration file:  `/etc/ibpcore/ibp.conf`  
+Data directory:      `/var/lib/ibpd`  
+PID file:            `/var/run/ibpd/ibpd.pid` (OpenRC and Upstart) or `/var/lib/ibpd/ibpd.pid` (systemd)  
+Lock file:           `/var/lock/subsys/ibpd` (CentOS)  
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the icprocore user and group.  It is advised for security
+should all be owned by the ibpcore user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-icprocore user and group.  Access to icpro-cli and other icprod rpc clients
+ibpcore user and group.  Access to ibp-cli and other ibpd rpc clients
 can then be controlled by group membership.
 
 3b) Mac OS X
 
-Binary:              `/usr/local/bin/icprod`  
-Configuration file:  `~/Library/Application Support/ICProCore/icpro.conf`  
+Binary:              `/usr/local/bin/ibpd`  
+Configuration file:  `~/Library/Application Support/ICProCore/ibp.conf`  
 Data directory:      `~/Library/Application Support/ICProCore`
 Lock file:           `~/Library/Application Support/ICProCore/.lock`
 
@@ -81,19 +81,19 @@ Installing this .service file consists of just copying it to
 /usr/lib/systemd/system directory, followed by the command
 `systemctl daemon-reload` in order to update running systemd configuration.
 
-To test, run `systemctl start icprod` and to enable for system startup run
-`systemctl enable icprod`
+To test, run `systemctl start ibpd` and to enable for system startup run
+`systemctl enable ibpd`
 
 4b) OpenRC
 
-Rename icprod.openrc to icprod and drop it in /etc/init.d.  Double
+Rename ibpd.openrc to ibpd and drop it in /etc/init.d.  Double
 check ownership and permissions and make it executable.  Test it with
-`/etc/init.d/icprod start` and configure it to run on startup with
-`rc-update add icprod`
+`/etc/init.d/ibpd start` and configure it to run on startup with
+`rc-update add ibpd`
 
 4c) Upstart (for Debian/Ubuntu based distributions)
 
-Drop icprod.conf in /etc/init.  Test by running `service icprod start`
+Drop ibpd.conf in /etc/init.  Test by running `service ibpd start`
 it will automatically start on reboot.
 
 NOTE: This script is incompatible with CentOS 5 and Amazon Linux 2014 as they
@@ -101,22 +101,22 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 
 4d) CentOS
 
-Copy icprod.init to /etc/init.d/icprod. Test by running `service icprod start`.
+Copy ibpd.init to /etc/init.d/ibpd. Test by running `service ibpd start`.
 
-Using this script, you can adjust the path and flags to the icprod program by
-setting the ICPROD and FLAGS environment variables in the file
-/etc/sysconfig/icprod. You can also use the DAEMONOPTS environment variable here.
+Using this script, you can adjust the path and flags to the ibpd program by
+setting the IBPD and FLAGS environment variables in the file
+/etc/sysconfig/ibpd. You can also use the DAEMONOPTS environment variable here.
 
 4e) Mac OS X
 
-Copy org.icpro.icprod.plist into ~/Library/LaunchAgents. Load the launch agent by
-running `launchctl load ~/Library/LaunchAgents/org.icpro.icprod.plist`.
+Copy org.ibp.ibpd.plist into ~/Library/LaunchAgents. Load the launch agent by
+running `launchctl load ~/Library/LaunchAgents/org.ibp.ibpd.plist`.
 
-This Launch Agent will cause icprod to start whenever the user logs in.
+This Launch Agent will cause ibpd to start whenever the user logs in.
 
-NOTE: This approach is intended for those icproing to run icprod as the current user.
-You will need to modify org.icpro.icprod.plist if you intend to use it as a
-Launch Daemon with a dedicated icprocore user.
+NOTE: This approach is intended for those ibping to run ibpd as the current user.
+You will need to modify org.ibp.ibpd.plist if you intend to use it as a
+Launch Daemon with a dedicated ibpcore user.
 
 5. Auto-respawn
 -----------------------------------

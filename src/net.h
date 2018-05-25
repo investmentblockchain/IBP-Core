@@ -139,8 +139,8 @@ public:
     bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant *grantOutbound = NULL, const char *strDest = NULL, bool fOneShot = false, bool fFeeler = false);
     bool CheckIncomingNonce(uint64_t nonce);
 
-    // fConnectToMasternode should be 'true' only if you icpro this node to allow to connect to itself
-    // and/or you icpro it to be disconnected on CMasternodeMan::ProcessMasternodeConnections()
+    // fConnectToMasternode should be 'true' only if you ibp this node to allow to connect to itself
+    // and/or you ibp it to be disconnected on CMasternodeMan::ProcessMasternodeConnections()
     // Unfortunately, can't make this method private like in Bitcoin,
     // because it's used in many ICPro-specific places (masternode, privatesend).
     CNode* ConnectNode(CAddress addrConnect, const char *pszDest = NULL, bool fConnectToMasternode = false);

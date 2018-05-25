@@ -6,7 +6,7 @@
 #define BITCOIN_QT_PAYICPTSERVER_H
 
 // This class handles payment requests from clicking on
-// icpro: URIs
+// ibp: URIs
 //
 // This is somewhat tricky, because we have to deal with
 // the situation where the user clicks on a link during

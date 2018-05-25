@@ -216,7 +216,7 @@ http://test.explorer.darkcoin.fr/tx/ce0ea2bdf630233955d459489b6f764e0d0bbe9e8a62
 - Disabled collateral charging for now. We'll work on this after RC4 is
   released and update the masternode network after it's working properly. It's
   not incredibly important at this stage (while we're closed source), so
-  I don't icpro it holding up the release. Plus it's really
+  I don't ibp it holding up the release. Plus it's really
   the only issue we're experiencing
 - Merged rebroad's (https://github.com/rebroad) changes to bring debugging
   output more in line with the bitcoin project. Output is now much cleaner and
@@ -383,10 +383,10 @@ anonymity improvements:
   This improves the anonmity by not allowing someone to follow transactions by
   the missing denominations.
 - Transactions use unique change addresses for every output of each round.
-- QT GUI will now ask to unlock the wallet when it detects Darksend icpros to do
+- QT GUI will now ask to unlock the wallet when it detects Darksend ibps to do
   something and lock it when it's done again.
 - Darksend is turned off by default in the daemon now. In most cases daemons
-  won't icpro to run with anonymity (pools, exchanges, etc), if a user does they
+  won't ibp to run with anonymity (pools, exchanges, etc), if a user does they
   can override the default setting with -enabledaemondarksend=true
 - Fees per round of Darksend are 0.001DRK or $0.00538 at current prices. This
   means to anonymize 1000DRK with 3 rounds (an average use case) it would cost
@@ -429,7 +429,7 @@ DS+ seems to be pretty stable now :-)
 - Input selection will now only select denominated, non-denominated or
   all inputs. This caused ds+ inputs to get interrupted by the splitting
   mechanism sometimes.
-- Added new GUI element for selecting which inputs you icpro to send
+- Added new GUI element for selecting which inputs you ibp to send
 - Fixed darksend+ rounds function, it was returning bad data in some cases
   causing darksend inputs to never stop being sent through darksend.
 - Fixed "Send" dialog to be able to use the different kinds of inputs available.
@@ -451,7 +451,7 @@ on the same masternode for testing purposes:
 /darkcoin-qt -datadir=/home/user/.darkcoin -listen=0 -darksendrounds=8 -usemasternode="192.168.56.102:10211"
 /darkcoin-qt -datadir=/home/user/.darkcoin2 -listen=0 -darksendrounds=8 -usemasternode="192.168.56.102:10211"
 
-and even disable darksend auto-denom if icproed:
+and even disable darksend auto-denom if ibped:
 /darkcoin-qt -datadir=/home/user/.darkcoin -listen=0 -darksendrounds=8 -usemasternode="192.168.56.102:10211" -disabledarksend=1
 
 

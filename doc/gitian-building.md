@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to icpro.org.
+to ibp.org.
 
 More independent Gitian builders are needed, which is why this guide exists.
 It is preferred you follow these steps yourself instead of using someone else's
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up the Gitian image](#setting-up-the-gitian-image)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building ICPro Core](#building-icpro-core)
+- [Building ICPro Core](#building-ibp-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -87,7 +87,7 @@ After creating the VM, we need to configure it.
 
 ![](gitian-building/network_settings.png)
 
-- Click `Advanced`, then `Port Forwarding`. We icpro to set up a port through which we can reach the VM to get files in and out.
+- Click `Advanced`, then `Port Forwarding`. We ibp to set up a port through which we can reach the VM to get files in and out.
 - Create a new rule by clicking the plus icon.
 
 ![](gitian-building/port_forwarding_rules.png)
@@ -229,7 +229,7 @@ For example, to connect as `root` from a Linux command prompt use
     $ ssh root@localhost -p 22222
     The authenticity of host '[localhost]:22222 ([127.0.0.1]:22222)' can't be established.
     RSA key fingerprint is ae:f5:c8:9f:17:c6:c7:1b:c2:1b:12:31:1d:bb:d0:c7.
-    Are you sure you icpro to continue connecting (yes/no)? yes
+    Are you sure you ibp to continue connecting (yes/no)? yes
     Warning: Permanently added '[localhost]:22222' (RSA) to the list of known hosts.
     root@localhost's password: (enter root password configured during install)
 
@@ -304,7 +304,7 @@ Clone the git repositories for ICPro Core and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/icproproject/icpro
+git clone https://github.com/ibpproject/ibp
 ```
 
 Setting up the Gitian image
@@ -363,12 +363,12 @@ tail -f var/build.log
 Output from `gbuild` will look something like
 
 ```bash
-    Initialized empty Git repository in /home/debian/gitian-builder/inputs/icpro/.git/
+    Initialized empty Git repository in /home/debian/gitian-builder/inputs/ibp/.git/
     remote: Counting objects: 57959, done.
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/icproproject/icpro
+    From https://github.com/ibpproject/ibp
     ... (new tags, new branch etc)
     --- Building for precise amd64 ---
     Stopping target if it is up
@@ -388,24 +388,24 @@ Output from `gbuild` will look something like
 Building an alternative repository
 -----------------------------------
 
-If you icpro to do a test build of a pull on GitHub it can be useful to point
+If you ibp to do a test build of a pull on GitHub it can be useful to point
 the Gitian builder at an alternative repository, using the same descriptors
 and inputs.
 
 For example:
 ```bash
-URL=https://github.com/crowning-/icpro.git
+URL=https://github.com/crowning-/ibp.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
-./bin/gbuild --commit icpro=${COMMIT} --url icpro=${URL} ../icpro/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit icpro=${COMMIT} --url icpro=${URL} ../icpro/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit icpro=${COMMIT} --url icpro=${URL} ../icpro/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit ibp=${COMMIT} --url ibp=${URL} ../ibp/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit ibp=${COMMIT} --url ibp=${URL} ../ibp/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit ibp=${COMMIT} --url ibp=${URL} ../ibp/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 Building fully offline
 -----------------------
 
 For building fully offline including attaching signatures to unsigned builds, the detached-sigs repository
-and the icpro git repository with the desired tag must both be available locally, and then gbuild must be
+and the ibp git repository with the desired tag must both be available locally, and then gbuild must be
 told where to find them. It also requires an apt-cacher-ng which is fully-populated but set to offline mode, or
 manually disabling gitian-builder's use of apt-get to update the VM build environment.
 
@@ -424,7 +424,7 @@ cd /path/to/gitian-builder
 LXC_ARCH=amd64 LXC_SUITE=precise on-target -u root apt-get update
 LXC_ARCH=amd64 LXC_SUITE=precise on-target -u root \
   -e DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends -y install \
-  $( sed -ne '/^packages:/,/[^-] .*/ {/^- .*/{s/"//g;s/- //;p}}' ../icpro/contrib/gitian-descriptors/*|sort|uniq )
+  $( sed -ne '/^packages:/,/[^-] .*/ {/^- .*/{s/"//g;s/- //;p}}' ../ibp/contrib/gitian-descriptors/*|sort|uniq )
 LXC_ARCH=amd64 LXC_SUITE=precise on-target -u root apt-get -q -y purge grub
 LXC_ARCH=amd64 LXC_SUITE=precise on-target -u root -e DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade
 ```
@@ -444,18 +444,18 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/icproproject/icpro-detached-sigs.git
+git clone https://github.com/ibpproject/ibp-detached-sigs.git
 
-BTCPATH=/some/root/path/icpro.git
-SIGPATH=/some/root/path/icpro-detached-sigs.git
+BTCPATH=/some/root/path/ibp.git
+SIGPATH=/some/root/path/ibp-detached-sigs.git
 
-./bin/gbuild --url icpro=${BTCPATH},signature=${SIGPATH} ../icpro/contrib/gitian-descriptors/gitian-win-signer.yml
+./bin/gbuild --url ibp=${BTCPATH},signature=${SIGPATH} ../ibp/contrib/gitian-descriptors/gitian-win-signer.yml
 ```
 
 Signing externally
 -------------------
 
-If you icpro to do the PGP signing on another device, that's also possible; just define `SIGNER` as mentioned
+If you ibp to do the PGP signing on another device, that's also possible; just define `SIGNER` as mentioned
 and follow the steps in the build process as normal.
 
     gpg: skipped "crowning-": secret key not available
@@ -464,9 +464,9 @@ When you execute `gsign` you will get an error from GPG, which can be ignored. C
 in `gitian.sigs` to your signing machine and do
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${SIGNER}/icpro-linux-build.assert
-    gpg --detach-sign ${VERSION}-win/${SIGNER}/icpro-win-build.assert
-    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/icpro-osx-build.assert
+    gpg --detach-sign ${VERSION}-linux/${SIGNER}/ibp-linux-build.assert
+    gpg --detach-sign ${VERSION}-win/${SIGNER}/ibp-win-build.assert
+    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/ibp-osx-build.assert
 ```
 
 This will create the `.sig` files that can be committed together with the `.assert` files to assert your
@@ -476,6 +476,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[icpro/gitian.sigs](https://github.com/icproproject/gitian.sigs/) repository, or if that's not possible to create a pull
+[ibp/gitian.sigs](https://github.com/ibpproject/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.

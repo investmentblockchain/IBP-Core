@@ -16,7 +16,7 @@
 
 namespace leveldb {
 
-// Grouping of constants.  We may icpro to make some of these
+// Grouping of constants.  We may ibp to make some of these
 // parameters set via options.
 namespace config {
 static const int kNumLevels = 7;

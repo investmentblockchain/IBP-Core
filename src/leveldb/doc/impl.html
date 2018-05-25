@@ -156,13 +156,13 @@ reads due to the overhead of merging more files together on every
 read.
 
 <p>
-Solution 1: To reduce this problem, we might icpro to increase the log
+Solution 1: To reduce this problem, we might ibp to increase the log
 switching threshold when the number of level-0 files is large.  Though
 the downside is that the larger this threshold, the more memory we will
 need to hold the corresponding memtable.
 
 <p>
-Solution 2: We might icpro to decrease write rate artificially when the
+Solution 2: We might ibp to decrease write rate artificially when the
 number of level-0 files goes up.
 
 <p>

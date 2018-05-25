@@ -36,10 +36,10 @@ def bctest(testDir, testObj, exeext):
 		print("Output data mismatch for " + outputFn)
 		sys.exit(1)
 
-	icproRC = 0
+	ibpRC = 0
 	if "return_code" in testObj:
-		icproRC = testObj['return_code']
-	if proc.returncode != icproRC:
+		ibpRC = testObj['return_code']
+	if proc.returncode != ibpRC:
 		print("Return code mismatch for " + outputFn)
 		sys.exit(1)
 

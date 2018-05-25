@@ -45,16 +45,16 @@ AC_ARG_WITH([boost],
      @<:@ARG=yes@:>@ ])],
     [
     if test "$withval" = "no"; then
-        icpro_boost="no"
+        ibp_boost="no"
     elif test "$withval" = "yes"; then
-        icpro_boost="yes"
+        ibp_boost="yes"
         ac_boost_path=""
     else
-        icpro_boost="yes"
+        ibp_boost="yes"
         ac_boost_path="$withval"
     fi
     ],
-    [icpro_boost="yes"])
+    [ibp_boost="yes"])
 
 
 AC_ARG_WITH([boost-libdir],
@@ -71,7 +71,7 @@ AC_ARG_WITH([boost-libdir],
         [ac_boost_lib_path=""]
 )
 
-if test "x$icpro_boost" = "xyes"; then
+if test "x$ibp_boost" = "xyes"; then
     boost_lib_version_req=ifelse([$1], ,1.20.0,$1)
     boost_lib_version_req_shorten=`expr $boost_lib_version_req : '\([[0-9]]*\.[[0-9]]*\)'`
     boost_lib_version_req_major=`expr $boost_lib_version_req : '\([[0-9]]*\)'`
@@ -80,7 +80,7 @@ if test "x$icpro_boost" = "xyes"; then
     if test "x$boost_lib_version_req_sub_minor" = "x" ; then
         boost_lib_version_req_sub_minor="0"
         fi
-    ICPRO_BOOST_VERSION=`expr $boost_lib_version_req_major \* 100000 \+  $boost_lib_version_req_minor \* 100 \+ $boost_lib_version_req_sub_minor`
+    IBP_BOOST_VERSION=`expr $boost_lib_version_req_major \* 100000 \+  $boost_lib_version_req_minor \* 100 \+ $boost_lib_version_req_sub_minor`
     AC_MSG_CHECKING(for boostlib >= $boost_lib_version_req)
     succeeded=no
 
@@ -161,7 +161,7 @@ if test "x$icpro_boost" = "xyes"; then
         AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
     @%:@include <boost/version.hpp>
     ]], [[
-    #if BOOST_VERSION >= $ICPRO_BOOST_VERSION
+    #if BOOST_VERSION >= $IBP_BOOST_VERSION
     // Everything is okay
     #else
     #  error Boost version is too old
@@ -244,7 +244,7 @@ if test "x$icpro_boost" = "xyes"; then
             AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
         @%:@include <boost/version.hpp>
         ]], [[
-        #if BOOST_VERSION >= $ICPRO_BOOST_VERSION
+        #if BOOST_VERSION >= $IBP_BOOST_VERSION
         // Everything is okay
         #else
         #  error Boost version is too old

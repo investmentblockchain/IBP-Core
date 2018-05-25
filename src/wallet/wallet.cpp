@@ -103,7 +103,7 @@ const CWalletTx* CWallet::GetWalletTx(const uint256& hash) const
 CPubKey CWallet::GenerateNewKey(uint32_t nAccountIndex, bool fInternal)
 {
     AssertLockHeld(cs_wallet); // mapKeyMetadata
-    bool fCompressed = CanSupportFeature(FEATURE_COMPRPUBKEY); // default to compressed public keys if we icpro 0.6.0 wallets
+    bool fCompressed = CanSupportFeature(FEATURE_COMPRPUBKEY); // default to compressed public keys if we ibp 0.6.0 wallets
 
     CKey secret;
 
@@ -640,7 +640,7 @@ bool CWallet::Verify(const string& walletFile, string& warningString, string& er
 
 void CWallet::SyncMetaData(pair<TxSpends::iterator, TxSpends::iterator> range)
 {
-    // We icpro all the wallet transactions in range to have the same metadata as
+    // We ibp all the wallet transactions in range to have the same metadata as
     // the oldest (smallest nOrderPos).
     // So: find smallest nOrderPos:
 
@@ -2256,7 +2256,7 @@ CAmount CWallet::GetNeedsToBeAnonymizedBalance(CAmount nMinBalance) const
     // anonymizable balance is way too small
     if(nAnonymizableBalance < nMinBalance) return 0;
 
-    // not enough funds to anonymze amount we icpro, try the max we can
+    // not enough funds to anonymze amount we ibp, try the max we can
     if(nNeedsToAnonymizeBalance > nAnonymizableBalance) nNeedsToAnonymizeBalance = nAnonymizableBalance;
 
     // we should never exceed the pool max
@@ -2534,7 +2534,7 @@ bool CWallet::SelectCoinsMinConf(const CAmount& nTargetValue, int nConfMine, int
 
             int i = output.i;
             CAmount n = pcoin->vout[i].nValue;
-            if (tryDenom == 0 && IsDenominatedAmount(n)) continue; // we don't icpro denom values on first run
+            if (tryDenom == 0 && IsDenominatedAmount(n)) continue; // we don't ibp denom values on first run
 
             pair<CAmount,pair<const CWalletTx*,unsigned int> > coin = make_pair(n,make_pair(pcoin, i));
 
@@ -2627,7 +2627,7 @@ bool CWallet::SelectCoins(const CAmount& nTargetValue, set<pair<const CWalletTx*
     vector<COutput> vCoins;
     AvailableCoins(vCoins, true, coinControl, false, nCoinType, fUseInstantSend);
 
-    // coin control -> return all selected outputs (we icpro all selected to go into the transaction for sure)
+    // coin control -> return all selected outputs (we ibp all selected to go into the transaction for sure)
     if (coinControl && coinControl->HasSelected() && !coinControl->fAllowOtherInputs)
     {
         BOOST_FOREACH(const COutput& out, vCoins)
@@ -2771,10 +2771,10 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
     std::random_shuffle(vCoins.rbegin(), vCoins.rend(), GetRandInt);
 
     // ( bit on if present )
-    // bit 0 - 100ICPRO+1
-    // bit 1 - 10ICPRO+1
-    // bit 2 - 1ICPRO+1
-    // bit 3 - .1ICPRO+1
+    // bit 0 - 100IBP+1
+    // bit 1 - 10IBP+1
+    // bit 2 - 1IBP+1
+    // bit 3 - .1IBP+1
 
     std::vector<int> vecBits;
     if (!CPrivateSend::GetDenominationsBits(nDenom, vecBits)) {
@@ -3209,9 +3209,9 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
     // considering fee sniping fewer options for pulling off this attack.
     //
     // A simple way to think about this is from the wallet's point of view we
-    // always icpro the blockchain to move forward. By setting nLockTime this
-    // way we're basically making the statement that we only icpro this
-    // transaction to appear in the next block; we don't icpro to potentially
+    // always ibp the blockchain to move forward. By setting nLockTime this
+    // way we're basically making the statement that we only ibp this
+    // transaction to appear in the next block; we don't ibp to potentially
     // encourage reorgs by allowing transactions to appear at lower heights
     // than the next block in forks of the best chain.
     //
@@ -3289,9 +3289,9 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
                 if (!SelectCoins(nValueToSelect, setCoins, nValueIn, coinControl, nCoinType, fUseInstantSend))
                 {
                     if (nCoinType == ONLY_NOT1000IFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 1000 ICPRO.");
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 1000 IBP.");
                     } else if (nCoinType == ONLY_NONDENOMINATED_NOT1000IFMN) {
-                        strFailReason = _("Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 ICPRO.");
+                        strFailReason = _("Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 IBP.");
                     } else if (nCoinType == ONLY_DENOMINATED) {
                         strFailReason = _("Unable to locate enough PrivateSend denominated funds for this transaction.");
                         strFailReason += " " + _("PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.");
@@ -3306,7 +3306,7 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
                     return false;
                 }
                 if (fUseInstantSend && nValueIn > sporkManager.GetSporkValue(SPORK_5_INSTANTSEND_MAX_VALUE)*COIN) {
-                    strFailReason += " " + strprintf(_("InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 ICPRO."), sporkManager.GetSporkValue(SPORK_5_INSTANTSEND_MAX_VALUE));
+                    strFailReason += " " + strprintf(_("InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 IBP."), sporkManager.GetSporkValue(SPORK_5_INSTANTSEND_MAX_VALUE));
                     return false;
                 }
 
@@ -3340,7 +3340,7 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
 
                         // Fill a vout to ourself
                         // TODO: pass in scriptChange instead of reservekey so
-                        // change transaction isn't always pay-to-icpro-address
+                        // change transaction isn't always pay-to-ibp-address
                         CScript scriptChange;
 
                         // coin control: send change to custom address
@@ -3522,7 +3522,7 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
 }
 
 /**
- * Call after CreateTransaction unless you icpro to abort
+ * Call after CreateTransaction unless you ibp to abort
  */
 bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey, CConnman* connman, std::string strCommand)
 {
@@ -3595,7 +3595,7 @@ CAmount CWallet::GetRequiredFee(unsigned int nTxBytes)
 
 CAmount CWallet::GetMinimumFee(unsigned int nTxBytes, unsigned int nConfirmTarget, const CTxMemPool& pool)
 {
-    // payTxFee is user-set "I icpro to pay this much"
+    // payTxFee is user-set "I ibp to pay this much"
     CAmount nFeeNeeded = payTxFee.GetFee(nTxBytes);
     // User didn't set: use -txconfirmtarget to estimate...
     if (nFeeNeeded == 0) {

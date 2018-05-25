@@ -41,7 +41,7 @@ been non-standard since ICPro 0.8, but were technically still permitted
 inside blocks.
 
 This change breaks the dependency on OpenSSL's signature parsing, and is
-required if implementations would icpro to remove all of OpenSSL from the
+required if implementations would ibp to remove all of OpenSSL from the
 consensus code.
 
 The same miner-voting mechanism as in BIP 34 is used: when 751 out of a
@@ -64,7 +64,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/ICPro-Qt (on Mac) or
-icprod/icpro-qt (on Linux).
+ibpd/ibp-qt (on Linux).
 
 
 0.11.2 changelog

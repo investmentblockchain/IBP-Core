@@ -89,7 +89,7 @@
        <item>
         <widget class="QPlainTextEdit" name="messageIn_SM">
          <property name="toolTip">
-          <string>Enter the message you icpro to sign here</string>
+          <string>Enter the message you ibp to sign here</string>
          </property>
         </widget>
        </item>
@@ -352,7 +352,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../icpro.qrc"/>
+  <include location="../ibp.qrc"/>
  </resources>
  <connections/>
 </ui>

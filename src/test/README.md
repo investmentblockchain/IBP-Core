@@ -2,15 +2,15 @@
 The sources in this directory are unit test cases.  Boost includes a
 unit testing framework, and since ICPro Core already uses boost, it makes
 sense to simply use this framework rather than require developers to
-configure some other framework (we icpro as few impediments to creating
+configure some other framework (we ibp as few impediments to creating
 unit tests as possible).
 
-The build system is setup to compile an executable called "test_icpro"
+The build system is setup to compile an executable called "test_ibp"
 that runs all of the unit tests.  The main source file is called
-test_icpro.cpp, which simply includes other files that contain the
+test_ibp.cpp, which simply includes other files that contain the
 actual unit tests (outside of a couple required preprocessor
 directives).  The pattern is to create one test file for each class or
-source file for which you icpro to create unit tests.  The file naming
+source file for which you ibp to create unit tests.  The file naming
 convention is "<source_filename>_tests.cpp" and such files should wrap
 their tests in a test suite called "<source_filename>_tests".  For an
 examples of this pattern, examine uint160_tests.cpp and
@@ -22,14 +22,14 @@ For further reading, I found the following website to be helpful in
 explaining how the boost unit test framework works:
 [http://www.alittlemadness.com/2009/03/31/c-unit-testing-with-boosttest/](http://www.alittlemadness.com/2009/03/31/c-unit-testing-with-boosttest/).
 
-test_icpro has some built-in command-line arguments; for
+test_ibp has some built-in command-line arguments; for
 example, to run just the getarg_tests verbosely:
 
-    test_icpro --log_level=all --run_test=getarg_tests
+    test_ibp --log_level=all --run_test=getarg_tests
 
-... or to run just the doubleicpro test:
+... or to run just the doubleibp test:
 
-    test_icpro --run_test=getarg_tests/doubleicpro
+    test_ibp --run_test=getarg_tests/doubleibp
 
-Run  test_icpro --help   for the full list.
+Run  test_ibp --help   for the full list.
 

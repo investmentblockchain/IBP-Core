@@ -482,7 +482,7 @@ bool CPrivateSendClient::CheckPoolStateUpdate(PoolState nStateNew, int nEntriesC
 
 //
 // After we receive the finalized transaction from the Masternode, we must
-// check it to make sure it's what we icpro, then sign it if we agree.
+// check it to make sure it's what we ibp, then sign it if we agree.
 // If we refuse to sign, it's possible we'll be charged collateral
 //
 bool CPrivateSendClient::SignFinalTransaction(const CTransaction& finalTransactionNew, CNode* pnode, CConnman& connman)
@@ -542,7 +542,7 @@ bool CPrivateSendClient::SignFinalTransaction(const CTransaction& finalTransacti
                 int nTargetOuputsCount = entry.vecTxDSOut.size();
                 if(nFoundOutputsCount < nTargetOuputsCount || nValue1 != nValue2) {
                     // in this case, something went wrong and we'll refuse to sign. It's possible we'll be charged collateral. But that's
-                    // better then signing if the transaction doesn't look like what we icproed.
+                    // better then signing if the transaction doesn't look like what we ibped.
                     LogPrintf("CPrivateSendClient::SignFinalTransaction -- My entries are not correct! Refusing to sign: nFoundOutputsCount: %d, nTargetOuputsCount: %d\n", nFoundOutputsCount, nTargetOuputsCount);
                     UnlockCoins();
                     keyHolderStorage.ReturnAll();
@@ -1422,7 +1422,7 @@ void ThreadCheckPrivateSendClient(CConnman& connman)
     fOneThread = true;
 
     // Make this thread recognisable as the PrivateSend thread
-    RenameThread("icpro-ps-client");
+    RenameThread("ibp-ps-client");
 
     unsigned int nTick = 0;
     unsigned int nDoAutoNextRun = nTick + PRIVATESEND_AUTO_TIMEOUT_MIN;

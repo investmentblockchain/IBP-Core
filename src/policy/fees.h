@@ -27,7 +27,7 @@ class CTxMemPool;
  * takes transactions in the various buckets to be mined.  It operates under
  * the assumption that in general transactions of higher fee/priority will be
  * included in blocks before transactions of lower fee/priority.   So for
- * example if you icproed to know what fee you should put on a transaction to
+ * example if you ibped to know what fee you should put on a transaction to
  * be included in a block within the next 5 blocks, you would start by looking
  * at the bucket with the highest fee transactions and verifying that a
  * sufficiently high percentage of them were confirmed within 5 blocks and
@@ -55,7 +55,7 @@ class CTxMemPool;
  * for how long it to took transactions to get confirmed from 1 to a max of 25
  * and we increment all the counters from Y up to 25. This is because for any
  * number Z>=Y the transaction was successfully mined within Z blocks.  We
- * icpro to save a history of this information, so at any time we have a
+ * ibp to save a history of this information, so at any time we have a
  * counter of the total number of transactions that happened in a given fee
  * bucket and the total number that were confirmed in each number 1-25 blocks
  * or less for any bucket.   We save this history by keeping an exponentially
@@ -201,7 +201,7 @@ static const double MIN_PRIORITY = 10;
 static const double MAX_PRIORITY = 1e16;
 static const double INF_PRIORITY = 1e9 * MAX_MONEY;
 
-// We have to lump transactions into buckets based on fee or priority, but we icpro to be able
+// We have to lump transactions into buckets based on fee or priority, but we ibp to be able
 // to give accurate estimates over a large range of potential fees and priorities
 // Therefore it makes sense to exponentially space the buckets
 /** Spacing of FeeRate buckets */
@@ -211,7 +211,7 @@ static const double FEE_SPACING = 1.1;
 static const double PRI_SPACING = 2;
 
 /**
- *  We icpro to be able to estimate fees or priorities that are needed on tx's to be included in
+ *  We ibp to be able to estimate fees or priorities that are needed on tx's to be included in
  * a certain number of blocks.  Every time a block is added to the best chain, this class records
  * stats on the transactions included in that block
  */

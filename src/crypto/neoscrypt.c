@@ -116,18 +116,18 @@ static void neoscrypt_hash_init_sha256(sha256_hash_state *S) {
 }
 
 static void neoscrypt_hash_update_sha256(sha256_hash_state *S, const uchar *in, uint inlen) {
-    uint blocks, icpro;
+    uint blocks, ibp;
 
     /* handle the previous data */
     if(S->leftover) {
-        icpro = (BLOCK_SIZE - S->leftover);
-        icpro = (icpro < inlen) ? icpro : inlen;
-        neoscrypt_copy(S->buffer + S->leftover, in, icpro);
-        S->leftover += (uint)icpro;
+        ibp = (BLOCK_SIZE - S->leftover);
+        ibp = (ibp < inlen) ? ibp : inlen;
+        neoscrypt_copy(S->buffer + S->leftover, in, ibp);
+        S->leftover += (uint)ibp;
         if(S->leftover < BLOCK_SIZE)
           return;
-        in += icpro;
-        inlen -= icpro;
+        in += ibp;
+        inlen -= ibp;
         sha256_blocks(S, S->buffer, 1);
     }
 
@@ -390,18 +390,18 @@ static void neoscrypt_hash_init_blake256(blake256_hash_state *S) {
 
 static void neoscrypt_hash_update_blake256(blake256_hash_state *S,
   const uchar *in, uint inlen) {
-    uint blocks, icpro;
+    uint blocks, ibp;
 
     /* handle the previous data */
     if(S->leftover) {
-        icpro = (BLOCK_SIZE - S->leftover);
-        icpro = (icpro < inlen) ? icpro : inlen;
-        neoscrypt_copy(S->buffer + S->leftover, in, icpro);
-        S->leftover += (uint)icpro;
+        ibp = (BLOCK_SIZE - S->leftover);
+        ibp = (ibp < inlen) ? ibp : inlen;
+        neoscrypt_copy(S->buffer + S->leftover, in, ibp);
+        S->leftover += (uint)ibp;
         if(S->leftover < BLOCK_SIZE)
           return;
-        in += icpro;
-        inlen -= icpro;
+        in += ibp;
+        inlen -= ibp;
         blake256_blocks(S, S->buffer, 1);
     }
 

@@ -31,7 +31,7 @@ Handle invalid Bitcoin URIs using "bitcoin://" instead of "bitcoin:".
 Several shutdown issues have been fixed.
 Revert to "global progress indication", as starting from zero every time was considered too confusing for many users.
 Check that keys stored in the wallet are valid at startup, and if not, report corruption.
-Enable accessible widgets on Windows, so that icpro with screen readers such as NVDA can make sense of it.
+Enable accessible widgets on Windows, so that ibp with screen readers such as NVDA can make sense of it.
 Various build fixes.
 If no password is specified to bitcoind, recommend a secure password.
 Automatically focus and scroll to new "Send coins" entries in Bitcoin-Qt.

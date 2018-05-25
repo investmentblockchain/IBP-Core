@@ -87,7 +87,7 @@ class DecodeScriptTest(BitcoinTestFramework):
         # 5) null data scriptPubKey
         # use a signature look-alike here to make sure that we do not decode random data as a signature.
         # this matters if/when signature sighash decoding comes along.
-        # would icpro to make sure that no such decoding takes place in this case.
+        # would ibp to make sure that no such decoding takes place in this case.
         signature_imposter = '48304502207fa7a6d1e0ee81132a269ad84e68d695483745cde8b541e3bf630749894e342a022100c1f7ab20e13e22fb95281a870f3dcf38d782e53023ee313d741ad0cfbc0c509001'
         # OP_RETURN <data>
         rpc_result = self.nodes[0].decodescript('6a' + signature_imposter)

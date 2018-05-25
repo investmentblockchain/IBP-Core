@@ -1,21 +1,21 @@
 Shared Libraries
 ================
 
-## icproconsensus
+## ibpconsensus
 
 The purpose of this library is to make the verification functionality that is critical to ICPro's consensus available to other applications, e.g. to language bindings.
 
 ### API
 
-The interface is defined in the C header `icproconsensus.h` located in  `src/script/icproconsensus.h`.
+The interface is defined in the C header `ibpconsensus.h` located in  `src/script/ibpconsensus.h`.
 
 #### Version
 
-`icproconsensus_version` returns an `unsigned int` with the the API version *(currently at an experimental `0`)*.
+`ibpconsensus_version` returns an `unsigned int` with the the API version *(currently at an experimental `0`)*.
 
 #### Script Validation
 
-`icproconsensus_verify_script` returns an `int` with the status of the verification. It will be `1` if the input script correctly spends the previous output `scriptPubKey`.
+`ibpconsensus_verify_script` returns an `int` with the status of the verification. It will be `1` if the input script correctly spends the previous output `scriptPubKey`.
 
 ##### Parameters
 - `const unsigned char *scriptPubKey` - The previous output script that encumbers spending.
@@ -24,18 +24,18 @@ The interface is defined in the C header `icproconsensus.h` located in  `src/scr
 - `unsigned int txToLen` - The number of bytes for the `txTo`.
 - `unsigned int nIn` - The index of the input in `txTo` that spends the `scriptPubKey`.
 - `unsigned int flags` - The script validation flags *(see below)*.
-- `icproconsensus_error* err` - Will have the error/success code for the operation *(see below)*.
+- `ibpconsensus_error* err` - Will have the error/success code for the operation *(see below)*.
 
 ##### Script Flags
-- `icproconsensus_SCRIPT_FLAGS_VERIFY_NONE`
-- `icproconsensus_SCRIPT_FLAGS_VERIFY_P2SH` - Evaluate P2SH ([BIP16](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki)) subscripts
-- `icproconsensus_SCRIPT_FLAGS_VERIFY_DERSIG` - Enforce strict DER ([BIP66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki)) compliance
+- `ibpconsensus_SCRIPT_FLAGS_VERIFY_NONE`
+- `ibpconsensus_SCRIPT_FLAGS_VERIFY_P2SH` - Evaluate P2SH ([BIP16](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki)) subscripts
+- `ibpconsensus_SCRIPT_FLAGS_VERIFY_DERSIG` - Enforce strict DER ([BIP66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki)) compliance
 
 ##### Errors
-- `icproconsensus_ERR_OK` - No errors with input parameters *(see the return value of `icproconsensus_verify_script` for the verification status)*
-- `icproconsensus_ERR_TX_INDEX` - An invalid index for `txTo`
-- `icproconsensus_ERR_TX_SIZE_MISMATCH` - `txToLen` did not match with the size of `txTo`
-- `icproconsensus_ERR_DESERIALIZE` - An error deserializing `txTo`
+- `ibpconsensus_ERR_OK` - No errors with input parameters *(see the return value of `ibpconsensus_verify_script` for the verification status)*
+- `ibpconsensus_ERR_TX_INDEX` - An invalid index for `txTo`
+- `ibpconsensus_ERR_TX_SIZE_MISMATCH` - `txToLen` did not match with the size of `txTo`
+- `ibpconsensus_ERR_DESERIALIZE` - An error deserializing `txTo`
 
 ### Example Implementations
 - [NBitcoin](https://github.com/NicolasDorier/NBitcoin/blob/master/NBitcoin/Script.cs#L814) (.NET Bindings)

@@ -721,7 +721,7 @@ DBErrors CWalletDB::LoadWallet(CWallet* pwallet)
         result = DB_NONCRITICAL_ERROR;
 
     // Any wallet corruption at all: skip any rewriting or
-    // upgrading, we don't icpro to make it worse.
+    // upgrading, we don't ibp to make it worse.
     if (result != DB_LOAD_OK)
         return result;
 
@@ -842,7 +842,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet, vector<CWalletTx>& vWtx)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("icpro-wallet");
+    RenameThread("ibp-wallet");
 
     static bool fOneThread;
     if (fOneThread)

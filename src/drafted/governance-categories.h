@@ -4,7 +4,7 @@
 
 	* means the category has an associated class
 
-	CICProNetwork: ICPRO NETWORK (ROOT)
+	CICProNetwork: IBP NETWORK (ROOT)
 	has:
 		vector<CNetworkVariable> vecNetworkVariables;
 		vector<CICProProject> vecProjects;
@@ -19,7 +19,7 @@
 
 */
 
-	// ICPRO NETWORK (ROOT)
+	// IBP NETWORK (ROOT)
 	// 	-> NETWORK VARIABLE
 	// 		-> switch, setting
 	// 	-> CATEGORIES
@@ -49,7 +49,7 @@
 	// 			-> USER1 (only users are allowed here in this scope)
 	// 			-> USER2
 	// 		-> GROUP2 (EVO)
-	// 			-> VALUEOVERRIDE (STORE=ICPRODRIVE)
+	// 			-> VALUEOVERRIDE (STORE=IBPDRIVE)
 	// 			-> USER1
 
 	// 	-> COMPANIES

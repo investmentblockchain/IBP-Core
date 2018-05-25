@@ -1,9 +1,9 @@
 dnl Helper for cases where a qt dependency is not met.
 dnl Output: If qt version is auto, set bitcoin_enable_qt to false. Else, exit.
 AC_DEFUN([BITCOIN_QT_FAIL],[
-  if test "x$bitcoin_qt_icpro_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
+  if test "x$bitcoin_qt_ibp_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
     if test x$bitcoin_enable_qt != xno; then
-      AC_MSG_WARN([$1; icpro-qt frontend will not be built])
+      AC_MSG_WARN([$1; ibp-qt frontend will not be built])
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -13,7 +13,7 @@ AC_DEFUN([BITCOIN_QT_FAIL],[
 ])
 
 AC_DEFUN([BITCOIN_QT_CHECK],[
-  if test "x$bitcoin_enable_qt" != "xno" && test x$bitcoin_qt_icpro_version != xno; then
+  if test "x$bitcoin_enable_qt" != "xno" && test x$bitcoin_qt_ibp_version != xno; then
     true
     $1
   else
@@ -50,15 +50,15 @@ AC_DEFUN([BITCOIN_QT_INIT],[
   dnl enable qt support
   AC_ARG_WITH([gui],
     [AS_HELP_STRING([--with-gui@<:@=no|qt4|qt5|auto@:>@],
-    [build icpro-qt GUI (default=auto, qt5 tried first)])],
+    [build ibp-qt GUI (default=auto, qt5 tried first)])],
     [
-     bitcoin_qt_icpro_version=$withval
-     if test x$bitcoin_qt_icpro_version = xyes; then
+     bitcoin_qt_ibp_version=$withval
+     if test x$bitcoin_qt_ibp_version = xyes; then
        bitcoin_qt_force=yes
-       bitcoin_qt_icpro_version=auto
+       bitcoin_qt_ibp_version=auto
      fi
     ],
-    [bitcoin_qt_icpro_version=auto])
+    [bitcoin_qt_ibp_version=auto])
 
   AC_ARG_WITH([qt-incdir],[AS_HELP_STRING([--with-qt-incdir=INC_DIR],[specify qt include path (overridden by pkgconfig)])], [qt_include_path=$withval], [])
   AC_ARG_WITH([qt-libdir],[AS_HELP_STRING([--with-qt-libdir=LIB_DIR],[specify qt lib path (overridden by pkgconfig)])], [qt_lib_path=$withval], [])
@@ -353,9 +353,9 @@ AC_DEFUN([_BITCOIN_QT_FIND_STATIC_PLUGINS],[
 ])
 
 dnl Internal. Find Qt libraries using pkg-config.
-dnl Inputs: bitcoin_qt_icpro_version (from --with-gui=). The version to check
+dnl Inputs: bitcoin_qt_ibp_version (from --with-gui=). The version to check
 dnl         first.
-dnl Inputs: $1: If bitcoin_qt_icpro_version is "auto", check for this version
+dnl Inputs: $1: If bitcoin_qt_ibp_version is "auto", check for this version
 dnl         first.
 dnl Outputs: All necessary QT_* variables are set.
 dnl Outputs: bitcoin_qt_got_major_vers is set to "4" or "5".
@@ -366,7 +366,7 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITH_PKGCONFIG],[
   if test x$auto_priority_version = x; then
     auto_priority_version=qt5
   fi
-    if test x$bitcoin_qt_icpro_version = xqt5 ||  ( test x$bitcoin_qt_icpro_version = xauto && test x$auto_priority_version = xqt5 ); then
+    if test x$bitcoin_qt_ibp_version = xqt5 ||  ( test x$bitcoin_qt_ibp_version = xauto && test x$auto_priority_version = xqt5 ); then
       QT_LIB_PREFIX=Qt5
       bitcoin_qt_got_major_vers=5
     else
@@ -376,14 +376,14 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITH_PKGCONFIG],[
     qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets"
     qt4_modules="QtCore QtGui QtNetwork"
     BITCOIN_QT_CHECK([
-      if test x$bitcoin_qt_icpro_version = xqt5 || ( test x$bitcoin_qt_icpro_version = xauto && test x$auto_priority_version = xqt5 ); then
+      if test x$bitcoin_qt_ibp_version = xqt5 || ( test x$bitcoin_qt_ibp_version = xauto && test x$auto_priority_version = xqt5 ); then
         PKG_CHECK_MODULES([QT], [$qt5_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes],[have_qt=no])
-      elif test x$bitcoin_qt_icpro_version = xqt4 || ( test x$bitcoin_qt_icpro_version = xauto && test x$auto_priority_version = xqt4 ); then
+      elif test x$bitcoin_qt_ibp_version = xqt4 || ( test x$bitcoin_qt_ibp_version = xauto && test x$auto_priority_version = xqt4 ); then
         PKG_CHECK_MODULES([QT], [$qt4_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes], [have_qt=no])
       fi
 
       dnl qt version is set to 'auto' and the preferred version wasn't found. Now try the other.
-      if test x$have_qt = xno && test x$bitcoin_qt_icpro_version = xauto; then
+      if test x$have_qt = xno && test x$bitcoin_qt_ibp_version = xauto; then
         if test x$auto_priority_version = xqt5; then
           PKG_CHECK_MODULES([QT], [$qt4_modules], [QT_INCLUDES="$QT_CFLAGS"; have_qt=yes; QT_LIB_PREFIX=Qt; bitcoin_qt_got_major_vers=4], [have_qt=no])
         else
@@ -407,7 +407,7 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITH_PKGCONFIG],[
 
 dnl Internal. Find Qt libraries without using pkg-config. Version is deduced
 dnl from the discovered headers.
-dnl Inputs: bitcoin_qt_icpro_version (from --with-gui=). The version to use.
+dnl Inputs: bitcoin_qt_ibp_version (from --with-gui=). The version to use.
 dnl         If "auto", the version will be discovered by _BITCOIN_QT_CHECK_QT5.
 dnl Outputs: All necessary QT_* variables are set.
 dnl Outputs: bitcoin_qt_got_major_vers is set to "4" or "5".
@@ -429,10 +429,10 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   BITCOIN_QT_CHECK([AC_CHECK_HEADER([QLocalSocket],, BITCOIN_QT_FAIL(QtNetwork headers missing))])
 
   BITCOIN_QT_CHECK([
-    if test x$bitcoin_qt_icpro_version = xauto; then
+    if test x$bitcoin_qt_ibp_version = xauto; then
       _BITCOIN_QT_CHECK_QT5
     fi
-    if test x$bitcoin_cv_qt5 = xyes || test x$bitcoin_qt_icpro_version = xqt5; then
+    if test x$bitcoin_cv_qt5 = xyes || test x$bitcoin_qt_ibp_version = xqt5; then
       QT_LIB_PREFIX=Qt5
       bitcoin_qt_got_major_vers=5
     else

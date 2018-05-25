@@ -116,7 +116,7 @@ extern "C"{
 #endif
 
 /*
- * We do not icpro to copy the state to local variables on x86 (32-bit
+ * We do not ibp to copy the state to local variables on x86 (32-bit
  * and 64-bit alike).
  */
 #ifndef SPH_KECCAK_NOCOPY

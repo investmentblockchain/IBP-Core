@@ -6,12 +6,12 @@
 # This python code was modified from ArtForz' public domain  half-a-node, as
 # found in the mini-node branch of http://github.com/jgarzik/pynode.
 #
-# NodeConn: an object which manages p2p connectivity to a icpro node
+# NodeConn: an object which manages p2p connectivity to a ibp node
 # NodeConnCB: a base class that describes the interface for receiving
 #             callbacks with network messages from a NodeConn
 # CBlock, CTransaction, CBlockHeader, CTxIn, CTxOut, etc....:
 #     data structures that should map to corresponding structures in
-#     icpro/primitives
+#     ibp/primitives
 # msg_block, msg_tx, msg_headers, etc.:
 #     data structures that represent network messages
 # ser_*, deser_*: functions that handle serialization/deserialization
@@ -32,7 +32,7 @@ from threading import Thread
 import logging
 import copy
 
-import icpro_hash
+import ibp_hash
 
 BIP0031_VERSION = 60000
 MY_VERSION = 70206  # current MIN_PEER_PROTO_VERSION
@@ -64,8 +64,8 @@ def sha256(s):
 def hash256(s):
     return sha256(sha256(s))
 
-def icprohash(s):
-    return icpro_hash.getPoWHash(s)
+def ibphash(s):
+    return ibp_hash.getPoWHash(s)
 
 def deser_string(f):
     nit = struct.unpack("<B", f.read(1))[0]
@@ -247,7 +247,7 @@ def FromHex(obj, hex_string):
 def ToHex(obj):
     return hexlify(obj.serialize()).decode('ascii')
 
-# Objects that map to icprod objects, which can be serialized/deserialized
+# Objects that map to ibpd objects, which can be serialized/deserialized
 
 class CAddress(object):
     def __init__(self):
@@ -496,8 +496,8 @@ class CBlockHeader(object):
             r += struct.pack("<I", self.nTime)
             r += struct.pack("<I", self.nBits)
             r += struct.pack("<I", self.nNonce)
-            self.sha256 = uint256_from_str(icprohash(r))
-            self.hash = encode(icprohash(r)[::-1], 'hex_codec').decode('ascii')
+            self.sha256 = uint256_from_str(ibphash(r))
+            self.hash = encode(ibphash(r)[::-1], 'hex_codec').decode('ascii')
 
     def rehash(self):
         self.sha256 = None
@@ -972,7 +972,7 @@ class msg_headers(object):
         self.headers = []
 
     def deserialize(self, f):
-        # comment in icprod indicates these should be deserialized as blocks
+        # comment in ibpd indicates these should be deserialized as blocks
         blocks = deser_vector(f, CBlock)
         for x in blocks:
             self.headers.append(CBlockHeader(x))
@@ -1050,7 +1050,7 @@ class NodeConnCB(object):
             return self.deliver_sleep_time
 
     # Spin until verack message is received from the node.
-    # Tests may icpro to use this as a signal that the test can begin.
+    # Tests may ibp to use this as a signal that the test can begin.
     # This can be called from the testing thread, so it needs to acquire the
     # global lock.
     def wait_for_verack(self):
@@ -1083,12 +1083,12 @@ class NodeConnCB(object):
         self.verack_received = True
 
     def on_inv(self, conn, message):
-        icpro = msg_getdata()
+        ibp = msg_getdata()
         for i in message.inv:
             if i.type != 0:
-                icpro.inv.append(i)
-        if len(icpro.inv):
-            conn.send_message(icpro)
+                ibp.inv.append(i)
+        if len(ibp.inv):
+            conn.send_message(ibp)
 
     def on_addr(self, conn, message): pass
     def on_alert(self, conn, message): pass

@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/icpro-config.h"
+#include "config/ibp-config.h"
 #endif
 
 #include "net.h"
@@ -2429,7 +2429,7 @@ bool CConnman::RemoveAddedNode(const std::string& strNode)
 size_t CConnman::GetNodeCount(NumConnections flags)
 {
     LOCK(cs_vNodes);
-    if (flags == CConnman::CONNECTIONS_ALL) // Shortcut if we icpro total
+    if (flags == CConnman::CONNECTIONS_ALL) // Shortcut if we ibp total
         return vNodes.size();
 
     int nNum = 0;

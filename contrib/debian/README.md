@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package icprod/icpro-qt
-for Debian-based Linux systems. If you compile icprod/icpro-qt yourself, there are some useful files here.
+This directory contains files used to package ibpd/ibp-qt
+for Debian-based Linux systems. If you compile ibpd/ibp-qt yourself, there are some useful files here.
 
-## icpro: URI support ##
+## ibp: URI support ##
 
 
-icpro-qt.desktop  (Gnome / Open Desktop)
+ibp-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install icpro-qt.desktop
+	sudo desktop-file-install ibp-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your icpro-qt binary to `/usr/bin`
-and the `../../share/pixmaps/icpro128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your ibp-qt binary to `/usr/bin`
+and the `../../share/pixmaps/ibp128.png` to `/usr/share/pixmaps`
 
-icpro-qt.protocol (KDE)
+ibp-qt.protocol (KDE)
 

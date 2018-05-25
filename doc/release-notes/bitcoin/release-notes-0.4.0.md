@@ -27,7 +27,7 @@ Optimize database writes for large (lots of inputs) transactions
 
 Wallet Encryption
 
-Bitcoin supports native wallet encryption so that icpro who steal your
+Bitcoin supports native wallet encryption so that ibp who steal your
 wallet file don't automatically get access to all of your Bitcoins.
 In order to enable this feature, choose "Encrypt Wallet" from the
 Options menu.  You will be prompted to enter a passphrase, which

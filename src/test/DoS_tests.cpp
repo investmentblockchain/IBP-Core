@@ -13,7 +13,7 @@
 #include "serialize.h"
 #include "util.h"
 
-#include "test/test_icpro.h"
+#include "test/test_ibp.h"
 
 #include <stdint.h>
 

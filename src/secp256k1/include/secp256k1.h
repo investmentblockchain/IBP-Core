@@ -200,7 +200,7 @@ SECP256K1_API void secp256k1_context_destroy(
  *  specific return value, as calling code should not have branches to deal with
  *  the case that this code itself is broken.
  *
- *  On the other hand, during debug stage, one would icpro to be informed about
+ *  On the other hand, during debug stage, one would ibp to be informed about
  *  such mistakes, and the default (crashing) may be inadvisable.
  *  When this callback is triggered, the API function called is guaranteed not
  *  to cause a crash, though its return value and output arguments are

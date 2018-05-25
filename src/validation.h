@@ -8,7 +8,7 @@
 #define BITCOIN_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/icpro-config.h"
+#include "config/ibp-config.h"
 #endif
 
 #include "amount.h"
@@ -93,7 +93,7 @@ static const unsigned int MAX_HEADERS_RESULTS = 2000;
 /** Size of the "block download window": how far ahead of our current height do we fetch?
  *  Larger windows tolerate larger download speed differences between peer, but increase the potential
  *  degree of disordering of blocks on disk (which make reindexing and in the future perhaps pruning
- *  harder). We'll probably icpro to make this a per-peer adaptive value at some point. */
+ *  harder). We'll probably ibp to make this a per-peer adaptive value at some point. */
 static const unsigned int BLOCK_DOWNLOAD_WINDOW = 1024;
 /** Time to wait (in seconds) between writing blocks/block index to disk. */
 static const unsigned int DATABASE_WRITE_INTERVAL = 60 * 60;
@@ -194,7 +194,7 @@ static const unsigned int DEFAULT_CHECKLEVEL = 3;
 // At 2MB per block, 288 blocks = 576MB.
 // Add 15% for Undo data = 662MB
 // Add 20% for Orphan block rate = 794MB
-// We icpro the low water mark after pruning to be at least 794 MB and since we prune in
+// We ibp the low water mark after pruning to be at least 794 MB and since we prune in
 // full block file chunks, we need the high water mark which triggers the prune to be
 // one 128MB block file + added 15% undo data = 147MB greater for a total of 941MB
 // Setting the target to > than 945MB will make it likely we can respect the target.
@@ -205,14 +205,14 @@ static const uint64_t MIN_DISK_SPACE_FOR_BLOCK_FILES = 945 * 1024 * 1024;
  * block is made active. Note that it does not, however, guarantee that the
  * specific block passed to it has been checked for validity!
  *
- * If you icpro to *possibly* get feedback on whether pblock is valid, you must
+ * If you ibp to *possibly* get feedback on whether pblock is valid, you must
  * install a CValidationInterface (see validationinterface.h) - this will have
  * its BlockChecked method called whenever *any* block completes validation.
  *
  * Note that we guarantee that either the proof-of-work is valid on pblock, or
  * (and possibly also) BlockChecked will have been called.
  * 
- * @param[in]   pblock  The block we icpro to process.
+ * @param[in]   pblock  The block we ibp to process.
  * @param[in]   fForceProcessing Process this block even if unrequested; used for non-network block sources and whitelisted peers.
  * @param[out]  dbp     The already known disk position of pblock, or NULL if not yet stored.
  * @param[out]  fNewBlock A boolean which is set to indicate if the block was first received via this call
@@ -225,7 +225,7 @@ bool ProcessNewBlock(const CChainParams& chainparams, const CBlock* pblock, bool
  *
  * @param[in]  block The block headers themselves
  * @param[out] state This may be set to an Error state if any error occurred processing them
- * @param[in]  chainparams The params for the chain we icpro to connect to
+ * @param[in]  chainparams The params for the chain we ibp to connect to
  * @param[out] ppindex If set, the pointer will be set to point to the last new block index object for the given headers
  */
 bool ProcessNewBlockHeaders(const std::vector<CBlockHeader>& block, CValidationState& state, const CChainParams& chainparams, CBlockIndex** ppindex=NULL);

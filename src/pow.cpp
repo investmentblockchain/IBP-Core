@@ -81,7 +81,7 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const Conse
 }
 
 unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consensus::Params& params) {
-    /* current difficulty formula, icpro - DarkGravity v3, written by Evan Duffield - evan@icpro.org */
+    /* current difficulty formula, ibp - DarkGravity v3, written by Evan Duffield - evan@ibp.org */
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
     int64_t nPastBlocks = 24;
 
@@ -160,7 +160,7 @@ unsigned int GetNextWorkRequiredBTC(const CBlockIndex* pindexLast, const CBlockH
         return pindexLast->nBits;
     }
 
-    // Go back by what we icpro to be 1 day worth of blocks
+    // Go back by what we ibp to be 1 day worth of blocks
     int nHeightFirst = pindexLast->nHeight - (params.DifficultyAdjustmentInterval()-1);
     assert(nHeightFirst >= 0);
     const CBlockIndex* pindexFirst = pindexLast->GetAncestor(nHeightFirst);
@@ -179,7 +179,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         //else if (pindexLast->nHeight + 1 >= 15200) retarget = DIFF_KGW;
         //else retarget = DIFF_BTC;
         retarget = DIFF_DGW;
-    // testnet -- we icpro a lot of coins in existance early on
+    // testnet -- we ibp a lot of coins in existance early on
     } else {
         if (pindexLast->nHeight + 1 >= 4001) retarget = DIFF_DGW;
         else retarget = DIFF_BTC;

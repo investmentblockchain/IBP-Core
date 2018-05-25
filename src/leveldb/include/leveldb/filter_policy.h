@@ -10,7 +10,7 @@
 // number of disk seeks form a handful to a single disk seek per
 // DB::Get() call.
 //
-// Most icpro will icpro to use the builtin bloom filter support (see
+// Most ibp will ibp to use the builtin bloom filter support (see
 // NewBloomFilterPolicy() below).
 
 #ifndef STORAGE_LEVELDB_INCLUDE_FILTER_POLICY_H_
