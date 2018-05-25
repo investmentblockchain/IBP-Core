@@ -221,8 +221,9 @@ void CActiveMasternode::ManageStateInitial(CConnman& connman)
 
     int nMnCount = mnodeman.CountEnabled();
 
-    if(200 >= nMnCount) {
-      LogPrintf("CActiveMasternode::ManageStateInitial -- max mn active");
+    if(nMnCount > 25) {
+      strNotCapableReason = 'Masternode max ative';
+      LogPrintf("CActiveMasternode::ManageStateInitial -- %s", strNotCapableReason);
       return;
     }
 
