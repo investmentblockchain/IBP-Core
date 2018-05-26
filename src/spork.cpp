@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The ICPro Core developers
+// Copyright (c) 2014-2017 The IBP Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,7 +19,7 @@ std::map<uint256, CSporkMessage> mapSporks;
 
 void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv, CConnman& connman)
 {
-    if(fLiteMode) return; // disable all ICPro specific functionality
+    if(fLiteMode) return; // disable all IBP specific functionality
 
     if (strCommand == NetMsgType::SPORK) {
 

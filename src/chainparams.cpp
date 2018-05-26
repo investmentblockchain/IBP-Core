@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The ICPro Core developers
+// Copyright (c) 2014-2017 The IBP Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -69,8 +69,8 @@ public:
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x001");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 5 * 60; // ICPro: 1 min
-        consensus.nPowTargetSpacing = 5 * 60; // ICPro: 1 min
+        consensus.nPowTargetTimespan = 5 * 60; // IBP: 1 min
+        consensus.nPowTargetSpacing = 5 * 60; // IBP: 1 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916;
@@ -115,18 +115,18 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        // ICPro addresses start with 'S'
+        // IBP addresses start with 'S'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,7);
-        // ICPro script addresses start with '7'
+        // IBP script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        // ICPro private keys start with '7' or 'X'
+        // IBP private keys start with '7' or 'X'
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,198);
-        // ICPro BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // IBP BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // ICPro BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // IBP BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        // ICPro BIP44 coin type is '5'
+        // IBP BIP44 coin type is '5'
         nExtCoinType = 5;
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
@@ -181,8 +181,8 @@ public:
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x001");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // ICPro: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // ICPro: 2.5 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // IBP: 1 day
+        consensus.nPowTargetSpacing = 2.5 * 60; // IBP: 2.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -228,18 +228,18 @@ public:
         vSeeds.clear();
 
 
-        // Testnet ICPro addresses start with 'y'
+        // Testnet IBP addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
-        // Testnet ICPro script addresses start with '8' or '9'
+        // Testnet IBP script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,19);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
-        // Testnet ICPro BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet IBP BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet ICPro BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet IBP BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
 
-        // Testnet ICPro BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet IBP BIP44 coin type is '1' (All coin's testnet default)
         nExtCoinType = 1;
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -294,8 +294,8 @@ public:
         consensus.BIP34Height = -1; // BIP34 has not necessarily activated on regtest
         consensus.BIP34Hash = uint256();
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 5 * 60; // ICPro: 1 day
-        consensus.nPowTargetSpacing = 5 * 60; // ICPro: 2.5 minutes
+        consensus.nPowTargetTimespan = 5 * 60; // IBP: 1 day
+        consensus.nPowTargetSpacing = 5 * 60; // IBP: 2.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
@@ -348,18 +348,18 @@ public:
             0,
             0
         };
-        // Regtest ICPro addresses start with 'y'
+        // Regtest IBP addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
-        // Regtest ICPro script addresses start with '8' or '9'
+        // Regtest IBP script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,19);
         // Regtest private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
-        // Regtest ICPro BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Regtest IBP BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Regtest ICPro BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Regtest IBP BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
 
-        // Regtest ICPro BIP44 coin type is '1' (All coin's testnet default)
+        // Regtest IBP BIP44 coin type is '1' (All coin's testnet default)
         nExtCoinType = 1;
    }
 };

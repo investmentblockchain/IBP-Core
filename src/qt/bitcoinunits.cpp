@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The ICPro Core developers
+// Copyright (c) 2014-2017 The IBP Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -72,10 +72,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case IBP: return QString("ICPro");
-            case mICP: return QString("Milli-ICPro (1 / 1" THIN_SP_UTF8 "000)");
-            case uICP: return QString("Micro-ICPro (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-ICPro (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case IBP: return QString("IBP");
+            case mICP: return QString("Milli-IBP (1 / 1" THIN_SP_UTF8 "000)");
+            case uICP: return QString("Micro-IBP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-IBP (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -83,10 +83,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case IBP: return QString("TestICPros");
-            case mICP: return QString("Milli-TestICPro (1 / 1" THIN_SP_UTF8 "000)");
-            case uICP: return QString("Micro-TestICPro (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-TestICPro (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case IBP: return QString("TestIBPs");
+            case mICP: return QString("Milli-TestIBP (1 / 1" THIN_SP_UTF8 "000)");
+            case uICP: return QString("Micro-TestIBP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-TestIBP (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }

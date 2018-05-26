@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The ICPro Core developers
+// Copyright (c) 2014-2017 The IBP Core developers
 // Distributed under the MIT software license, see the accompanying
 #ifndef IBP_HDCHAIN_H
 #define IBP_HDCHAIN_H

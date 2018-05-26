@@ -52,7 +52,7 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = _("ICPro Core ibp-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("IBP Core ibp-tx utility version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
               "  ibp-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded ibp transaction") + "\n" +
               "  ibp-tx [options] -create [commands]   " + _("Create hex-encoded ibp transaction") + "\n" +

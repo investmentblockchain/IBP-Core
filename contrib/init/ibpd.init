@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  ibpd The ICPro Core server.
+#  ibpd The IBP Core server.
 #
 #
 # chkconfig: 345 80 20

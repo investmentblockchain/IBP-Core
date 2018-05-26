@@ -68,9 +68,9 @@ can then be controlled by group membership.
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/ibpd`  
-Configuration file:  `~/Library/Application Support/ICProCore/ibp.conf`  
-Data directory:      `~/Library/Application Support/ICProCore`
-Lock file:           `~/Library/Application Support/ICProCore/.lock`
+Configuration file:  `~/Library/Application Support/IBPCore/ibp.conf`  
+Data directory:      `~/Library/Application Support/IBPCore`
+Lock file:           `~/Library/Application Support/IBPCore/.lock`
 
 4. Installing Service Configuration
 -----------------------------------

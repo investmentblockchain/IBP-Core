@@ -135,7 +135,7 @@ You can confirm that remote server is on the correct block by issuing
 
 ```ibp-cli getinfo```
 
-and comparing with the official explorer at https://explorer.ibp.org/chain/ICPro
+and comparing with the official explorer at https://explorer.ibp.org/chain/IBP
 
 ### Local
 

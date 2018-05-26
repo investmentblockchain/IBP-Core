@@ -1,11 +1,11 @@
-ICPro Core 0.12.1
+IBP Core 0.12.1
 =====================
 
-This is the official reference wallet for ICPro digital currency and comprises the backbone of the ICPro peer-to-peer network. You can [download ICPro Core](https://www.ibp.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for IBP digital currency and comprises the backbone of the IBP peer-to-peer network. You can [download IBP Core](https://www.ibp.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run ICPro on your native platform.
+The following are some helpful notes on how to run IBP on your native platform.
 
 ### Unix
 
@@ -20,18 +20,18 @@ Unpack the files into a directory, and then run ibp-qt.exe.
 
 ### OS X
 
-Drag ICPro-Qt to your applications folder, and then run ICPro-Qt.
+Drag IBP-Qt to your applications folder, and then run IBP-Qt.
 
 ### Need Help?
 
-* See the [ICPro documentation](https://ICProDev.atlassian.net/wiki/display/DOC)
+* See the [IBP documentation](https://IBPDev.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#ICProDev](http://webchat.freenode.net?channels=ICProDev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=ICProDev).
-* Ask for help on the [ICProTalk](https://ibptalk.org/) forums.
+* Ask for help on [#IBPDev](http://webchat.freenode.net?channels=IBPDev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=IBPDev).
+* Ask for help on the [IBPTalk](https://ibptalk.org/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build ICPro Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build IBP Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build ICPro Core on your native plat
 
 Development
 ---------------------
-The ICPro Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The IBP Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -57,8 +57,8 @@ The ICPro Core repo's [root README](/README.md) contains relevant information on
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [ICProTalk](https://ibptalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#ICProDev](http://webchat.freenode.net/?channels=ICProDev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=ICProDev).
+* Discuss on the [IBPTalk](https://ibptalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on [#IBPDev](http://webchat.freenode.net/?channels=IBPDev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=IBPDev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

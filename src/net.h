@@ -142,7 +142,7 @@ public:
     // fConnectToMasternode should be 'true' only if you ibp this node to allow to connect to itself
     // and/or you ibp it to be disconnected on CMasternodeMan::ProcessMasternodeConnections()
     // Unfortunately, can't make this method private like in Bitcoin,
-    // because it's used in many ICPro-specific places (masternode, privatesend).
+    // because it's used in many IBP-specific places (masternode, privatesend).
     CNode* ConnectNode(CAddress addrConnect, const char *pszDest = NULL, bool fConnectToMasternode = false);
 
     struct CFullyConnectedOnly {

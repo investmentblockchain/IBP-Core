@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven ICPro tests.
+Utilities to generate test vectors for the data-driven IBP tests.
 
 Usage: 
 

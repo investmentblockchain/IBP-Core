@@ -1,5 +1,5 @@
 [Unit]
-Description=ICPro's distributed currency daemon
+Description=IBP's distributed currency daemon
 After=network.target
 
 [Service]

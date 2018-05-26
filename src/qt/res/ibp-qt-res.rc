@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "ICPro"
-            VALUE "FileDescription",    "ICPro Core (GUI node for ICPro)"
+            VALUE "CompanyName",        "IBP"
+            VALUE "FileDescription",    "IBP Core (GUI node for IBP)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "ibp-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "ibp-qt.exe"
-            VALUE "ProductName",        "ICPro Core"
+            VALUE "ProductName",        "IBP Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

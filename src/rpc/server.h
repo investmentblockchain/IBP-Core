@@ -123,7 +123,7 @@ public:
 };
 
 /**
- * ICPro RPC command dispatcher.
+ * IBP RPC command dispatcher.
  */
 class CRPCTable
 {

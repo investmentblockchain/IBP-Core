@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=ICPro
-Comment=ICPro P2P Cryptocurrency
-Comment[fr]=ICPro, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=ICPro, eşten eşe kriptografik sanal para birimi
+Name=IBP
+Comment=IBP P2P Cryptocurrency
+Comment[fr]=IBP, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=IBP, eşten eşe kriptografik sanal para birimi
 Exec=ibp-qt %u
 Terminal=false
 Type=Application

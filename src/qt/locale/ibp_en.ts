@@ -80,13 +80,13 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your ICPro addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your ICPro addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your IBP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your IBP addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your ICPro addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your ICPro addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your IBP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your IBP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -237,8 +237,8 @@
     </message>
     <message>
         <location line="-57"/>
-        <source>ICPro Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
-        <translation>ICPro Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</translation>
+        <source>IBP Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
+        <translation>IBP Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -310,14 +310,14 @@
     <name>BitcoinGUI</name>
     <message>
         <location filename="../ibp.cpp" line="+542"/>
-        <source>A fatal error occurred. ICPro Core can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. ICPro Core can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. IBP Core can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. IBP Core can no longer continue safely and will quit.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="+130"/>
         <location line="+988"/>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <location line="-979"/>
@@ -346,8 +346,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Send coins to a ICPro address</source>
-        <translation>Send coins to a ICPro address</translation>
+        <source>Send coins to a IBP address</source>
+        <translation>Send coins to a IBP address</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -391,13 +391,13 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About ICPro Core</source>
-        <translation>&amp;About ICPro Core</translation>
+        <source>&amp;About IBP Core</source>
+        <translation>&amp;About IBP Core</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about ICPro Core</source>
-        <translation>Show information about ICPro Core</translation>
+        <source>Show information about IBP Core</source>
+        <translation>Show information about IBP Core</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -416,8 +416,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for ICPro Core</source>
-        <translation>Modify configuration options for ICPro Core</translation>
+        <source>Modify configuration options for IBP Core</source>
+        <translation>Modify configuration options for IBP Core</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -481,8 +481,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Sign messages with your ICPro addresses to prove you own them</source>
-        <translation>Sign messages with your ICPro addresses to prove you own them</translation>
+        <source>Sign messages with your IBP addresses to prove you own them</source>
+        <translation>Sign messages with your IBP addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -491,8 +491,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Verify messages to ensure they were signed with specified ICPro addresses</source>
-        <translation>Verify messages to ensure they were signed with specified ICPro addresses</translation>
+        <source>Verify messages to ensure they were signed with specified IBP addresses</source>
+        <translation>Verify messages to ensure they were signed with specified IBP addresses</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -611,8 +611,8 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Show the ICPro Core help message to get a list with possible ICPro Core command-line options</source>
-        <translation>Show the ICPro Core help message to get a list with possible ICPro Core command-line options</translation>
+        <source>Show the IBP Core help message to get a list with possible IBP Core command-line options</source>
+        <translation>Show the IBP Core help message to get a list with possible IBP Core command-line options</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -651,15 +651,15 @@
     </message>
     <message>
         <location line="+168"/>
-        <source>ICPro Core client</source>
-        <translation>ICPro Core client</translation>
+        <source>IBP Core client</source>
+        <translation>IBP Core client</translation>
     </message>
     <message numerus="yes">
         <location line="+200"/>
-        <source>%n active connection(s) to ICPro network</source>
+        <source>%n active connection(s) to IBP network</source>
         <translation>
-            <numerusform>%n active connection to ICPro network</numerusform>
-            <numerusform>%n active connections to ICPro network</numerusform>
+            <numerusform>%n active connection to IBP network</numerusform>
+            <numerusform>%n active connections to IBP network</numerusform>
         </translation>
     </message>
     <message>
@@ -1125,18 +1125,18 @@
     </message>
     <message>
         <location line="-29"/>
-        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ICPro&apos;s configuration screen.</source>
-        <translation>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ICPro&apos;s configuration screen.</translation>
+        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening IBP&apos;s configuration screen.</source>
+        <translation>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening IBP&apos;s configuration screen.</translation>
     </message>
     <message>
         <location line="+15"/>
-        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ICPro&apos;s configuration screen.</source>
-        <translation>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ICPro&apos;s configuration screen.</translation>
+        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening IBP&apos;s configuration screen.</source>
+        <translation>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening IBP&apos;s configuration screen.</translation>
     </message>
     <message>
         <location line="+15"/>
-        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ICPro&apos;s configuration screen.</source>
-        <translation>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ICPro&apos;s configuration screen.</translation>
+        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening IBP&apos;s configuration screen.</source>
+        <translation>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening IBP&apos;s configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1188,8 +1188,8 @@
     </message>
     <message>
         <location line="+71"/>
-        <source>The entered address &quot;%1&quot; is not a valid ICPro address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid ICPro address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid IBP address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid IBP address.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1239,8 +1239,8 @@
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+37"/>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1255,8 +1255,8 @@
     </message>
     <message>
         <location line="+5"/>
-        <source>About ICPro Core</source>
-        <translation>About ICPro Core</translation>
+        <source>About IBP Core</source>
+        <translation>About IBP Core</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1315,8 +1315,8 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the ICPro in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other ibp, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 IBP, 0.1 IBP, 1 IBP and 10 IBP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other ibp send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
-        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the ICPro in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other ibp, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 IBP, 0.1 IBP, 1 IBP and 10 IBP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other ibp send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the IBP in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other ibp, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 IBP, 0.1 IBP, 1 IBP and 10 IBP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other ibp send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
+        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the IBP in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other ibp, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 IBP, 0.1 IBP, 1 IBP and 10 IBP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other ibp send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </translation>
     </message>
 </context>
 <context>
@@ -1328,18 +1328,18 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to ICPro Core.</source>
-        <translation>Welcome to ICPro Core.</translation>
+        <source>Welcome to IBP Core.</source>
+        <translation>Welcome to IBP Core.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where ICPro Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where ICPro Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where IBP Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where IBP Core will store its data.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>ICPro Core will download and store a copy of the ICPro block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ICPro Core will download and store a copy of the ICPro block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>IBP Core will download and store a copy of the IBP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>IBP Core will download and store a copy of the IBP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1353,8 +1353,8 @@
     </message>
     <message>
         <location filename="../intro.cpp" line="+88"/>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1541,13 +1541,13 @@
     </message>
     <message>
         <location line="+117"/>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the ICPro network, as detailed below.</source>
-        <translation>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the ICPro network, as detailed below.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the IBP network, as detailed below.</source>
+        <translation>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the IBP network, as detailed below.</translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>Attempting to spend ICPro that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Attempting to spend ICPro that are affected by not-yet-displayed transactions will not be accepted by the network.</translation>
+        <source>Attempting to spend IBP that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Attempting to spend IBP that are affected by not-yet-displayed transactions will not be accepted by the network.</translation>
     </message>
     <message>
         <location line="+63"/>
@@ -1665,8 +1665,8 @@
     </message>
     <message>
         <location line="+155"/>
-        <source>Amount of ICPro to keep anonymized</source>
-        <translation>Amount of ICPro to keep anonymized</translation>
+        <source>Amount of IBP to keep anonymized</source>
+        <translation>Amount of IBP to keep anonymized</translation>
     </message>
     <message>
         <location line="-119"/>
@@ -1675,13 +1675,13 @@
     </message>
     <message>
         <location line="-104"/>
-        <source>Automatically start ICPro Core after logging in to the system.</source>
-        <translation>Automatically start ICPro Core after logging in to the system.</translation>
+        <source>Automatically start IBP Core after logging in to the system.</source>
+        <translation>Automatically start IBP Core after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start ICPro Core on system login</source>
-        <translation>&amp;Start ICPro Core on system login</translation>
+        <source>&amp;Start IBP Core on system login</source>
+        <translation>&amp;Start IBP Core on system login</translation>
     </message>
     <message>
         <location line="+123"/>
@@ -1740,8 +1740,8 @@
     </message>
     <message>
         <location line="+60"/>
-        <source>Automatically open the ICPro Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the ICPro Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the IBP Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the IBP Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1755,8 +1755,8 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the ICPro network through a SOCKS5 proxy.</source>
-        <translation>Connect to the ICPro network through a SOCKS5 proxy.</translation>
+        <source>Connect to the IBP network through a SOCKS5 proxy.</source>
+        <translation>Connect to the IBP network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1770,8 +1770,8 @@
     </message>
     <message>
         <location line="+45"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting ICPro Core.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting ICPro Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting IBP Core.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting IBP Core.</translation>
     </message>
     <message>
         <location line="+99"/>
@@ -1867,8 +1867,8 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the ICPro network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Connect to the ICPro network through a separate SOCKS5 proxy for Tor hidden services.</translation>
+        <source>Connect to the IBP network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Connect to the IBP network through a separate SOCKS5 proxy for Tor hidden services.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2020,8 +2020,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <location line="+53"/>
         <location line="+355"/>
         <location line="+258"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ICPro network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the ICPro network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IBP network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the IBP network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-364"/>
@@ -2410,8 +2410,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid ICPro address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid ICPro address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid IBP address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid IBP address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -2530,8 +2530,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <location line="+7"/>
         <location line="+15"/>
         <location line="+19"/>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <location line="-40"/>
@@ -2555,8 +2555,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+48"/>
-        <source>ICPro Core didn&apos;t yet exit safely...</source>
-        <translation>ICPro Core didn&apos;t yet exit safely...</translation>
+        <source>IBP Core didn&apos;t yet exit safely...</source>
+        <translation>IBP Core didn&apos;t yet exit safely...</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="+233"/>
@@ -2565,8 +2565,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+120"/>
-        <source>Enter a ICPro address (e.g. %1)</source>
-        <translation>Enter a ICPro address (e.g. %1)</translation>
+        <source>Enter a IBP address (e.g. %1)</source>
+        <translation>Enter a IBP address (e.g. %1)</translation>
     </message>
     <message>
         <location line="+855"/>
@@ -2821,8 +2821,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+48"/>
-        <source>Open the ICPro Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the ICPro Core debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the IBP Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the IBP Core debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -3099,8 +3099,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+188"/>
-        <source>Welcome to the ICPro Core RPC console.</source>
-        <translation>Welcome to the ICPro Core RPC console.</translation>
+        <source>Welcome to the IBP Core RPC console.</source>
+        <translation>Welcome to the IBP Core RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3204,8 +3204,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ICPro network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ICPro network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the IBP network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the IBP network.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3220,8 +3220,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="-14"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ICPro network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ICPro network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the IBP network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the IBP network.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3796,8 +3796,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+100"/>
-        <source>Warning: Invalid ICPro address</source>
-        <translation>Warning: Invalid ICPro address</translation>
+        <source>Warning: Invalid IBP address</source>
+        <translation>Warning: Invalid IBP address</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -3824,8 +3824,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The ICPro address to send the payment to</source>
-        <translation>The ICPro address to send the payment to</translation>
+        <source>The IBP address to send the payment to</source>
+        <translation>The IBP address to send the payment to</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3873,8 +3873,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="-1046"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of ICPro than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of ICPro than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of IBP than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of IBP than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3888,8 +3888,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ICPro network.</source>
-        <translation>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ICPro network.</translation>
+        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the IBP network.</source>
+        <translation>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the IBP network.</translation>
     </message>
     <message>
         <location line="+433"/>
@@ -3923,8 +3923,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+71"/>
-        <source>ICPro Core is shutting down...</source>
-        <translation>ICPro Core is shutting down...</translation>
+        <source>IBP Core is shutting down...</source>
+        <translation>IBP Core is shutting down...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3946,13 +3946,13 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive ICPro sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>You can sign messages/agreements with your addresses to prove you can receive ICPro sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive IBP sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>You can sign messages/agreements with your addresses to prove you can receive IBP sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The ICPro address to sign the message with</source>
-        <translation>The ICPro address to sign the message with</translation>
+        <source>The IBP address to sign the message with</source>
+        <translation>The IBP address to sign the message with</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3993,8 +3993,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+17"/>
-        <source>Sign the message to prove you own this ICPro address</source>
-        <translation>Sign the message to prove you own this ICPro address</translation>
+        <source>Sign the message to prove you own this IBP address</source>
+        <translation>Sign the message to prove you own this IBP address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4024,13 +4024,13 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The ICPro address the message was signed with</source>
-        <translation>The ICPro address the message was signed with</translation>
+        <source>The IBP address the message was signed with</source>
+        <translation>The IBP address the message was signed with</translation>
     </message>
     <message>
         <location line="+33"/>
-        <source>Verify the message to ensure it was signed with the specified ICPro address</source>
-        <translation>Verify the message to ensure it was signed with the specified ICPro address</translation>
+        <source>Verify the message to ensure it was signed with the specified IBP address</source>
+        <translation>Verify the message to ensure it was signed with the specified IBP address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4123,8 +4123,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="+45"/>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4138,8 +4138,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>The ICPro Core developers</source>
-        <translation>The ICPro Core developers</translation>
+        <source>The IBP Core developers</source>
+        <translation>The IBP Core developers</translation>
     </message>
 </context>
 <context>
@@ -4909,8 +4909,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Cannot obtain a lock on data directory %s. ICPro Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. ICPro Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. IBP Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. IBP Core is probably already running.</translation>
     </message>
     <message>
         <location line="+34"/>
@@ -4959,8 +4959,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. ICPro Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. ICPro Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. IBP Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. IBP Core is probably already running.</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -5354,8 +5354,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2014-%i The ICPro Core Developers</source>
-        <translation>Copyright (C) 2014-%i The ICPro Core Developers</translation>
+        <source>Copyright (C) 2014-%i The IBP Core Developers</source>
+        <translation>Copyright (C) 2014-%i The IBP Core Developers</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -5379,8 +5379,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of ICPro Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of ICPro Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of IBP Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of IBP Core</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -5454,8 +5454,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. ICPro Core is shutting down.</source>
-        <translation>Initialization sanity check failed. ICPro Core is shutting down.</translation>
+        <source>Initialization sanity check failed. IBP Core is shutting down.</source>
+        <translation>Initialization sanity check failed. IBP Core is shutting down.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5774,8 +5774,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Wallet needed to be rewritten: restart ICPro Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart ICPro Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart IBP Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart IBP Core to complete</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -5839,8 +5839,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="-354"/>
-        <source>Disable all ICPro specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Disable all ICPro specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</translation>
+        <source>Disable all IBP specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
+        <translation>Disable all IBP specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5939,8 +5939,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong ICPro Core will not work properly.</source>
-        <translation>Please check that your computer&apos;s date and time are correct! If your clock is wrong ICPro Core will not work properly.</translation>
+        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong IBP Core will not work properly.</source>
+        <translation>Please check that your computer&apos;s date and time are correct! If your clock is wrong IBP Core will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>

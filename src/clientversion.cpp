@@ -13,7 +13,7 @@
  * for both ibpd and ibp-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("ICPro Core");
+const std::string CLIENT_NAME("IBP Core");
 
 /**
  * Client version number

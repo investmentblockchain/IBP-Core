@@ -62,12 +62,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your ICPro addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones ICPro para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar ibps.</translation>
+        <source>These are your IBP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones IBP para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar ibps.</translation>
     </message>
     <message>
-        <source>These are your ICPro addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones de ICPro para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your IBP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones de IBP para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -188,8 +188,8 @@
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <source>ICPro will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
-        <translation>ICPro se cerrará ahora para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus ibps del robo por un malware que infecte su sistema.</translation>
+        <source>IBP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
+        <translation>IBP se cerrará ahora para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus ibps del robo por un malware que infecte su sistema.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -255,8 +255,8 @@
         <translation>&amp;Enviar</translation>
     </message>
     <message>
-        <source>Send coins to a ICPro address</source>
-        <translation>Enviar cuantía a una dirección ICPro</translation>
+        <source>Send coins to a IBP address</source>
+        <translation>Enviar cuantía a una dirección IBP</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -264,7 +264,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ibp: URIs)</source>
-        <translation>Solicitar pagos (genera códigos QR y URIs de ICPro)</translation>
+        <translation>Solicitar pagos (genera códigos QR y URIs de IBP)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -283,12 +283,12 @@
         <translation>Salir de la aplicación</translation>
     </message>
     <message>
-        <source>&amp;About ICPro Core</source>
-        <translation>&amp;Acerca de ICPro Core</translation>
+        <source>&amp;About IBP Core</source>
+        <translation>&amp;Acerca de IBP Core</translation>
     </message>
     <message>
-        <source>Show information about ICPro Core</source>
-        <translation>Mostrar información acerca de ICPro Core</translation>
+        <source>Show information about IBP Core</source>
+        <translation>Mostrar información acerca de IBP Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -303,8 +303,8 @@
         <translation>&amp;Opciones...</translation>
     </message>
     <message>
-        <source>Modify configuration options for ICPro</source>
-        <translation>Modificar las opciones de configuración de ICPro</translation>
+        <source>Modify configuration options for IBP</source>
+        <translation>Modificar las opciones de configuración de IBP</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,16 +355,16 @@
         <translation>Firmar &amp;mensaje...</translation>
     </message>
     <message>
-        <source>Sign messages with your ICPro addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones ICPro para demostrar su posesión</translation>
+        <source>Sign messages with your IBP addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones IBP para demostrar su posesión</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verificar el mensaje...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ICPro addresses</source>
-        <translation>Verificar mensajes para comprobar que fueron firmados con la dirección ICPro indicada</translation>
+        <source>Verify messages to ensure they were signed with specified IBP addresses</source>
+        <translation>Verificar mensajes para comprobar que fueron firmados con la dirección IBP indicada</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -451,8 +451,8 @@
         <translation>&amp;Opciones de consola de comandos</translation>
     </message>
     <message>
-        <source>ICPro Core client</source>
-        <translation>Cliente ICPro Core</translation>
+        <source>IBP Core client</source>
+        <translation>Cliente IBP Core</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Sincronizando datos adicionales: %p%</translation>
     </message>
     <message>
-        <source>Show the ICPro Core help message to get a list with possible ICPro command-line options</source>
-        <translation>Mostrar el mensaje de ayuda de ICPro Core para obtener una lista con las posibles opciones de la consola de comandos</translation>
+        <source>Show the IBP Core help message to get a list with possible IBP command-line options</source>
+        <translation>Mostrar el mensaje de ayuda de IBP Core para obtener una lista con las posibles opciones de la consola de comandos</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -487,8 +487,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to ICPro network</source>
-        <translation><numerusform>%n conexion(es) activa a la red ICPro</numerusform><numerusform>%n conexion(es) activas a la red ICPro</numerusform></translation>
+        <source>%n active connection(s) to IBP network</source>
+        <translation><numerusform>%n conexion(es) activa a la red IBP</numerusform><numerusform>%n conexion(es) activas a la red IBP</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -626,7 +626,7 @@ Dirección: %4
     </message>
     <message>
         <source>Coin Selection</source>
-        <translation>Selección de ICPro</translation>
+        <translation>Selección de IBP</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -896,16 +896,16 @@ Dirección: %4
         <translation>Configuración de Darksend</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>Darksend fue configurado con éxito en la básica (%1 y 2 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de ICPro.</translation>
+        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>Darksend fue configurado con éxito en la básica (%1 y 2 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de IBP.</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>Darksend fue configurado con éxito en la alta (%1 y 8 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de ICPro.</translation>
+        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>Darksend fue configurado con éxito en la alta (%1 y 8 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de IBP.</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>Darksend fue configurado con éxito en la máxima (%1 y 16 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de ICPro.</translation>
+        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>Darksend fue configurado con éxito en la máxima (%1 y 16 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de IBP.</translation>
     </message>
 </context>
 <context>
@@ -947,8 +947,8 @@ Dirección: %4
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ICPro address.</source>
-        <translation>La dirección introducida "%1" no es una dirección ICPro válida.</translation>
+        <source>The entered address "%1" is not a valid IBP address.</source>
+        <translation>La dirección introducida "%1" no es una dirección IBP válida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -989,8 +989,8 @@ Dirección: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -1001,8 +1001,8 @@ Dirección: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About ICPro Core</source>
-        <translation>Acerca de ICPro Core</translation>
+        <source>About IBP Core</source>
+        <translation>Acerca de IBP Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1048,16 +1048,16 @@ Dirección: %4
         <translation>Bienvenido</translation>
     </message>
     <message>
-        <source>Welcome to ICPro Core.</source>
-        <translation>Bienvenido a ICPro Core</translation>
+        <source>Welcome to IBP Core.</source>
+        <translation>Bienvenido a IBP Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ICPro Core will store its data.</source>
-        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos ICPro Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where IBP Core will store its data.</source>
+        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos IBP Core.</translation>
     </message>
     <message>
-        <source>ICPro Core will download and store a copy of the ICPro block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ICPro Core va a descargar y guardar una copia de la cadena de bloques de ICPro. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
+        <source>IBP Core will download and store a copy of the IBP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>IBP Core va a descargar y guardar una copia de la cadena de bloques de IBP. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1068,8 +1068,8 @@ Dirección: %4
         <translation>Utilizar un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1122,12 +1122,12 @@ Dirección: %4
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Automatically start ICPro after logging in to the system.</source>
-        <translation>Iniciar ICPro automáticamente al ingresar en el sistema.</translation>
+        <source>Automatically start IBP after logging in to the system.</source>
+        <translation>Iniciar IBP automáticamente al ingresar en el sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start ICPro on system login</source>
-        <translation>&amp;Iniciar ICPro al ingresar en el sistema</translation>
+        <source>&amp;Start IBP on system login</source>
+        <translation>&amp;Iniciar IBP al ingresar en el sistema</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1154,8 +1154,8 @@ Dirección: %4
         <translation>Esta cuantía sirve de umbral para que Darksend se apague, una vez sea alcanzada.</translation>
     </message>
     <message>
-        <source>Amount of ICPro to keep anonymized</source>
-        <translation>Cuantía de ICPro a mantener anónima</translation>
+        <source>Amount of IBP to keep anonymized</source>
+        <translation>Cuantía de IBP a mantener anónima</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1174,8 +1174,8 @@ Dirección: %4
         <translation>Permitir conexiones entrantes</translation>
     </message>
     <message>
-        <source>Connect to the ICPro network through a SOCKS5 proxy.</source>
-        <translation>Conectarse a la red ICPro a través de un proxy SOCKS5.</translation>
+        <source>Connect to the IBP network through a SOCKS5 proxy.</source>
+        <translation>Conectarse a la red IBP a través de un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1206,8 +1206,8 @@ Dirección: %4
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>Automatically open the ICPro client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente ICPro en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the IBP client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente IBP en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1258,8 +1258,8 @@ Dirección: %4
         <translation>I&amp;dioma de la interfaz de usuario</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ICPro.</source>
-        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará después de reiniciar ICPro.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting IBP.</source>
+        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará después de reiniciar IBP.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1347,8 +1347,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ICPro network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red ICPro después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IBP network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red IBP después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1588,8 +1588,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Dirección de pago no válida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid ICPro address or malformed URI parameters.</source>
-        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección ICPro inválida o a parámetros de URI mal formados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid IBP address or malformed URI parameters.</source>
+        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección IBP inválida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1674,8 +1674,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Cuantía</translation>
     </message>
     <message>
-        <source>Enter a ICPro address (e.g. %1)</source>
-        <translation>Introduzca una dirección ICPro (e.g. %1)</translation>
+        <source>Enter a IBP address (e.g. %1)</source>
+        <translation>Introduzca una dirección IBP (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1764,7 +1764,7 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Número de conexiones</translation>
     </message>
     <message>
-        <source>Open the ICPro debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the IBP debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede requerir varios segundos para archivos de registro grandes.</translation>
     </message>
     <message>
@@ -1972,8 +1972,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Salientes:</translation>
     </message>
     <message>
-        <source>Welcome to the ICPro RPC console.</source>
-        <translation>Bienvenido a la consola RPC de ICPro</translation>
+        <source>Welcome to the IBP RPC console.</source>
+        <translation>Bienvenido a la consola RPC de IBP</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2035,8 +2035,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>&amp;Reutilizar una dirección receptora existente (no recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ICPro network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, el cual se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red ICPro.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the IBP network.</source>
+        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, el cual se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red IBP.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2047,8 +2047,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Etiqueta opcional para asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ICPro network.</source>
-        <translation>Un mensaje opcional para adjuntar con la solicitud de pago, el cual aparecerá cuando ésta sea abierta.&lt;br&gt;Nota: El mensaje no se enviará con el pago a la red ICPro.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the IBP network.</source>
+        <translation>Un mensaje opcional para adjuntar con la solicitud de pago, el cual aparecerá cuando ésta sea abierta.&lt;br&gt;Nota: El mensaje no se enviará con el pago a la red IBP.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2201,7 +2201,7 @@ https://www.transifex.com/projects/p/ibp/</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar ICPro</translation>
+        <translation>Enviar IBP</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2496,8 +2496,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Pagar sólo la comisión mínima de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid ICPro address</source>
-        <translation>Aviso: Dirección de ICPro no válida</translation>
+        <source>Warning: Invalid IBP address</source>
+        <translation>Aviso: Dirección de IBP no válida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2519,8 +2519,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Pagar &amp;a:</translation>
     </message>
     <message>
-        <source>The ICPro address to send the payment to</source>
-        <translation>La dirección ICPro a la cual enviar el pago</translation>
+        <source>The IBP address to send the payment to</source>
+        <translation>La dirección IBP a la cual enviar el pago</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2559,8 +2559,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ICPro network.</source>
-        <translation>Un mensaje que se adjuntó al ibp: URI que será almacenada con la transacción para su referencia. Nota: Este mensaje no se enviará a través de la red ICPro.</translation>
+        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the IBP network.</source>
+        <translation>Un mensaje que se adjuntó al ibp: URI que será almacenada con la transacción para su referencia. Nota: Este mensaje no se enviará a través de la red IBP.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2586,8 +2586,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ICPro Core is shutting down...</source>
-        <translation>ICPro Core se está cerrando...</translation>
+        <source>IBP Core is shutting down...</source>
+        <translation>IBP Core se está cerrando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2609,8 +2609,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Puede firmar mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa vaga, ya que los ataques de phishing pueden tratar de engañarle para suplantar su identidad. Firme solo declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The ICPro address to sign the message with</source>
-        <translation>La dirección ICPro con la cual se firma el mensaje</translation>
+        <source>The IBP address to sign the message with</source>
+        <translation>La dirección IBP con la cual se firma el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2641,8 +2641,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ICPro address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección ICPro</translation>
+        <source>Sign the message to prove you own this IBP address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección IBP</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2665,12 +2665,12 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Introduzca la dirección para la firma, el mensaje (asegurándose de copiar tal cual los saltos de línea, espacios, tabulaciones, etc.) y la firma a continuación para verificar el mensaje. Tenga cuidado de no asumir más información de lo que dice el propio mensaje firmado para evitar fraudes basados en ataques de tipo man-in-the-middle.</translation>
     </message>
     <message>
-        <source>The ICPro address the message was signed with</source>
-        <translation>La dirección ICPro con la cual se firmó el mensaje</translation>
+        <source>The IBP address the message was signed with</source>
+        <translation>La dirección IBP con la cual se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ICPro address</source>
-        <translation>Verificar el mensaje para garantizar que fue firmado con la dirección ICPro indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified IBP address</source>
+        <translation>Verificar el mensaje para garantizar que fue firmado con la dirección IBP indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2736,8 +2736,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2748,8 +2748,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Los desarrolladores de Bitcoin Core</translation>
     </message>
     <message>
-        <source>The ICPro Core developers</source>
-        <translation>Los desarrolladores del ICPro Core</translation>
+        <source>The IBP Core developers</source>
+        <translation>Los desarrolladores del IBP Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3273,7 +3273,7 @@ https://www.transifex.com/projects/p/ibp/</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar ICPro</translation>
+        <translation>Enviar IBP</translation>
     </message>
     <message>
         <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 IBP.</source>
@@ -3326,8 +3326,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Vincular a la dirección dada y escuchar siempre en ella. Utilice la notación [host]:port para IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. ICPro Core is probably already running.</source>
-        <translation>No se ha podido bloquear el directorio de datos %s. Probablemente ya se está ejecutando ICPro Core.</translation>
+        <source>Cannot obtain a lock on data directory %s. IBP Core is probably already running.</source>
+        <translation>No se ha podido bloquear el directorio de datos %s. Probablemente ya se está ejecutando IBP Core.</translation>
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3382,8 +3382,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Esta es una versión de pre-prueba - utilícela bajo su propio riesgo. No la utilice para usos comerciales o de minería.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. ICPro Core is probably already running.</source>
-        <translation>No se puede enlazar a %s en este equipo. ICPro Core probablemente ya está en funcionamiento.</translation>
+        <source>Unable to bind to %s on this computer. IBP Core is probably already running.</source>
+        <translation>No se puede enlazar a %s en este equipo. IBP Core probablemente ya está en funcionamiento.</translation>
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3615,8 +3615,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Borrar todas las transacciones del monedero y recuperar únicamente aquellas partes de la cadena de bloques a través de -rescan en el inicio</translation>
     </message>
     <message>
-        <source>Disable all ICPro specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desactivar todas las funciones asociadas a ICPro (Nodos Maestros, Darksend, InstantX, Presupuesto) (0-1, predeterminado: %u)</translation>
+        <source>Disable all IBP specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desactivar todas las funciones asociadas a IBP (Nodos Maestros, Darksend, InstantX, Presupuesto) (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3720,7 +3720,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "ICPro Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "IBP Alert" admin@foo.com
 </source>
         <translation>Para usar ibpd, o la opción -server de ibp-qt, debe establecer rpcpassword en el archivo de configuración:
 %s
@@ -3731,7 +3731,7 @@ rpcpassword=%s
 El nombre de usuario y la contraseña NO DEBEN ser iguales.
 Si el archivo no existe, créelo con permisos de sólo lectura para su propietario.
 También resulta recomendable establecer alertnotify para que se le notifique de posibles problemas;
-por ejemplo: alertnotify=echo %%s | mail -s "Alerta de ICPro" admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s "Alerta de IBP" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3747,8 +3747,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de ICPro" admin@foo.com
         <translation>Aviso: ¡-maxtxfee se estableció en un valor muy alto! Comisiones tan grandes no se podrían pagar en una única transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong ICPro Core will not work properly.</source>
-        <translation>Aviso: ¡Por favor compruebe que la fecha y hora de su computadora son correctas! Si su reloj está mal ajustado, ICPro Core no funcionará correctamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong IBP Core will not work properly.</source>
+        <translation>Aviso: ¡Por favor compruebe que la fecha y hora de su computadora son correctas! Si su reloj está mal ajustado, IBP Core no funcionará correctamente.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3801,8 +3801,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de ICPro" admin@foo.com
         <translation>Copyright (C) 2009-%i Los Desarrolladores de Bitcoin Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The ICPro Core Developers</source>
-        <translation>Copyright (C) 2014-%i Los Desarrolladores de ICPro Core</translation>
+        <source>Copyright (C) 2014-%i The IBP Core Developers</source>
+        <translation>Copyright (C) 2014-%i Los Desarrolladores de IBP Core</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3833,8 +3833,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de ICPro" admin@foo.com
         <translation>Error al conectar al Nodo Maestro.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of ICPro Core</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de ICPro Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of IBP Core</source>
+        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de IBP Core</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3905,8 +3905,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de ICPro" admin@foo.com
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. ICPro Core is shutting down.</source>
-        <translation>La comprobación de validez de inicio falló. ICPro Core se está cerrando.</translation>
+        <source>Initialization sanity check failed. IBP Core is shutting down.</source>
+        <translation>La comprobación de validez de inicio falló. IBP Core se está cerrando.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4157,8 +4157,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de ICPro" admin@foo.com
         <translation>Usar UPnP para asignar el puerto de escucha (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart ICPro Core to complete</source>
-        <translation>El monedero se ha de reescribir: reinicie ICPro Core para completarlo</translation>
+        <source>Wallet needed to be rewritten: restart IBP Core to complete</source>
+        <translation>El monedero se ha de reescribir: reinicie IBP Core para completarlo</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>

@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The ICPro Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The IBP Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>ICPro-Qt</string>
+  <string>IBP-Qt</string>
   
   <key>CFBundleName</key>
-  <string>ICPro-Qt</string>
+  <string>IBP-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.ibp.ICPro-Qt</string>
+  <string>org.ibp.IBP-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.ibp.ICProDevment</string>
+      <string>org.ibp.IBPDevment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>ibp</string>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>org.ibp.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>ICPro payment request</string>
+      <string>IBP payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -71,7 +71,7 @@
         <string>application/x-ibp-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>ICProDevmentrequest</string>
+          <string>IBPDevmentrequest</string>
         </array>
       </dict>
     </dict>

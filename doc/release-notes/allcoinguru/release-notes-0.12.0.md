@@ -2,9 +2,9 @@
 ====================
 
 
-ICPro Core version 0.12.0 is now available from:
+IBP Core version 0.12.0 is now available from:
 
-  https://ICProDev.io/downloads
+  https://IBPDev.io/downloads
 
 Please report bugs using the issue tracker at github:
 
@@ -16,7 +16,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/ICPro-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/IBP-Qt (on Mac) or
 ibpd/ibp-qt (on Linux).
 
 **This new version uses transaction indexing by default, you will need to reindex 
@@ -28,7 +28,7 @@ Downgrade warning
 
 Because release 0.12.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.12 versions of ICPro Core or other software:
+backwards-compatible with pre-0.12 versions of IBP Core or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or

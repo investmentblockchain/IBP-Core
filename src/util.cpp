@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The ICPro Core developers
+// Copyright (c) 2014-2017 The IBP Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -104,7 +104,7 @@ namespace boost {
 
 using namespace std;
 
-//ICPro only features
+//IBP only features
 bool fMasterNode = false;
 bool fLiteMode = false;
 /**
@@ -271,7 +271,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "ibp" is a composite category enabling all ICPro-related debug output
+            // "ibp" is a composite category enabling all IBP-related debug output
             if(ptrCategory->count(string("ibp"))) {
                 ptrCategory->insert(string("privatesend"));
                 ptrCategory->insert(string("instantsend"));
@@ -516,13 +516,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\ICProCore
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\ICProCore
-    // Mac: ~/Library/Application Support/ICProCore
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\IBPCore
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\IBPCore
+    // Mac: ~/Library/Application Support/IBPCore
     // Unix: ~/.ibpcore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "ICProCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "IBPCore";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -532,7 +532,7 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/ICProCore";
+    return pathRet / "Library/Application Support/IBPCore";
 #else
     // Unix
     return pathRet / ".ibpcore";

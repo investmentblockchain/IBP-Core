@@ -42,7 +42,7 @@ QT_TRANSLATE_NOOP("ibp-core", ""
 "notation for IPv6. This option can be specified multiple times (default: "
 "bind to all interfaces)"),
 QT_TRANSLATE_NOOP("ibp-core", ""
-"Cannot obtain a lock on data directory %s. ICPro Core is probably already "
+"Cannot obtain a lock on data directory %s. IBP Core is probably already "
 "running."),
 QT_TRANSLATE_NOOP("ibp-core", ""
 "Create new files with system default permissions, instead of umask 077 (only "
@@ -51,7 +51,7 @@ QT_TRANSLATE_NOOP("ibp-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
 QT_TRANSLATE_NOOP("ibp-core", ""
-"Disable all ICPro specific functionality (Masternodes, PrivateSend, "
+"Disable all IBP specific functionality (Masternodes, PrivateSend, "
 "InstantSend, Governance) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("ibp-core", ""
 "Discover own IP addresses (default: 1 when listening and no -externalip or -"
@@ -158,7 +158,7 @@ QT_TRANSLATE_NOOP("ibp-core", ""
 "Output debugging information (default: %u, supplying <category> is optional)"),
 QT_TRANSLATE_NOOP("ibp-core", ""
 "Please check that your computer's date and time are correct! If your clock "
-"is wrong ICPro Core will not work properly."),
+"is wrong IBP Core will not work properly."),
 QT_TRANSLATE_NOOP("ibp-core", ""
 "PrivateSend uses exact denominated amounts to send funds, you might simply "
 "need to anonymize some more coins."),
@@ -221,7 +221,7 @@ QT_TRANSLATE_NOOP("ibp-core", ""
 "Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = "
 "no limit (default: %d)"),
 QT_TRANSLATE_NOOP("ibp-core", ""
-"Unable to bind to %s on this computer. ICPro Core is probably already running."),
+"Unable to bind to %s on this computer. IBP Core is probably already running."),
 QT_TRANSLATE_NOOP("ibp-core", ""
 "Unable to locate enough PrivateSend denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("ibp-core", ""
@@ -333,7 +333,7 @@ QT_TRANSLATE_NOOP("ibp-core", "Connect to KeePassHttp on port <port> (default: %
 QT_TRANSLATE_NOOP("ibp-core", "Connect to a node to retrieve peer addresses, and disconnect"),
 QT_TRANSLATE_NOOP("ibp-core", "Connection options:"),
 QT_TRANSLATE_NOOP("ibp-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
-QT_TRANSLATE_NOOP("ibp-core", "Copyright (C) 2014-%i The ICPro Core Developers"),
+QT_TRANSLATE_NOOP("ibp-core", "Copyright (C) 2014-%i The IBP Core Developers"),
 QT_TRANSLATE_NOOP("ibp-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("ibp-core", "Could not parse masternode.conf"),
 QT_TRANSLATE_NOOP("ibp-core", "Debugging/Testing options:"),
@@ -358,7 +358,7 @@ QT_TRANSLATE_NOOP("ibp-core", "Error loading %s: You can't disable HD on a alrea
 QT_TRANSLATE_NOOP("ibp-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("ibp-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("ibp-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("ibp-core", "Error loading wallet.dat: Wallet requires newer version of ICPro Core"),
+QT_TRANSLATE_NOOP("ibp-core", "Error loading wallet.dat: Wallet requires newer version of IBP Core"),
 QT_TRANSLATE_NOOP("ibp-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("ibp-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("ibp-core", "Error"),
@@ -385,7 +385,7 @@ QT_TRANSLATE_NOOP("ibp-core", "Incompatible mode."),
 QT_TRANSLATE_NOOP("ibp-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("ibp-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("ibp-core", "Information"),
-QT_TRANSLATE_NOOP("ibp-core", "Initialization sanity check failed. ICPro Core is shutting down."),
+QT_TRANSLATE_NOOP("ibp-core", "Initialization sanity check failed. IBP Core is shutting down."),
 QT_TRANSLATE_NOOP("ibp-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("ibp-core", "InstantSend options:"),
 QT_TRANSLATE_NOOP("ibp-core", "Insufficient funds."),
@@ -537,7 +537,7 @@ QT_TRANSLATE_NOOP("ibp-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("ibp-core", "Very low number of keys left: %d"),
 QT_TRANSLATE_NOOP("ibp-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("ibp-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("ibp-core", "Wallet needed to be rewritten: restart ICPro Core to complete"),
+QT_TRANSLATE_NOOP("ibp-core", "Wallet needed to be rewritten: restart IBP Core to complete"),
 QT_TRANSLATE_NOOP("ibp-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("ibp-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("ibp-core", "Warning"),

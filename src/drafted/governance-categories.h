@@ -4,15 +4,15 @@
 
 	* means the category has an associated class
 
-	CICProNetwork: IBP NETWORK (ROOT)
+	CIBPNetwork: IBP NETWORK (ROOT)
 	has:
 		vector<CNetworkVariable> vecNetworkVariables;
-		vector<CICProProject> vecProjects;
+		vector<CIBPProject> vecProjects;
 		vector<CGovernanceObject> vecProposals;
 		vector<CBudgetContract> vecContracts;
 		vector<CBudgetUsers> vecUsers;
 
-	CICProProject:
+	CIBPProject:
 	has:
 		name
 		employees

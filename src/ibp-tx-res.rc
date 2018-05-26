@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "ICPro"
-            VALUE "FileDescription",    "ibp-tx (CLI ICPro transaction editor utility)"
+            VALUE "CompanyName",        "IBP"
+            VALUE "FileDescription",    "ibp-tx (CLI IBP transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "ibp-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

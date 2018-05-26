@@ -16,9 +16,9 @@ enum GovernanceObjectType {
     ValueOverride = 1, 
 
     // -------------------------------
-    // ICProNetwork - is the root node
-    ICProNetwork = 1000,
-    ICProNetworkVariable = 1001,
+    // IBPNetwork - is the root node
+    IBPNetwork = 1000,
+    IBPNetworkVariable = 1001,
     Category = 1002,
 
     // Actors

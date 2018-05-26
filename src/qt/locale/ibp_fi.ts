@@ -62,12 +62,12 @@
         <translation>Vastaanottava osoite</translation>
     </message>
     <message>
-        <source>These are your ICPro addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat ICPro osoitteesi maksujen lähetykseen. Tarkista aina lähetettävä määrä ja vastaanottajan osoite ennen kuin lähetät varoja.</translation>
+        <source>These are your IBP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat IBP osoitteesi maksujen lähetykseen. Tarkista aina lähetettävä määrä ja vastaanottajan osoite ennen kuin lähetät varoja.</translation>
     </message>
     <message>
-        <source>These are your ICPro addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat ICPro osoitteesi suoritusten vastaanottamiseen. Suositellaan että käytät uutta osoitetta kullekin siirtotapahtumalle.</translation>
+        <source>These are your IBP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat IBP osoitteesi suoritusten vastaanottamiseen. Suositellaan että käytät uutta osoitetta kullekin siirtotapahtumalle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -188,8 +188,8 @@
         <translation>Lompakko salattu</translation>
     </message>
     <message>
-        <source>ICPro Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
-        <translation>ICPro Core sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää ICProiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
+        <source>IBP Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
+        <translation>IBP Core sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää IBPiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -242,12 +242,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. ICPro Core can no longer continue safely and will quit.</source>
-        <translation>Vakava virhe tapahtunut. ICPro Core ei voi enää toimia turvallisesti ja sulkeutuu.</translation>
+        <source>A fatal error occurred. IBP Core can no longer continue safely and will quit.</source>
+        <translation>Vakava virhe tapahtunut. IBP Core ei voi enää toimia turvallisesti ja sulkeutuu.</translation>
     </message>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -270,8 +270,8 @@
         <translation>L&amp;ähetä</translation>
     </message>
     <message>
-        <source>Send coins to a ICPro address</source>
-        <translation>Lähetä varoja ICPro osoitteeseen</translation>
+        <source>Send coins to a IBP address</source>
+        <translation>Lähetä varoja IBP osoitteeseen</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -279,7 +279,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ibp: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja ICPro: URIt)</translation>
+        <translation>Pyydä maksuja (Luo QR koodit ja IBP: URIt)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -306,12 +306,12 @@
         <translation>Sulje ohjelma</translation>
     </message>
     <message>
-        <source>&amp;About ICPro Core</source>
-        <translation>Tietoja &amp;ICPro Core:sta</translation>
+        <source>&amp;About IBP Core</source>
+        <translation>Tietoja &amp;IBP Core:sta</translation>
     </message>
     <message>
-        <source>Show information about ICPro Core</source>
-        <translation>Näytä tietoja ICPro Core:sta</translation>
+        <source>Show information about IBP Core</source>
+        <translation>Näytä tietoja IBP Core:sta</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -326,8 +326,8 @@
         <translation>&amp;Asetukset...</translation>
     </message>
     <message>
-        <source>Modify configuration options for ICPro Core</source>
-        <translation>Muuta ICPro Core asetuksia</translation>
+        <source>Modify configuration options for IBP Core</source>
+        <translation>Muuta IBP Core asetuksia</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -335,7 +335,7 @@
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota ICPro pääikkuna</translation>
+        <translation>Näytä tai piilota IBP pääikkuna</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
@@ -378,16 +378,16 @@
         <translation>&amp;Allekirjoita Viesti...</translation>
     </message>
     <message>
-        <source>Sign messages with your ICPro addresses to prove you own them</source>
-        <translation>Allekirjoita viestit ICPro osoitteillasi todistaaksesi että omistat ne</translation>
+        <source>Sign messages with your IBP addresses to prove you own them</source>
+        <translation>Allekirjoita viestit IBP osoitteillasi todistaaksesi että omistat ne</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Tarkista Viesti...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ICPro addresses</source>
-        <translation>Tarkista viestit ollaksesi varma että ne on allekirjoitettu määritetyillä ICPro osoitteilla</translation>
+        <source>Verify messages to ensure they were signed with specified IBP addresses</source>
+        <translation>Tarkista viestit ollaksesi varma että ne on allekirjoitettu määritetyillä IBP osoitteilla</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -475,15 +475,15 @@
     </message>
     <message>
         <source>Open a ibp: URI or payment request</source>
-        <translation>Avaa ICPro: URI tai maksupyyntö</translation>
+        <translation>Avaa IBP: URI tai maksupyyntö</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message>
-        <source>Show the ICPro Core help message to get a list with possible ICPro Core command-line options</source>
-        <translation>Näytä ICPro Core ohjelista komentorivin valinnoista</translation>
+        <source>Show the IBP Core help message to get a list with possible IBP Core command-line options</source>
+        <translation>Näytä IBP Core ohjelista komentorivin valinnoista</translation>
     </message>
     <message>
         <source>&amp;PrivateSend information</source>
@@ -514,12 +514,12 @@
         <translation>Välilehtipalkki</translation>
     </message>
     <message>
-        <source>ICPro Core client</source>
-        <translation>ICPro Core asiakasohjelma</translation>
+        <source>IBP Core client</source>
+        <translation>IBP Core asiakasohjelma</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to ICPro network</source>
-        <translation><numerusform>%n aktiivinen yhteys ICPro verkkoon</numerusform><numerusform>%n aktiivista yhteyttä ICPro verkkoon</numerusform></translation>
+        <source>%n active connection(s) to IBP network</source>
+        <translation><numerusform>%n aktiivinen yhteys IBP verkkoon</numerusform><numerusform>%n aktiivista yhteyttä IBP verkkoon</numerusform></translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -889,16 +889,16 @@
         <translation>PrivateSend Asetukset</translation>
     </message>
     <message>
-        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>PrivateSend on asetettu perusasetuksiin (%1 and 2 kierrosta). Voit muuttaa asetuksia milloin vain ICPro asetuksista.</translation>
+        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>PrivateSend on asetettu perusasetuksiin (%1 and 2 kierrosta). Voit muuttaa asetuksia milloin vain IBP asetuksista.</translation>
     </message>
     <message>
-        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>PrivateSend on asetettu korkean tason asetuksiin (%1 and 8 kierrosta). Voit muuttaa asetuksia milloin vain ICPro asetuksista.</translation>
+        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>PrivateSend on asetettu korkean tason asetuksiin (%1 and 8 kierrosta). Voit muuttaa asetuksia milloin vain IBP asetuksista.</translation>
     </message>
     <message>
-        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>PrivateSend on asetettu maksimitason asetuksiin (%1 and 16 kierrosta). Voit muuttaa asetuksia milloin vain ICPro asetuksista.</translation>
+        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>PrivateSend on asetettu maksimitason asetuksiin (%1 and 16 kierrosta). Voit muuttaa asetuksia milloin vain IBP asetuksista.</translation>
     </message>
 </context>
 <context>
@@ -940,8 +940,8 @@
         <translation>Muokkaa lähettävää osoitetta</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ICPro address.</source>
-        <translation>Annettu osoite "%1" ei ole pätevä ICPro osoite.</translation>
+        <source>The entered address "%1" is not a valid IBP address.</source>
+        <translation>Annettu osoite "%1" ei ole pätevä IBP osoite.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -982,8 +982,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -994,8 +994,8 @@
         <translation>(%1-bittinen)</translation>
     </message>
     <message>
-        <source>About ICPro Core</source>
-        <translation>Tietoja ICPro Core:sta</translation>
+        <source>About IBP Core</source>
+        <translation>Tietoja IBP Core:sta</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1042,8 +1042,8 @@
         <translation>PrivateSend tietoja</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the ICPro in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other ibp, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 IBP, 0.1 IBP, 1 IBP and 10 IBP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other ibp send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href="https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend"&gt;https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
-        <translation>&lt;h3&gt;PrivateSend perusteet&lt;/h3&gt; PrivateSend tarjoaa yksityisyyden hämärtämällä varojesi alkuperäisen osoitteen. Kaikki ICPro:it lompakossasi muodostuvat erillisistä "syötteistä", joita voit ajatella erillisinä kolikkoina.&lt;br&gt; PrivateSend käyttää innovatiivista prosessia sekoittaakseen lompakkosi syötteet kahden muun ihmisen syötteisiin, siirtämättä varoja pois lompakostasi. Varojesi kontrolli pysyy aina sinulla.&lt;hr&gt; &lt;b&gt; PrivateSend prosessi toimii seuraavasti:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend aloittaa pilkkomalla siirtotapahtumiesi syötteet pienemmiksi standardi arvoiksi. Nämä arvot ovat 0.01 IBP, 0.1 IBP, 1 IBP ja 10 IBP.&lt;/li&gt; &lt;li&gt;Sitten lompakkosi lähettää pyynnön verkon palvelimille, joita kutsutaan "masternode:iksi". Masternodet saavat tiedon että haluat sekoittaa pilkottuja standardi arvoja. Mitään tunnistetietoja ei lähetetä masternode:ille, ne eivät koskaan tiedä "kuka" olet.&lt;/li&gt; &lt;li&gt;Kun 2 muuta käyttäjää ilmoittaa että he haluavat myös sekoittaa varoja, alkaa sekoitus-sessio. Masternodet sekoittavat standardi arvot ja ilmoittavat kaikille 3:lle käyttäjän lompakoille että maksavat sekoitetut arvot takaisin itselleen. Lompakkosi maksaa nuo sekoitetut arvot suoraan itselleen, mutta eri osoitteeseen (vaihto-osoite).&lt;/li&gt; &lt;li&gt;Jotta varojesi alkuperäinen lähde hämärretään, lompakkosi suorittaa tämän prosessin useita kertoja kaikilla standardi arvoilla. Aina kun prosessi on valmis, sitä kutsutaan "kierrokseksi". Jokainen PrivateSend kierros tekee eksponentiaalisesti vaikeammaksi löytää varojesi alkuperäisen osoitteen.&lt;/li&gt; &lt;li&gt;Tämä sekoitusprosessi tapahtuu taustalla ilman käyttäjän toimenpiteitä. Kun haluat myöhemmin tehdä anonyymin varojen siirron, on varasi valmiiksi sekoitettu (anonymisoitu). Erillistä sekoitusta/odotusta ei tarvita.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;TÄRKEÄÄ:&lt;/b&gt; Lompakkosi sisältää vain 1000 "vaihto-osoitetta". Aina kun sekoitustapahtuma tehdään, max 9 osoitetta käytetään. Tämä tarkoittaa sitä että nuo 1000 osoitetta kestää noin 100 sekoitustapahtumaa. Kun 900 osoitetta on käytetty, lompakkosi täytyy tehdä lisää osoitteita. Se voi tehdä niitä vain jos automaattinen varmistus on käytössä.&lt;br&gt; Tästä seuraa että jos varmistus ei ole käytössä, myös PrivateSend on pois käytöstä. &lt;hr&gt;Lisätietoja &lt;a href="https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend"&gt;https://ICProDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt; </translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the IBP in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other ibp, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 IBP, 0.1 IBP, 1 IBP and 10 IBP -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other ibp send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href="https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend"&gt;https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
+        <translation>&lt;h3&gt;PrivateSend perusteet&lt;/h3&gt; PrivateSend tarjoaa yksityisyyden hämärtämällä varojesi alkuperäisen osoitteen. Kaikki IBP:it lompakossasi muodostuvat erillisistä "syötteistä", joita voit ajatella erillisinä kolikkoina.&lt;br&gt; PrivateSend käyttää innovatiivista prosessia sekoittaakseen lompakkosi syötteet kahden muun ihmisen syötteisiin, siirtämättä varoja pois lompakostasi. Varojesi kontrolli pysyy aina sinulla.&lt;hr&gt; &lt;b&gt; PrivateSend prosessi toimii seuraavasti:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend aloittaa pilkkomalla siirtotapahtumiesi syötteet pienemmiksi standardi arvoiksi. Nämä arvot ovat 0.01 IBP, 0.1 IBP, 1 IBP ja 10 IBP.&lt;/li&gt; &lt;li&gt;Sitten lompakkosi lähettää pyynnön verkon palvelimille, joita kutsutaan "masternode:iksi". Masternodet saavat tiedon että haluat sekoittaa pilkottuja standardi arvoja. Mitään tunnistetietoja ei lähetetä masternode:ille, ne eivät koskaan tiedä "kuka" olet.&lt;/li&gt; &lt;li&gt;Kun 2 muuta käyttäjää ilmoittaa että he haluavat myös sekoittaa varoja, alkaa sekoitus-sessio. Masternodet sekoittavat standardi arvot ja ilmoittavat kaikille 3:lle käyttäjän lompakoille että maksavat sekoitetut arvot takaisin itselleen. Lompakkosi maksaa nuo sekoitetut arvot suoraan itselleen, mutta eri osoitteeseen (vaihto-osoite).&lt;/li&gt; &lt;li&gt;Jotta varojesi alkuperäinen lähde hämärretään, lompakkosi suorittaa tämän prosessin useita kertoja kaikilla standardi arvoilla. Aina kun prosessi on valmis, sitä kutsutaan "kierrokseksi". Jokainen PrivateSend kierros tekee eksponentiaalisesti vaikeammaksi löytää varojesi alkuperäisen osoitteen.&lt;/li&gt; &lt;li&gt;Tämä sekoitusprosessi tapahtuu taustalla ilman käyttäjän toimenpiteitä. Kun haluat myöhemmin tehdä anonyymin varojen siirron, on varasi valmiiksi sekoitettu (anonymisoitu). Erillistä sekoitusta/odotusta ei tarvita.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;TÄRKEÄÄ:&lt;/b&gt; Lompakkosi sisältää vain 1000 "vaihto-osoitetta". Aina kun sekoitustapahtuma tehdään, max 9 osoitetta käytetään. Tämä tarkoittaa sitä että nuo 1000 osoitetta kestää noin 100 sekoitustapahtumaa. Kun 900 osoitetta on käytetty, lompakkosi täytyy tehdä lisää osoitteita. Se voi tehdä niitä vain jos automaattinen varmistus on käytössä.&lt;br&gt; Tästä seuraa että jos varmistus ei ole käytössä, myös PrivateSend on pois käytöstä. &lt;hr&gt;Lisätietoja &lt;a href="https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend"&gt;https://IBPDev.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt; </translation>
     </message>
 </context>
 <context>
@@ -1053,17 +1053,17 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to ICPro Core.</source>
-        <translation>ICPro Core - Tervetuloa.</translation>
+        <source>Welcome to IBP Core.</source>
+        <translation>IBP Core - Tervetuloa.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ICPro Core will store its data.</source>
-        <translation>Koska tämä on ensimmäinen kerta kun ohjelma käynnistetään, voit valita minne ICPro Core tallettaa datansa.
+        <source>As this is the first time the program is launched, you can choose where IBP Core will store its data.</source>
+        <translation>Koska tämä on ensimmäinen kerta kun ohjelma käynnistetään, voit valita minne IBP Core tallettaa datansa.
 Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä (Live os), ohjaa talletettava data eri levyasemalle turvalliseen paikkaan.</translation>
     </message>
     <message>
-        <source>ICPro Core will download and store a copy of the ICPro block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ICPro Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
+        <source>IBP Core will download and store a copy of the IBP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>IBP Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1074,8 +1074,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Määritä oma datahakemisto:</translation>
     </message>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1220,12 +1220,12 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the ICPro network, as detailed below.</source>
-        <translation>Viimeisimmät siirtotapahtumat eivät välttämättä ole vielä näkyvissä, ja siksi lompakon saldo voi olla väärin. Saldo korjaantuu oikeaksi kun lompakon synkronointi ICPro verkkoon on valmis.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the IBP network, as detailed below.</source>
+        <translation>Viimeisimmät siirtotapahtumat eivät välttämättä ole vielä näkyvissä, ja siksi lompakon saldo voi olla väärin. Saldo korjaantuu oikeaksi kun lompakon synkronointi IBP verkkoon on valmis.</translation>
     </message>
     <message>
-        <source>Attempting to spend ICPro that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Yritys käyttää ICPro:eja joihin vaikuttaa ei näkyvissä olevat siirtotapahtumat, tulevat hylätyksi ICPro verkossa.</translation>
+        <source>Attempting to spend IBP that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Yritys käyttää IBP:eja joihin vaikuttaa ei näkyvissä olevat siirtotapahtumat, tulevat hylätyksi IBP verkossa.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1318,20 +1318,20 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>(0 = auto, &lt;0 = jätä näin monta prosessorin ydintä vapaaksi)</translation>
     </message>
     <message>
-        <source>Amount of ICPro to keep anonymized</source>
-        <translation>ICPro määrä joka pidetään anonymisoituna</translation>
+        <source>Amount of IBP to keep anonymized</source>
+        <translation>IBP määrä joka pidetään anonymisoituna</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
         <translation>&amp;Lompakko</translation>
     </message>
     <message>
-        <source>Automatically start ICPro Core after logging in to the system.</source>
-        <translation>Käynnistä ICPro Core automaattisesti kun järjestelmään kirjaudutaan.</translation>
+        <source>Automatically start IBP Core after logging in to the system.</source>
+        <translation>Käynnistä IBP Core automaattisesti kun järjestelmään kirjaudutaan.</translation>
     </message>
     <message>
-        <source>&amp;Start ICPro Core on system login</source>
-        <translation>&amp;Käynnistä ICPro Core järjestelmään kirjauduttaessa</translation>
+        <source>&amp;Start IBP Core on system login</source>
+        <translation>&amp;Käynnistä IBP Core järjestelmään kirjauduttaessa</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1378,8 +1378,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Tämä määrä toimii rajana sekoituksen keskeytykselle kun PrivateSend sen saavuttaa.</translation>
     </message>
     <message>
-        <source>Automatically open the ICPro Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa automaattisesti ICPro Core asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the IBP Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa automaattisesti IBP Core asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1390,8 +1390,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Salli sisään tulevat yhteydet</translation>
     </message>
     <message>
-        <source>Connect to the ICPro network through a SOCKS5 proxy.</source>
-        <translation>Kytkeydy ICPro verkkoon käyttäen SOCKS5 proxy:a.</translation>
+        <source>Connect to the IBP network through a SOCKS5 proxy.</source>
+        <translation>Kytkeydy IBP verkkoon käyttäen SOCKS5 proxy:a.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1402,8 +1402,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Ikkunaa suljettaessa pienennä ohjelman ikkuna lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ICPro Core.</source>
-        <translation>Käyttöliittymän kieli asetetaan tässä, Asetus tulee voimaan kun ICPro Core asiakasohjelma käynnistetään uudelleen.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting IBP Core.</source>
+        <translation>Käyttöliittymän kieli asetetaan tässä, Asetus tulee voimaan kun IBP Core asiakasohjelma käynnistetään uudelleen.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items.&lt;br/&gt;%s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1474,8 +1474,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the ICPro network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Kytkeydy ICPro verkkoon käyttäen erillistä SOCKS5 proxy:a Tor piilopalveluihin.</translation>
+        <source>Connect to the IBP network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Kytkeydy IBP verkkoon käyttäen erillistä SOCKS5 proxy:a Tor piilopalveluihin.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1595,8 +1595,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ICPro network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajan tasalla.&lt;br&gt;Lompakkosi synkronoituu automaattisesti ICPro verkkoon kun&lt;br&gt;yhteys on muodostettu, mutta tämä prosessi ei vielä ole valmis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IBP network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajan tasalla.&lt;br&gt;Lompakkosi synkronoituu automaattisesti IBP verkkoon kun&lt;br&gt;yhteys on muodostettu, mutta tämä prosessi ei vielä ole valmis.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1865,7 +1865,7 @@ https://www.transifex.com/projects/p/ibp/</translation>
     </message>
     <message>
         <source>Cannot start ibp: click-to-pay handler</source>
-        <translation>Ei voi käynnistää ICProia: click-to-pay handler</translation>
+        <translation>Ei voi käynnistää IBPia: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1880,8 +1880,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Virheellinen maksuosoite %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid ICPro address or malformed URI parameters.</source>
-        <translation>URI:a ei voida jäsentää! Tämä voi johtua virheellisestä ICPro osoitteesta tai virheellisestä URI:n muuttujasta. </translation>
+        <source>URI cannot be parsed! This can be caused by an invalid IBP address or malformed URI parameters.</source>
+        <translation>URI:a ei voida jäsentää! Tämä voi johtua virheellisestä IBP osoitteesta tai virheellisestä URI:n muuttujasta. </translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1970,8 +1970,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -1990,16 +1990,16 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Virhe luettaessa masternoden asetustiedostoa: %1</translation>
     </message>
     <message>
-        <source>ICPro Core didn't yet exit safely...</source>
-        <translation>ICPro Core ei ole vielä sulkeutunut turvallisesti...</translation>
+        <source>IBP Core didn't yet exit safely...</source>
+        <translation>IBP Core ei ole vielä sulkeutunut turvallisesti...</translation>
     </message>
     <message>
         <source>Amount</source>
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>Enter a ICPro address (e.g. %1)</source>
-        <translation>Syötä ICPro osoite (esim. %1)</translation>
+        <source>Enter a IBP address (e.g. %1)</source>
+        <translation>Syötä IBP osoite (esim. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2164,8 +2164,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Muistin käyttö</translation>
     </message>
     <message>
-        <source>Open the ICPro Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa ICPro Core debug lokitiedosto nykyisestä datahakemistosta. Tämä saattaa kestää muutaman sekunnin isoilla tiedostoilla.</translation>
+        <source>Open the IBP Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa IBP Core debug lokitiedosto nykyisestä datahakemistosta. Tämä saattaa kestää muutaman sekunnin isoilla tiedostoilla.</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2384,8 +2384,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>&amp;Poista kieltolistalta</translation>
     </message>
     <message>
-        <source>Welcome to the ICPro Core RPC console.</source>
-        <translation>Tervetuloa ICPro Core RPC konsoliin.</translation>
+        <source>Welcome to the IBP Core RPC console.</source>
+        <translation>Tervetuloa IBP Core RPC konsoliin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2467,8 +2467,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>&amp;Uudelleen käytä vastaanottavaa osoitetta (ei suositella)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ICPro network.</source>
-        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana ICPro verkkoon.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the IBP network.</source>
+        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana IBP verkkoon.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2479,8 +2479,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Valinnainen nimi liitetään uuteen vastaanottavaan osoitteeseen.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ICPro network.</source>
-        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana ICPro verkkoon.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the IBP network.</source>
+        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana IBP verkkoon.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2932,8 +2932,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation><numerusform>Arvioitu vahvistuksen aloitus %n lohkon kuluessa.</numerusform><numerusform>Arvioitu vahvistuksen aloitus %n lohkon kuluessa.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid ICPro address</source>
-        <translation>Varoitus: Virheellinen ICPro osoite</translation>
+        <source>Warning: Invalid IBP address</source>
+        <translation>Varoitus: Virheellinen IBP osoite</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2955,8 +2955,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Maksun &amp;saaja:</translation>
     </message>
     <message>
-        <source>The ICPro address to send the payment to</source>
-        <translation>ICPro osoite johon maksu lähetetään</translation>
+        <source>The IBP address to send the payment to</source>
+        <translation>IBP osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2991,7 +2991,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>&amp;Määrä:</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of ICPro than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of IBP than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Siirtomaksu vähennetään lähetettävästä summasta. Vastaanottaja saa pienemmän summan kuin mitä laitoit määrä kenttään. Jos useampia vastaanottajia on valittu, siirtomaksu jaetaan tasan.</translation>
     </message>
     <message>
@@ -3003,8 +3003,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Viesti:</translation>
     </message>
     <message>
-        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ICPro network.</source>
-        <translation>Viesti joka liitettiin ICPro: URI joka talletetaan siirtotapahtuman kanssa viitteeksi sinulle. Huomio: Tätä viestiä ei lähetetä ICPro verkkoon.</translation>
+        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the IBP network.</source>
+        <translation>Viesti joka liitettiin IBP: URI joka talletetaan siirtotapahtuman kanssa viitteeksi sinulle. Huomio: Tätä viestiä ei lähetetä IBP verkkoon.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3030,8 +3030,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ICPro Core is shutting down...</source>
-        <translation>ICPro Core sulkeutuu...</translation>
+        <source>IBP Core is shutting down...</source>
+        <translation>IBP Core sulkeutuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3049,12 +3049,12 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>&amp;Allekirjoita viesti</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive ICPro sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive IBP sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Voit allekirjoittaa viestit/sopimukset omilla osoitteillasi todistaaksesi että omistat ne. Ole huolellinen että et allekirjoita mitään epämääräistä, satunnaista, phishing-hyökkäjä voi huijata sinua allekirjoittamaan henkilöllisyytesi omasta puolestaan. Allekirjoita vain yksityiskohtaisesti täytetty selvitys johon sitoudut.</translation>
     </message>
     <message>
-        <source>The ICPro address to sign the message with</source>
-        <translation>ICPro osoite jolla viesti allekirjoitetaan</translation>
+        <source>The IBP address to sign the message with</source>
+        <translation>IBP osoite jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3085,8 +3085,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Kopioi tämän hetkinen allekirjoitus leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ICPro address</source>
-        <translation>Allekirjoita viesti todistaaksesi että omistat tämän ICPro osoitteen</translation>
+        <source>Sign the message to prove you own this IBP address</source>
+        <translation>Allekirjoita viesti todistaaksesi että omistat tämän IBP osoitteen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3109,12 +3109,12 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Syötä allekirjoittava osoite, viesti (varmista että kopioit rivinvaihdot, välilyönnit, tabulaattorit, jne täsmälleen oikein) ja allekirjoitus alla oleviin kenttiin varmistaaksesi allekirjoituksen aitouden. Varo lukemasta enempää allekirjoitukseen kuin kuin mitä itse viestissä on, välttääksesi man-in-the-middle hyökkäyksen. Huom. tämä todistaa vain että allekirjoittava osapuoli vastaanottaa osoitteella, se ei voi todistaa lähettäjää.</translation>
     </message>
     <message>
-        <source>The ICPro address the message was signed with</source>
-        <translation>ICPro osoite jolla viesti on allekirjoitettu</translation>
+        <source>The IBP address the message was signed with</source>
+        <translation>IBP osoite jolla viesti on allekirjoitettu</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ICPro address</source>
-        <translation>Tarkista että viesti on allekirjoitettu määritetyllä ICPro osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified IBP address</source>
+        <translation>Tarkista että viesti on allekirjoitettu määritetyllä IBP osoitteella</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3184,8 +3184,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>[testiverkko]</translation>
     </message>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core</translation>
+        <source>IBP Core</source>
+        <translation>IBP Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3196,8 +3196,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Bitcoin Core kehittäjät</translation>
     </message>
     <message>
-        <source>The ICPro Core developers</source>
-        <translation>ICPro Core kehittäjät</translation>
+        <source>The IBP Core developers</source>
+        <translation>IBP Core kehittäjät</translation>
     </message>
 </context>
 <context>
@@ -3737,7 +3737,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Lähetä ICProeja</translation>
+        <translation>Lähetä IBPeja</translation>
     </message>
     <message>
         <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 IBP.</source>
@@ -3794,8 +3794,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:port merkintätapaa IPv6:lle.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. ICPro Core is probably already running.</source>
-        <translation>Ei voida lukita datahakemistoa %s. ICPro Core on luultavasti jo käynnissä.</translation>
+        <source>Cannot obtain a lock on data directory %s. IBP Core is probably already running.</source>
+        <translation>Ei voida lukita datahakemistoa %s. IBP Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3834,12 +3834,12 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Tämä on esi-julkaistu testiversio - Käytä omalla vastuulla - Älä käytä louhimiseen tai kauppasovelluksiin.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. ICPro Core is probably already running.</source>
-        <translation>Ei voida yhdistää %s tässä tietokoneessa. ICPro Core on luultavasti jo käynnissä.</translation>
+        <source>Unable to bind to %s on this computer. IBP Core is probably already running.</source>
+        <translation>Ei voida yhdistää %s tässä tietokoneessa. IBP Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Varoitus: ICPro verkossa on ristiriitoja! Louhijat näyttävät kokevan virhetilanteita.</translation>
+        <translation>Varoitus: IBP verkossa on ristiriitoja! Louhijat näyttävät kokevan virhetilanteita.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
@@ -4150,8 +4150,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Copyright (C) 2009-%i Bitcoin Core Kehittäjät</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The ICPro Core Developers</source>
-        <translation>Copyright (C) 2014-%i ICPro Core Kehittäjät</translation>
+        <source>Copyright (C) 2014-%i The IBP Core Developers</source>
+        <translation>Copyright (C) 2014-%i IBP Core Kehittäjät</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -4170,8 +4170,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Virhe latauksessa %s: Et voi poistaa käytöstä HD:tä jo olemassa olevassa HD lompakossa</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of ICPro Core</source>
-        <translation>Virhe ladattaessa wallet.dat: Lompakko vaatii uudemman version ICPro Core:sta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of IBP Core</source>
+        <translation>Virhe ladattaessa wallet.dat: Lompakko vaatii uudemman version IBP Core:sta</translation>
     </message>
     <message>
         <source>Failed to load fulfilled requests cache from</source>
@@ -4230,8 +4230,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Tietoja</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. ICPro Core is shutting down.</source>
-        <translation>Ohjelman alkuperäisyyden tarkistus epäonnistui. ICPro Core sulkeutuu.</translation>
+        <source>Initialization sanity check failed. IBP Core is shutting down.</source>
+        <translation>Ohjelman alkuperäisyyden tarkistus epäonnistui. IBP Core sulkeutuu.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4486,8 +4486,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Käyttäjä toimijan kommentti (%s) sisältää ei suositeltuja merkkejä.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart ICPro Core to complete</source>
-        <translation>Lompakko on kirjoitettava uudelleen: käynnistä ICPro Core uudestaan viimeistelyä varten</translation>
+        <source>Wallet needed to be rewritten: restart IBP Core to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä IBP Core uudestaan viimeistelyä varten</translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -4538,8 +4538,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Pidä enintään &lt;n&gt; ei yhdistettyä siirtotapahtumaa muistissa (oletus: %u)</translation>
     </message>
     <message>
-        <source>Disable all ICPro specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Kytke pois käytöstä kaikki ICPro:in erityistoiminnot (Masternodet, PrivateSend, InstantSend, Budjetointi) (0-1, oletus: %u)</translation>
+        <source>Disable all IBP specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
+        <translation>Kytke pois käytöstä kaikki IBP:in erityistoiminnot (Masternodet, PrivateSend, InstantSend, Budjetointi) (0-1, oletus: %u)</translation>
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
@@ -4618,8 +4618,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Yksittäisen siirtotapahtuman maksimi siirtomaksu (%s), jos tämä asetetaan liian matalaksi, se voi keskeyttää isot siirtotapahtumat (oletus: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong ICPro Core will not work properly.</source>
-        <translation>Tarkista että tietokoneesi kellonaika ja päivämäärä ovat oikein! ICPro ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong IBP Core will not work properly.</source>
+        <translation>Tarkista että tietokoneesi kellonaika ja päivämäärä ovat oikein! IBP ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
     </message>
     <message>
         <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>

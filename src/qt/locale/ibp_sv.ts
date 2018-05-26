@@ -58,12 +58,12 @@
         <translation>Mottagaradresser</translation>
     </message>
     <message>
-        <source>These are your ICPro addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>De här är dina ICPro-adresser för att skicka betalningar. Kontrollera alltid mängden och mottagaradressen innan du skickar mynt.</translation>
+        <source>These are your IBP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>De här är dina IBP-adresser för att skicka betalningar. Kontrollera alltid mängden och mottagaradressen innan du skickar mynt.</translation>
     </message>
     <message>
-        <source>These are your ICPro addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>De här är dina ICPro-adresser för betalningsmottagningar. Det rekommenderas att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your IBP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>De här är dina IBP-adresser för betalningsmottagningar. Det rekommenderas att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Plånbok krypterad</translation>
     </message>
     <message>
-        <source>ICPro will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
-        <translation>ICPro kommer nu att färdigställa krypteringsprocessen. Kom ihåg att krypteringen av din plånbok inte kan skydda dig helt och hållet från att dina ICPro stjäls av skadeprogram som har infekterat din dator.</translation>
+        <source>IBP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ibps from being stolen by malware infecting your computer.</source>
+        <translation>IBP kommer nu att färdigställa krypteringsprocessen. Kom ihåg att krypteringen av din plånbok inte kan skydda dig helt och hållet från att dina IBP stjäls av skadeprogram som har infekterat din dator.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -219,8 +219,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core
+        <source>IBP Core</source>
+        <translation>IBP Core
 </translation>
     </message>
     <message>
@@ -244,8 +244,8 @@
         <translation>&amp;Skicka</translation>
     </message>
     <message>
-        <source>Send coins to a ICPro address</source>
-        <translation>Skicka mynt till en ICPro-adress</translation>
+        <source>Send coins to a IBP address</source>
+        <translation>Skicka mynt till en IBP-adress</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -253,7 +253,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ibp: URIs)</source>
-        <translation>Begär betalningar (genererar QR-koder och ICPro:-URI:s)</translation>
+        <translation>Begär betalningar (genererar QR-koder och IBP:-URI:s)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -272,8 +272,8 @@
         <translation>Avsluta applikationen</translation>
     </message>
     <message>
-        <source>&amp;About ICPro Core</source>
-        <translation>&amp;Om ICPro Core</translation>
+        <source>&amp;About IBP Core</source>
+        <translation>&amp;Om IBP Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -288,8 +288,8 @@
         <translation>&amp;Alternativ...</translation>
     </message>
     <message>
-        <source>Modify configuration options for ICPro</source>
-        <translation>Anpassa konfigurationsalternatv för ICPro</translation>
+        <source>Modify configuration options for IBP</source>
+        <translation>Anpassa konfigurationsalternatv för IBP</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -340,16 +340,16 @@
         <translation>Signera &amp;meddelande...</translation>
     </message>
     <message>
-        <source>Sign messages with your ICPro addresses to prove you own them</source>
-        <translation>Signera meddelanden med dina ICPro-adresser för att bevisa att du äger dem</translation>
+        <source>Sign messages with your IBP addresses to prove you own them</source>
+        <translation>Signera meddelanden med dina IBP-adresser för att bevisa att du äger dem</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Bekräfta meddelande...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ICPro addresses</source>
-        <translation>Bekräfta meddelanden för att garantera att de signerades med de angivna ICPro-adresserna</translation>
+        <source>Verify messages to ensure they were signed with specified IBP addresses</source>
+        <translation>Bekräfta meddelanden för att garantera att de signerades med de angivna IBP-adresserna</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -405,15 +405,15 @@
     </message>
     <message>
         <source>Open a ibp: URI or payment request</source>
-        <translation>Öppna en ICPro-URI eller betalningsbegäran</translation>
+        <translation>Öppna en IBP-URI eller betalningsbegäran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandoradalternativ</translation>
     </message>
     <message>
-        <source>Show the ICPro Core help message to get a list with possible ICPro command-line options</source>
-        <translation>Visa ICPro Core-hjälpmeddelandet för att få en lista med möjliga ICPro-kommandoradalternativ</translation>
+        <source>Show the IBP Core help message to get a list with possible IBP command-line options</source>
+        <translation>Visa IBP Core-hjälpmeddelandet för att få en lista med möjliga IBP-kommandoradalternativ</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -790,16 +790,16 @@ Adress: %4
         <translation>Darksend-konfiguration</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>Darksend ställdes framgångsrikt om till grundläggande (%1 och 2 omgångar). Du kan ändra detta när som helst genom att öppna ICPro:s konfigurationsskärm.</translation>
+        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>Darksend ställdes framgångsrikt om till grundläggande (%1 och 2 omgångar). Du kan ändra detta när som helst genom att öppna IBP:s konfigurationsskärm.</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>Darksend ställdes framgångsrikt in på hög (%1 och 8 omgångar). Du kan ändra detta när som helst genom att öppna ICPro:s konfigurationsskärm.</translation>
+        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>Darksend ställdes framgångsrikt in på hög (%1 och 8 omgångar). Du kan ändra detta när som helst genom att öppna IBP:s konfigurationsskärm.</translation>
     </message>
     <message>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ICPro's configuration screen.</source>
-        <translation>Darksend ställdes framgångsrikt in på maximal (%1 och 16 omgångar). Du kan ändra detta när som helst genom att öppna ICPro:s konfigurationsskärm</translation>
+        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening IBP's configuration screen.</source>
+        <translation>Darksend ställdes framgångsrikt in på maximal (%1 och 16 omgångar). Du kan ändra detta när som helst genom att öppna IBP:s konfigurationsskärm</translation>
     </message>
 </context>
 <context>
@@ -841,8 +841,8 @@ Adress: %4
         <translation>Redigera avsändaradress</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ICPro address.</source>
-        <translation>Den angivna adressen "%1" är inte en giltig ICPro-adress.</translation>
+        <source>The entered address "%1" is not a valid IBP address.</source>
+        <translation>Den angivna adressen "%1" är inte en giltig IBP-adress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -883,8 +883,8 @@ Adress: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core
+        <source>IBP Core</source>
+        <translation>IBP Core
 </translation>
     </message>
     <message>
@@ -931,16 +931,16 @@ Adress: %4
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to ICPro Core.</source>
-        <translation>Välkommen till ICPro Core.</translation>
+        <source>Welcome to IBP Core.</source>
+        <translation>Välkommen till IBP Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ICPro Core will store its data.</source>
-        <translation>Då detta är första gången programmet startas kan du välja var ICPro Core ska lagra sin data.</translation>
+        <source>As this is the first time the program is launched, you can choose where IBP Core will store its data.</source>
+        <translation>Då detta är första gången programmet startas kan du välja var IBP Core ska lagra sin data.</translation>
     </message>
     <message>
-        <source>ICPro Core will download and store a copy of the ICPro block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ICPro Core kommer att laddas ned och lagra en kopia av ICPro:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
+        <source>IBP Core will download and store a copy of the IBP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>IBP Core kommer att laddas ned och lagra en kopia av IBP:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -989,12 +989,12 @@ Adress: %4
         <translation>&amp;Huvud</translation>
     </message>
     <message>
-        <source>Automatically start ICPro after logging in to the system.</source>
-        <translation>Starta ICPro automatiskt efter systeminloggning.</translation>
+        <source>Automatically start IBP after logging in to the system.</source>
+        <translation>Starta IBP automatiskt efter systeminloggning.</translation>
     </message>
     <message>
-        <source>&amp;Start ICPro on system login</source>
-        <translation>&amp;Starta ICPro vid systeminloggning</translation>
+        <source>&amp;Start IBP on system login</source>
+        <translation>&amp;Starta IBP vid systeminloggning</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1021,8 +1021,8 @@ Adress: %4
         <translation>Denna mängd fungerar som en tröskel att stänga av Darksend då det har uppnåtts.</translation>
     </message>
     <message>
-        <source>Amount of ICPro to keep anonymized</source>
-        <translation>Mängd ICPro att bibehålla anonymiserade</translation>
+        <source>Amount of IBP to keep anonymized</source>
+        <translation>Mängd IBP att bibehålla anonymiserade</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1049,8 +1049,8 @@ Adress: %4
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>Automatically open the ICPro client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna ICPro:s klientport automatiskt på routern. Detta fungerar bara om din router stöder UPnP och är aktiverad.</translation>
+        <source>Automatically open the IBP client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna IBP:s klientport automatiskt på routern. Detta fungerar bara om din router stöder UPnP och är aktiverad.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1101,8 +1101,8 @@ Adress: %4
         <translation>Användargränssnitt&amp;språk: </translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ICPro.</source>
-        <translation>Användargränssnittspråket kan ställas in här. Denna inställning träder i kraft efter att ICPro startats om.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting IBP.</source>
+        <translation>Användargränssnittspråket kan ställas in här. Denna inställning träder i kraft efter att IBP startats om.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1182,8 +1182,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ICPro network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara utdaterad. Din plånbok synkroniseras automatiskt med ICPro-nätverket efter att en anslutning har etablerats men denna process har ännu inte slutförts.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IBP network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara utdaterad. Din plånbok synkroniseras automatiskt med IBP-nätverket efter att en anslutning har etablerats men denna process har ännu inte slutförts.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1435,8 +1435,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Antal anslutningar</translation>
     </message>
     <message>
-        <source>Open the ICPro debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna ICPros avsökningsloggfil från den nuvarande datakatalogen. Detta kan ta ett par sekunder för stora loggfiler.</translation>
+        <source>Open the IBP debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna IBPs avsökningsloggfil från den nuvarande datakatalogen. Detta kan ta ett par sekunder för stora loggfiler.</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1507,8 +1507,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Ut:</translation>
     </message>
     <message>
-        <source>Welcome to the ICPro RPC console.</source>
-        <translation>Välkommen till ICPros RPC-konsol.</translation>
+        <source>Welcome to the IBP RPC console.</source>
+        <translation>Välkommen till IBPs RPC-konsol.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1542,8 +1542,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Åt&amp;eranvänd en befintlig mottagaradress (rekommenderas inte)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ICPro network.</source>
-        <translation>Ett valfritt meddelande att bifoga betalningsbegärandet vilket kommer att visas när begärandet öppnas. Observera: Meddelandet kommer inte att skickas med betalningen över ICPro-nätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the IBP network.</source>
+        <translation>Ett valfritt meddelande att bifoga betalningsbegärandet vilket kommer att visas när begärandet öppnas. Observera: Meddelandet kommer inte att skickas med betalningen över IBP-nätverket.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -1899,8 +1899,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Fel: Plånboken låstes upp enbart för att anonymisera mynt.</translation>
     </message>
     <message>
-        <source>Warning: Invalid ICPro address</source>
-        <translation>Varning: Ogiltig ICPro-adress</translation>
+        <source>Warning: Invalid IBP address</source>
+        <translation>Varning: Ogiltig IBP-adress</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1958,8 +1958,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Meddelande:</translation>
     </message>
     <message>
-        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ICPro network.</source>
-        <translation>Ett meddelande som bifogades till ICPro: URI vilket kommer att lagras med transaktionen så att du vet. Observera: Meddelandet kommer inte att skickas över ICPro-nätverket.</translation>
+        <source>A message that was attached to the ibp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the IBP network.</source>
+        <translation>Ett meddelande som bifogades till IBP: URI vilket kommer att lagras med transaktionen så att du vet. Observera: Meddelandet kommer inte att skickas över IBP-nätverket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -1985,8 +1985,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ICPro Core is shutting down...</source>
-        <translation>ICPro Core stängs ned...</translation>
+        <source>IBP Core is shutting down...</source>
+        <translation>IBP Core stängs ned...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2036,8 +2036,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Kopiera den nuvarande valda signaturen till systemurklippet</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ICPro address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna ICPro-adress</translation>
+        <source>Sign the message to prove you own this IBP address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna IBP-adress</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2060,8 +2060,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Skriv in signeringsadressen, meddelandet, (försäkra dig om att du kopierar linjeavbrott, mellanslag, flikar med mera) och signera nedtill för att verifiera meddelandet. Var försiktig med att inte läsa in mer i signaturen än vad som finns i det signerade meddelandet för att undvika att bli lurad av en mellanhandattack.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ICPro address</source>
-        <translation>Bekräfta meddelandet för att försäkra dig om att den signerades med den angivna ICPro-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified IBP address</source>
+        <translation>Bekräfta meddelandet för att försäkra dig om att den signerades med den angivna IBP-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ICPro Core</source>
-        <translation>ICPro Core
+        <source>IBP Core</source>
+        <translation>IBP Core
 </translation>
     </message>
     <message>
@@ -2140,8 +2140,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Bitcoin Core-utvecklarna</translation>
     </message>
     <message>
-        <source>The ICPro Core developers</source>
-        <translation>ICPro Core-utvecklarna</translation>
+        <source>The IBP Core developers</source>
+        <translation>IBP Core-utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2662,8 +2662,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Sammanbind till fastställd adress och avlyssna alltid den. Använd [host]:port-notation för IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. ICPro Core is probably already running.</source>
-        <translation>Kan inte erhålla ett lås på datakatalog %s. ICPro Core körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. IBP Core is probably already running.</source>
+        <translation>Kan inte erhålla ett lås på datakatalog %s. IBP Core körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -2718,8 +2718,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Detta är en förhandsutgiven testkompilering - använd på egen risk - använd inte för utvinning eller handlarapplikationer.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. ICPro Core is probably already running.</source>
-        <translation>Det går inte att binda till %s till denna dator. ICPro Core körs förmodligen redan.</translation>
+        <source>Unable to bind to %s on this computer. IBP Core is probably already running.</source>
+        <translation>Det går inte att binda till %s till denna dator. IBP Core körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -2942,8 +2942,8 @@ https://www.transifex.com/projects/p/ibp/</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. ICPro Core is shutting down.</source>
-        <translation>Initialiseringstillståndkontroll misslyckades. ICPro Core stängs ned.</translation>
+        <source>Initialization sanity check failed. IBP Core is shutting down.</source>
+        <translation>Initialiseringstillståndkontroll misslyckades. IBP Core stängs ned.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>

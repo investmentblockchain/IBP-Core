@@ -30,7 +30,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the ICPro Qt UI.
+/** Utility functions used by the IBP Qt UI.
  */
 namespace GUIUtil
 {

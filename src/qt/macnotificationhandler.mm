@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.ibp.ICPro-Qt";
+        return @"org.ibp.IBP-Qt";
     } else {
         return [self __bundleIdentifier];
     }

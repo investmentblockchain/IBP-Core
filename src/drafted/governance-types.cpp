@@ -7,8 +7,8 @@ GovernanceObjectType GovernanceStringToType(std::string strType) {
     if(strType == "AllTypes") type = AllTypes;
     if(strType == "Error") type = Error;
     if(strType == "ValueOverride") type = ValueOverride;
-    if(strType == "ICProNetwork") type = ICProNetwork;
-    if(strType == "ICProNetworkVariable") type = ICProNetworkVariable;
+    if(strType == "IBPNetwork") type = IBPNetwork;
+    if(strType == "IBPNetworkVariable") type = IBPNetworkVariable;
     if(strType == "Category") type = Category;
     if(strType == "Group") type = Group;
     if(strType == "User") type = User;
@@ -28,8 +28,8 @@ std::string GovernanceTypeToString(GovernanceObjectType type) {
     if(type == AllTypes) s = "AllTypes";
     if(type == Error) s = "Error";
     if(type == ValueOverride) s = "ValueOverride";
-    if(type == ICProNetwork) s = "ICProNetwork";
-    if(type == ICProNetworkVariable) s = "ICProNetworkVariable";
+    if(type == IBPNetwork) s = "IBPNetwork";
+    if(type == IBPNetworkVariable) s = "IBPNetworkVariable";
     if(type == Category) s = "Category";
     if(type == Group) s = "Group";
     if(type == User) s = "User";

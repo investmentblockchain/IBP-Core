@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The ICPro Core developers
+// Copyright (c) 2014-2017 The IBP Core developers
 
 /*
  * FIELDS AND CLASSIFICATION
@@ -45,7 +45,7 @@
  * =========================
  *
  *   // network
- *   CICProNetwork lvl, network-type, network-status, network-error, milestone-status*
+ *   CIBPNetwork lvl, network-type, network-status, network-error, milestone-status*
  *   CCategory lvl, category-type, status, status-error
  *   CNetworkGlobalVariable lvl, global-type, status, status-error
  *   // base: actor
@@ -130,7 +130,7 @@ public:
 };
 
 // // root node
-class CICProNetwork : public CGovernanceObject
+class CIBPNetwork : public CGovernanceObject
 {
 private:
     std::string strName;
@@ -138,7 +138,7 @@ private:
 
 
 public:
-    CICProNetwork(UniValue objIn)
+    CIBPNetwork(UniValue objIn)
     {
         strName = objIn["name"].get_str();
         strURL = objIn["name"].get_str();
@@ -174,9 +174,9 @@ public:
 
 };
 
-// // can be under: ICProNetwork
+// // can be under: IBPNetwork
 // //   -- signature requirements : Key1(User)
-// class CICProNetworkVariable : public CGovernanceObject
+// class CIBPNetworkVariable : public CGovernanceObject
 // {
 // private:
 
@@ -279,7 +279,7 @@ public:
 //     // isRootCategory()
 //     // {
 //     //     // root categories won't have categories as parents
-//     //     return (IsType() == ICProNetwork);
+//     //     return (IsType() == IBPNetwork);
 //     // }
 
 //     // isSubcategoryOf(std::string strParentName)

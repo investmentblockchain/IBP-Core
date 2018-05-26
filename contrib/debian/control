@@ -25,17 +25,17 @@ Build-Depends: debhelper,
  python
 Standards-Version: 3.9.2
 Homepage: https://www.ibp.org/
-Vcs-Git: git://github.com/ICPro/ICPro.git
+Vcs-Git: git://github.com/IBP/IBP.git
 Vcs-Browser: https://github.com/ibpproject/ibp
 
 Package: ibpd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- ICPro is an experimental new digital currency that enables anonymous, instant
- payments to anyone, anywhere in the world. ICPro uses peer-to-peer
+ IBP is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. IBP uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. ICPro Core
+ and issuing money are carried out collectively by the network. IBP Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides the daemon, ibpd, and the CLI tool
@@ -45,22 +45,22 @@ Package: ibp-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- ICPro is an experimental new digital currency that enables anonymous, instant
- payments to anyone, anywhere in the world. ICPro uses peer-to-peer
+ IBP is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. IBP uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. ICPro Core
+ and issuing money are carried out collectively by the network. IBP Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides ICPro-Qt, a GUI for ICPro based on Qt.
+ This package provides IBP-Qt, a GUI for IBP based on Qt.
 
 Package: ibp-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- ICPro is an experimental new digital currency that enables anonymous, instant
- payments to anyone, anywhere in the world. ICPro uses peer-to-peer
+ IBP is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. IBP uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. ICPro Core
+ and issuing money are carried out collectively by the network. IBP Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides ibp-tx, a command-line transaction creation

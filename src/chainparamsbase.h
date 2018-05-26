@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between ibp-cli and ibpd)
- * of a given instance of the ICPro system.
+ * of a given instance of the IBP system.
  */
 class CBaseChainParams
 {
