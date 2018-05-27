@@ -9,6 +9,7 @@
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 // static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_LEGACY_BLOCK_SIZE = (2 * 1000 * 1000);
+static const int LYRA2Z_TIMESTAMP = 1527616800; //05/29/2018 @ 6:00pm (UTC)
 inline unsigned int MaxBlockSize(bool fDIP0001Active /*= false */)
 {
     return fDIP0001Active ? MAX_LEGACY_BLOCK_SIZE * 2 : MAX_LEGACY_BLOCK_SIZE;
@@ -30,5 +31,6 @@ enum {
     /* Use GetMedianTimePast() instead of nTime for end point timestamp. */
     LOCKTIME_MEDIAN_TIME_PAST = (1 << 1),
 };
+
 
 #endif // BITCOIN_CONSENSUS_CONSENSUS_H

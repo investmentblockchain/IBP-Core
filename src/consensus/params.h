@@ -82,6 +82,8 @@ struct Params {
     int64_t DifficultyAdjustmentInterval() const { return nPowTargetTimespan / nPowTargetSpacing; }
     uint256 nMinimumChainWork;
     uint256 defaultAssumeValid;
+
+    uint32_t nLyra2zTimestamp;
 };
 } // namespace Consensus
 
