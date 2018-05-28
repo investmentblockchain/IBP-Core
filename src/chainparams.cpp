@@ -69,12 +69,12 @@ public:
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x001");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 5 * 60; // IBP: 1 min
-        consensus.nPowTargetSpacing = 5 * 60; // IBP: 1 min
+        consensus.nPowTargetTimespan = 2 * 60; // IBP: 1 min
+        consensus.nPowTargetSpacing = 2 * 60; // IBP: 1 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916;
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nMinerConfirmationWindow = 5; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
