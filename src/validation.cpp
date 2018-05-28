@@ -1249,7 +1249,7 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
 
     CAmount ret;
-    if(nPrevHeight < 1300) {
+    if(nHeight < 1300) {
       ret = (blockValue/100) * 55;
     } else {
       ret = (blockValue/100) * 85;
