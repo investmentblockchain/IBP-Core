@@ -69,8 +69,8 @@ public:
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x001");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 2 * 60; // IBP: 1 min
-        consensus.nPowTargetSpacing = 2 * 60; // IBP: 1 min
+        consensus.nPowTargetTimespan = 5 * 60; // IBP: 5 min
+        consensus.nPowTargetSpacing = 5 * 60; // IBP: 5 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916;
@@ -92,10 +92,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000b0001a");
+        consensus.nMinimumChainWork = uint256S("0");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000e94828fdb2c37e2a4e5fed918f51b7148b50d88ac71addfd766ea329493");
+        consensus.defaultAssumeValid = uint256S("0");
 
         pchMessageStart[0] = 0x83;
         pchMessageStart[1] = 0x23;
@@ -143,9 +143,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  0, uint256S("0x00000b437d6e2c4a0831584673bf7b19bf523a0d736bb1cf1b74fe2b5a9d3e28"))
-            ( 10, uint256S("0x00000e94828fdb2c37e2a4e5fed918f51b7148b50d88ac71addfd766ea329493")),
-            1527193831, // * UNIX timestamp of last checkpoint block
+            (  0, uint256S("0x00000b437d6e2c4a0831584673bf7b19bf523a0d736bb1cf1b74fe2b5a9d3e28")),
+            1527177130, // * UNIX timestamp of last checkpoint block
             0,          // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             2800        // * estimated number of transactions per day after checkpoint
